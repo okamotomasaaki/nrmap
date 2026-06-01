@@ -317,21 +317,19 @@ export default function MapSearch({ locale }: MapSearchProps) {
     if (!element) return null;
     const trans = transText(element);
     
-    // スタイル
-    let bg = 'bg-gray-800 text-gray-300';
-    if (element === 'fire') bg = 'bg-red-950/80 text-red-400 border border-red-800/40';
-    if (element === 'lightning') bg = 'bg-cyan-950/80 text-cyan-400 border border-cyan-800/40';
-    if (element === 'poison') bg = 'bg-emerald-950/80 text-emerald-400 border border-emerald-800/40';
-    if (element === 'frostbite') bg = 'bg-sky-950/80 text-sky-400 border border-sky-800/40';
-    if (element === 'holy') bg = 'bg-amber-950/80 text-amber-400 border border-amber-800/40';
-    if (element === 'death') bg = 'bg-purple-950/80 text-purple-400 border border-purple-800/40';
-    if (element === 'madness') bg = 'bg-yellow-950/80 text-yellow-500 border border-yellow-800/40';
-    if (element === 'magic') bg = 'bg-blue-950/80 text-blue-400 border border-blue-800/40';
-    
     return (
-      <span className={`px-2 py-0.5 text-xs rounded-full font-medium ${bg}`}>
-        {trans}
-      </span>
+      <div className="flex items-center gap-1.5 bg-gray-950/60 border border-gray-800 rounded px-1.5 py-0.5 w-fit">
+        <div className="relative w-3.5 h-3.5 shrink-0">
+          <Image 
+            src={`/icon/element/${element}.png`} 
+            alt={element} 
+            fill 
+            sizes="14px"
+            className="object-contain pointer-events-none"
+          />
+        </div>
+        <span className="text-[10px] text-gray-300 font-semibold">{trans}</span>
+      </div>
     );
   };
 
@@ -893,14 +891,24 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   if (currentFilter) {
                     return (
                       <div className="space-y-2">
-                        <div className="p-2 bg-blue-950/40 border border-blue-800/40 rounded flex justify-between items-center">
-                          <div>
-                            <span className="font-semibold block">{transText(currentFilter.text)}</span>
-                            {getElementBadge(currentFilter.element ?? null)}
+                        <div className="p-2 bg-blue-950/40 border border-blue-800/40 rounded flex items-center gap-3">
+                          <div className="relative w-12 h-12 shrink-0 bg-blue-950/60 rounded border border-blue-800 p-1 flex items-center justify-center">
+                            <Image 
+                              src={`/icon/${currentFilter.type}.png`} 
+                              alt={currentFilter.type ?? 'base'} 
+                              fill 
+                              sizes="40px"
+                              className="object-contain pointer-events-none p-0.5"
+                            />
+                          </div>
+                          <div className="flex-grow min-w-0">
+                            <span className="text-[9px] text-blue-400 uppercase tracking-wider block">{transText(currentFilter.type ?? null)}</span>
+                            <span className="font-semibold text-blue-100 block text-sm truncate">{transText(currentFilter.text)}</span>
+                            {currentFilter.element && <div className="mt-1">{getElementBadge(currentFilter.element)}</div>}
                           </div>
                           <button
                             onClick={() => handleFilterRemove('major', activePopup.name)}
-                            className="p-1 hover:bg-gray-800 rounded text-red-400 hover:text-red-300"
+                            className="p-1.5 hover:bg-blue-900/60 rounded text-red-400 hover:text-red-300 transition-colors shrink-0"
                           >
                             <X className="w-4 h-4" />
                           </button>
@@ -914,10 +922,21 @@ export default function MapSearch({ locale }: MapSearchProps) {
                     const opt = opts[0];
                     return (
                       <div>
-                        <div className="p-2 bg-gray-900/60 rounded">
-                          <span className="text-gray-400 block text-[10px] uppercase font-bold">{transText(opt.type)}</span>
-                          <span className="font-semibold text-gray-200 block text-sm">{transText(opt.text)}</span>
-                          <div className="mt-1">{getElementBadge(opt.element)}</div>
+                        <div className="p-2.5 bg-gray-900/60 rounded border border-gray-800 flex items-center gap-3 mb-2">
+                          <div className="relative w-12 h-12 shrink-0 bg-gray-950/40 rounded border border-gray-800 p-1 flex items-center justify-center">
+                            <Image 
+                              src={`/icon/${opt.type}.png`} 
+                              alt={opt.type} 
+                              fill 
+                              sizes="40px"
+                              className="object-contain pointer-events-none p-0.5"
+                            />
+                          </div>
+                          <div className="flex-grow min-w-0">
+                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block">{transText(opt.type)}</span>
+                            <span className="font-semibold text-gray-200 block text-sm truncate">{transText(opt.text)}</span>
+                            {opt.element && <div className="mt-1">{getElementBadge(opt.element)}</div>}
+                          </div>
                         </div>
                         {renderBossTable(opt.text)}
                       </div>
@@ -931,13 +950,26 @@ export default function MapSearch({ locale }: MapSearchProps) {
                         <button
                           key={i}
                           onClick={() => handleFilterSelect('major', activePopup.name, opt)}
-                          className="w-full text-left p-2 rounded hover:bg-gray-900 border border-gray-900 hover:border-gray-800 transition-colors flex justify-between items-center"
+                          className="w-full text-left p-2 rounded hover:bg-gray-900 border border-gray-900 hover:border-gray-800 transition-colors flex items-center gap-3"
                         >
-                          <div>
-                            <span className="font-semibold text-gray-200 block">{transText(opt.text)}</span>
-                            <span className="text-[9px] text-gray-500 uppercase">{transText(opt.type)}</span>
+                          <div className="relative w-12 h-12 shrink-0 bg-gray-950/40 rounded border border-gray-800 p-1 flex items-center justify-center">
+                            <Image 
+                              src={`/icon/${opt.type}.png`} 
+                              alt={opt.type} 
+                              fill 
+                              sizes="40px"
+                              className="object-contain pointer-events-none p-0.5"
+                            />
                           </div>
-                          <div>{getElementBadge(opt.element)}</div>
+                          <div className="flex-grow min-w-0">
+                            <span className="font-semibold text-gray-200 block truncate text-xs">{transText(opt.text)}</span>
+                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block mt-0.5">{transText(opt.type)}</span>
+                          </div>
+                          {opt.element && (
+                            <div className="shrink-0">
+                              {getElementBadge(opt.element)}
+                            </div>
+                          )}
                         </button>
                       ))}
                     </div>
@@ -951,14 +983,23 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   
                   if (currentFilter) {
                     return (
-                      <div className="p-2 bg-amber-950/40 border border-amber-800/40 rounded flex justify-between items-center">
-                        <div>
-                          <span className="text-[10px] text-amber-400 block uppercase font-bold">{transText(currentFilter.type ?? null)}</span>
-                          <span className="font-semibold text-gray-200 block">{transText(currentFilter.text)}</span>
+                      <div className="p-2 bg-amber-950/40 border border-amber-800/40 rounded flex items-center gap-3">
+                        <div className="relative w-12 h-12 shrink-0 bg-amber-950/60 rounded border border-amber-800 p-1 flex items-center justify-center">
+                          <Image 
+                            src={`/icon/${currentFilter.type}.png`} 
+                            alt={currentFilter.type ?? 'base'} 
+                            fill 
+                            sizes="40px"
+                            className="object-contain pointer-events-none p-0.5"
+                          />
+                        </div>
+                        <div className="flex-grow min-w-0">
+                          <span className="text-[9px] text-amber-400 uppercase tracking-wider block">{transText(currentFilter.type ?? null)}</span>
+                          <span className="font-semibold text-amber-100 block text-sm truncate">{transText(currentFilter.text)}</span>
                         </div>
                         <button
                           onClick={() => handleFilterRemove('minor', activePopup.name)}
-                          className="p-1 hover:bg-gray-800 rounded text-red-400 hover:text-red-300"
+                          className="p-1.5 hover:bg-amber-900/60 rounded text-red-400 hover:text-red-300 transition-colors shrink-0"
                         >
                           <X className="w-4 h-4" />
                         </button>
@@ -969,9 +1010,20 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   if (opts.length === 1) {
                     const opt = opts[0];
                     return (
-                      <div className="p-2 bg-gray-900/60 rounded">
-                        <span className="text-gray-400 block text-[10px] uppercase font-bold">{transText(opt.type)}</span>
-                        <span className="font-semibold text-gray-200 block text-sm">{transText(opt.text)}</span>
+                      <div className="p-2.5 bg-gray-900/60 rounded border border-gray-800 flex items-center gap-3">
+                        <div className="relative w-12 h-12 shrink-0 bg-gray-950/40 rounded border border-gray-800 p-1 flex items-center justify-center">
+                          <Image 
+                            src={`/icon/${opt.type}.png`} 
+                            alt={opt.type} 
+                            fill 
+                            sizes="40px"
+                            className="object-contain pointer-events-none p-0.5"
+                          />
+                        </div>
+                        <div className="flex-grow min-w-0">
+                          <span className="text-[9px] text-gray-500 uppercase tracking-wider block">{transText(opt.type)}</span>
+                          <span className="font-semibold text-gray-200 block text-sm truncate">{transText(opt.text)}</span>
+                        </div>
                       </div>
                     );
                   }
@@ -983,10 +1035,21 @@ export default function MapSearch({ locale }: MapSearchProps) {
                         <button
                           key={i}
                           onClick={() => handleFilterSelect('minor', activePopup.name, opt)}
-                          className="w-full text-left p-2 rounded hover:bg-gray-900 border border-gray-900 hover:border-gray-800 transition-colors"
+                          className="w-full text-left p-2 rounded hover:bg-gray-900 border border-gray-900 hover:border-gray-800 transition-colors flex items-center gap-3"
                         >
-                          <span className="font-semibold text-gray-200 block">{transText(opt.text)}</span>
-                          <span className="text-[9px] text-gray-500 uppercase">{transText(opt.type)}</span>
+                          <div className="relative w-12 h-12 shrink-0 bg-gray-950/40 rounded border border-gray-800 p-1 flex items-center justify-center">
+                            <Image 
+                              src={`/icon/${opt.type}.png`} 
+                              alt={opt.type} 
+                              fill 
+                              sizes="40px"
+                              className="object-contain pointer-events-none p-0.5"
+                            />
+                          </div>
+                          <div className="flex-grow min-w-0">
+                            <span className="font-semibold text-gray-200 block truncate text-xs">{transText(opt.text)}</span>
+                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block mt-0.5">{transText(opt.type)}</span>
+                          </div>
                         </button>
                       ))}
                     </div>
