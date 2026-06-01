@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nightreign Map
 
-## Getting Started
+『ELDEN RING NIGHTREIGN』のマップ探索ツールを本家サイト（`https://www.nightreignmap.com/`）と完全に同一の仕様およびデザインで再現した Next.js アプリケーションです。
 
-First, run the development server:
+## 主な機能
+
+- **多言語対応**: 日本語 (`/ja`)、英語 (`/en`)、中国語 (`/zh`) のUIと言語切り替え機能をサポート。
+- **インタラクティブなマップ探索**: 
+  - 各種拠点（大拠点、小拠点、封牢、出現地点、フィールドボス、祝福など）をマップ上にプロット。
+  - 大拠点の未確定状態（`undefined` アイコン）から、クリックして絞り込むことで、マップパターン候補が論理的に減算される探索機能。
+  - マップパターンが1つに特定された際、その他の拠点や夜間追加イベント（DAY 1/DAY 2）が一斉に出現するロジックの再現。
+- **ボスの詳細情報と耐性テーブル**: マップ上のボスや封牢アイコンをクリックすると、物理や各属性に対する耐性・弱点値をビジュアル表示します。
+- **レスポンシブデザイン**: PCおよびスマートフォンの両画面幅に適したタッチ/ドラッグ対応マップ。
+
+## 技術スタック
+
+- **フレームワーク**: Next.js 16.2 (App Router, 静的HTMLエクスポート)
+- **スタイリング**: Tailwind CSS v4
+- **アイコンアセット**: 本家サイトより抽出・ダウンロードしたPNG画像を使用
+- **開発言語**: TypeScript / React
+
+## 開発と実行
+
+### 開発サーバーの起動
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで [http://localhost:3000](http://localhost:3000) にアクセスします。ルートパス `/` はブラウザ優先言語を検出して自動的に各言語のルート（`/ja` など）にリダイレクトされます。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 静的ビルドとエクスポート
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+ビルドが成功すると、`out/` ディレクトリ配下に静的 HTML および関連アセットがエクスポートされ、任意の静的Webホスティングサーバーに直接デプロイ可能な形式で保存されます。
 
-To learn more about Next.js, take a look at the following resources:
+### コードの静的チェック (Linter)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+```
