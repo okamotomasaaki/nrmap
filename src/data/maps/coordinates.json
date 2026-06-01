@@ -1,0 +1,398 @@
+{
+  "majorBases": {
+    "South Lake": {
+      "x": 400,
+      "y": 780
+    },
+    "Groveside": {
+      "x": 280,
+      "y": 650
+    },
+    "Gatefront": {
+      "x": 310,
+      "y": 540
+    },
+    "Stormhill North of Gate": {
+      "x": 280,
+      "y": 450
+    },
+    "Alexander Spot": {
+      "x": 420,
+      "y": 310
+    },
+    "Northwest Stormhill": {
+      "x": 230,
+      "y": 280
+    },
+    "Northeast Stormhill": {
+      "x": 400,
+      "y": 200
+    },
+    "South Mistwood": {
+      "x": 750,
+      "y": 750
+    },
+    "Waypoint Ruins": {
+      "x": 610,
+      "y": 690
+    },
+    "Minor Erdtree": {
+      "x": 760,
+      "y": 640
+    },
+    "West Mistwood": {
+      "x": 630,
+      "y": 590
+    },
+    "Northwest Mistwood": {
+      "x": 660,
+      "y": 470
+    },
+    "Artist's Shack": {
+      "x": 580,
+      "y": 440
+    },
+    "Northeast Mistwood": {
+      "x": 780,
+      "y": 430
+    },
+    "Summonwater Approach": {
+      "x": 630,
+      "y": 290
+    },
+    "Summonwater": {
+      "x": 720,
+      "y": 230
+    }
+  },
+  "minorBases": {
+    "Far Southwest": {
+      "x": 200,
+      "y": 710
+    },
+    "Lake": {
+      "x": 450,
+      "y": 700
+    },
+    "Stormhill South of Gate": {
+      "x": 210,
+      "y": 550
+    },
+    "Above Stormhill Tunnel Entrance": {
+      "x": 360,
+      "y": 390
+    },
+    "West of Warmaster's Shack": {
+      "x": 210,
+      "y": 360
+    },
+    "Southeast of Lake": {
+      "x": 570,
+      "y": 800
+    },
+    "East of Cavalry Bridge": {
+      "x": 550,
+      "y": 630
+    },
+    "Minor Erdtree": {
+      "x": 810,
+      "y": 580
+    },
+    "Below Summonwater Hawk": {
+      "x": 690,
+      "y": 370
+    },
+    "Third Church": {
+      "x": 770,
+      "y": 350
+    },
+    "Northeast of Saintsbridge": {
+      "x": 540,
+      "y": 230
+    }
+  },
+  "spawnPoints": {
+    "Above Stormhill Tunnel Entrance": {
+      "x": 350,
+      "y": 410
+    },
+    "Below Summonwater Hawk": {
+      "x": 670,
+      "y": 390
+    },
+    "East of Cavalry Bridge": {
+      "x": 550,
+      "y": 670
+    },
+    "Far Southwest": {
+      "x": 200,
+      "y": 750
+    },
+    "Minor Erdtree": {
+      "x": 810,
+      "y": 590
+    },
+    "Northeast of Saintsbridge": {
+      "x": 520,
+      "y": 210
+    },
+    "Southeast of Lake": {
+      "x": 560,
+      "y": 810
+    },
+    "Stormhill South of Gate": {
+      "x": 210,
+      "y": 560
+    },
+    "West of Warmaster's Shack": {
+      "x": 230,
+      "y": 350
+    }
+  },
+  "evergaols": {
+    "Northwest of Lake": {
+      "x": 350,
+      "y": 640
+    },
+    "Murkwater Terminus": {
+      "x": 450,
+      "y": 390
+    },
+    "Stormhill": {
+      "x": 170,
+      "y": 320
+    },
+    "Highroad": {
+      "x": 480,
+      "y": 200
+    },
+    "East of Lake": {
+      "x": 620,
+      "y": 770
+    },
+    "Mistwood": {
+      "x": 790,
+      "y": 490
+    },
+    "Northeast Tunnel Entrance": {
+      "x": 630,
+      "y": 360
+    }
+  },
+  "fieldBosses": {
+    "Castle Basement": {
+      "x": 480,
+      "y": 540
+    },
+    "Castle Rooftop": {
+      "x": 430,
+      "y": 510
+    },
+    "Far Southwest of Lake": {
+      "x": 310,
+      "y": 820
+    },
+    "Lake": {
+      "x": 430,
+      "y": 730
+    },
+    "North of Stormhill Tunnel Entrance": {
+      "x": 310,
+      "y": 380
+    },
+    "North of Murkwater Terminus": {
+      "x": 470,
+      "y": 345
+    },
+    "Stormhill Spectral Hawk": {
+      "x": 330,
+      "y": 230
+    },
+    "Northwest Stormhill Cliffside": {
+      "x": 290,
+      "y": 190
+    },
+    "Mistwood Spectral Hawk": {
+      "x": 690,
+      "y": 780
+    },
+    "North Mistwood": {
+      "x": 760,
+      "y": 510
+    },
+    "East of Murkwater Terminus": {
+      "x": 550,
+      "y": 380
+    },
+    "Northwest of Summonwater": {
+      "x": 640,
+      "y": 220
+    },
+    "Southwest": {
+      "x": 640,
+      "y": 740
+    },
+    "Southeast": {
+      "x": 780,
+      "y": 690
+    },
+    "Center West": {
+      "x": 600,
+      "y": 610
+    },
+    "Center East": {
+      "x": 720,
+      "y": 630
+    },
+    "Far Northwest": {
+      "x": 570,
+      "y": 560
+    },
+    "Northwest": {
+      "x": 640,
+      "y": 550
+    },
+    "Northeast": {
+      "x": 770,
+      "y": 600
+    },
+    "Far Northeast": {
+      "x": 780,
+      "y": 550
+    }
+  },
+  "nightCircle1": {
+    "East of Saintsbridge": {
+      "x": 570,
+      "y": 270
+    },
+    "Northeast Corner": {
+      "x": 800,
+      "y": 240
+    },
+    "Northeast of Lake": {
+      "x": 550,
+      "y": 540
+    },
+    "Northwest Corner": {
+      "x": 200,
+      "y": 200
+    },
+    "Northwest Lake": {
+      "x": 370,
+      "y": 700
+    },
+    "Northwest Mistwood Pond": {
+      "x": 710,
+      "y": 530
+    },
+    "Northwest of Castle": {
+      "x": 360,
+      "y": 460
+    },
+    "South Lake": {
+      "x": 480,
+      "y": 770
+    },
+    "South of Castle": {
+      "x": 430,
+      "y": 630
+    },
+    "Southwest Corner": {
+      "x": 270,
+      "y": 770
+    },
+    "Southwest Mistwood": {
+      "x": 700,
+      "y": 690
+    },
+    "West Stormhill Graveyard": {
+      "x": 200,
+      "y": 400
+    }
+  },
+  "nightCircle2": {
+    "East of Saintsbridge": {
+      "x": 570,
+      "y": 270
+    },
+    "Northeast Corner": {
+      "x": 800,
+      "y": 240
+    },
+    "Northeast of Lake": {
+      "x": 550,
+      "y": 540
+    },
+    "Northwest Corner": {
+      "x": 200,
+      "y": 200
+    },
+    "Northwest Lake": {
+      "x": 370,
+      "y": 700
+    },
+    "Northwest Mistwood Pond": {
+      "x": 710,
+      "y": 530
+    },
+    "Northwest of Castle": {
+      "x": 360,
+      "y": 460
+    },
+    "South Lake": {
+      "x": 480,
+      "y": 770
+    },
+    "South of Castle": {
+      "x": 430,
+      "y": 630
+    },
+    "Southwest Corner": {
+      "x": 270,
+      "y": 770
+    },
+    "Southwest Mistwood": {
+      "x": 700,
+      "y": 690
+    },
+    "West Stormhill Graveyard": {
+      "x": 200,
+      "y": 400
+    },
+    "Noklateo Entrance": {
+      "x": 440,
+      "y": 560
+    },
+    "North of Crater": {
+      "x": 480,
+      "y": 200
+    },
+    "Northwest Rotted Woods": {
+      "x": 730,
+      "y": 540
+    },
+    "Southeast Mountaintop": {
+      "x": 400,
+      "y": 400
+    },
+    "Southeast Rotted Woods": {
+      "x": 610,
+      "y": 700
+    }
+  },
+  "rotBlessings": {
+    "West": {
+      "x": 550,
+      "y": 660
+    },
+    "Northeast": {
+      "x": 820,
+      "y": 600
+    },
+    "Southwest": {
+      "x": 640,
+      "y": 790
+    }
+  }
+}

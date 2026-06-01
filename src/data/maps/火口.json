@@ -1,0 +1,6959 @@
+[
+  {
+    "nightLord": "三つ首の獣",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "鈴玉狩り"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "忌み子"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "神肌の使徒"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "黒き剣の眷属"
+      },
+      "Far Southwest of Lake": {
+        "text": "黒き刃の刺客"
+      },
+      "Lake": {
+        "text": "祖霊"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "死儀礼の鳥"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "老獅子"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "丘陵の飛竜"
+      },
+      "North Mistwood": {
+        "text": "王族の幽鬼"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "三つ首の獣",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "亜人女王&剣聖"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Foot Soldiers"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "墓守闘士"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "竜人兵"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "王族の幽鬼"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "竜のツリーガード"
+      },
+      "Lake": {
+        "text": "老獅子"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "死儀礼の鳥"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "夜の騎兵"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ミランダフラワー"
+      },
+      "North Mistwood": {
+        "text": "黄金樹の化身"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "三つ首の獣",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northeast Corner",
+      "text": "亜人女王&剣聖"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "忌み鬼",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "動く切株"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "Minor Erdtree": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "獣人たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Mistwood": {
+        "text": "神肌貴種＆使徒"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "黒き剣の眷属"
+      },
+      "Lake": {
+        "text": "接ぎ木の貴公子"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ザミェルの古英雄"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "鈴玉狩り"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "三つ首の獣",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": "Day 2 夜の勢力",
+    "nightCircle1": {
+      "place": "Northwest Lake",
+      "text": "鈴玉狩り"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "忌み鬼",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Lake": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "混種の集団"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "死儀礼の鳥"
+      },
+      "Far Southwest of Lake": {
+        "text": "ミランダフラワー"
+      },
+      "Lake": {
+        "text": "ツリーガード"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "獅子の混種"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黄金樹の化身"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "老獅子"
+      },
+      "North Mistwood": {
+        "text": "爛れた樹霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "三つ首の獣",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": "Day 1 隕石",
+    "nightCircle1": {
+      "place": "Northwest Mistwood Pond",
+      "text": "鈴玉狩り"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "忌み鬼",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Gatefront": {
+        "type": "Map Event",
+        "text": "Gatefront",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "動く切株"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "獣人たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "失地騎士"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "黄金樹の化身"
+      },
+      "Far Southwest of Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "Lake": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "王族の幽鬼"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "竜のツリーガード"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "喰らいつく顎",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "英雄のガーゴイル"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "坩堝＆カバ",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Shack"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Third Church": {
+        "type": "Sorcerer's Rise",
+        "text": "霧の扉"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "神肌の貴種"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌貴種＆使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "結晶人"
+      },
+      "Mistwood": {
+        "text": "忌み子"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "亜人の女王"
+      },
+      "Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "死儀礼の鳥"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ミランダフラワー"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "ツリーガード"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "喰らいつく顎",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northwest Lake",
+      "text": "貧食ドラゴン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "僻地の宿将",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Demi-Humans"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "忌み子"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "死儀礼の鳥"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "鈴玉狩り"
+      },
+      "Far Southwest of Lake": {
+        "text": "竜のツリーガード"
+      },
+      "Lake": {
+        "text": "黄金カバ"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ザミェルの古英雄"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ツリーガード"
+      },
+      "North Mistwood": {
+        "text": "亜人の女王"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "喰らいつく顎",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": "Day 2 忌み鬼",
+    "nightCircle1": {
+      "place": "Southwest Mistwood",
+      "text": "夜の騎兵"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "古竜",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "揺れる木"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "墓守闘士"
+      },
+      "Mistwood": {
+        "text": "失地騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "爛れた樹霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "ミランダフラワー"
+      },
+      "Lake": {
+        "text": "祖霊"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "接ぎ木の貴公子"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黄金樹の化身"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ツリーガード"
+      },
+      "North Mistwood": {
+        "text": "獅子の混種"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "喰らいつく顎",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": "Day 2 新たな夜の脅威",
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "公のフレイディア"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "古竜",
+      "extra": "坩堝＆カバ"
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Southeast of Lake": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Wandering Nobles"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "墓守闘士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "結晶人"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "竜人兵"
+      },
+      "Mistwood": {
+        "text": "ノクスの戦士たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "王族の幽鬼"
+      },
+      "Castle Rooftop": {
+        "text": "死儀礼の鳥"
+      },
+      "Far Southwest of Lake": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Lake": {
+        "text": "夜の騎兵"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "ツリーガード"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ミランダフラワー"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黄金カバ"
+      },
+      "North Mistwood": {
+        "text": "爛れた樹霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "喰らいつく顎",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "ミミズ顔"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "坩堝＆カバ",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "墓守闘士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "王族の幽鬼"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "王配の赤狼"
+      },
+      "Lake": {
+        "text": "爛れた樹霊"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "ツリーガード"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "獅子の混種"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "竜のツリーガード"
+      },
+      "North Mistwood": {
+        "text": "接ぎ木の貴公子"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "知性の蟲",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "百足のデーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜人兵",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "神肌の使徒"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "混種の集団"
+      },
+      "Mistwood": {
+        "text": "失地騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "爛れた樹霊"
+      },
+      "Lake": {
+        "text": "老獅子"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "鈴玉狩り"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "亜人の女王"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ザミェルの古英雄"
+      },
+      "North Mistwood": {
+        "text": "黄金樹の化身"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "知性の蟲",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Minor Erdtree",
+    "specialEvent": "Day 1 兆し",
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "ティビアの呼び舟"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜人兵",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "揺れる木"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "忌み子"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "ノクスの戦士たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "黄金樹の化身"
+      },
+      "Far Southwest of Lake": {
+        "text": "亜人の女王"
+      },
+      "Lake": {
+        "text": "爛れた樹霊"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "夜の騎兵"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "溶岩土竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "竜のツリーガード"
+      },
+      "North Mistwood": {
+        "text": "ミランダフラワー"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "知性の蟲",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Southwest Mistwood",
+      "text": "溶鉄デーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Shack"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "忌み子"
+      },
+      "Mistwood": {
+        "text": "失地騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "黒き剣の眷属"
+      },
+      "Far Southwest of Lake": {
+        "text": "溶岩土竜"
+      },
+      "Lake": {
+        "text": "王配の赤狼"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "鈴玉狩り"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "知性の蟲",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Minor Erdtree",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "爛れた樹霊"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Shack"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "結晶人"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "忌み子"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "神肌の貴種"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "ツリーガード"
+      },
+      "Far Southwest of Lake": {
+        "text": "王族の幽鬼"
+      },
+      "Lake": {
+        "text": "鈴玉狩り"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "丘陵の飛竜"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黒き刃の刺客"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "黒き剣の眷属"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "知性の蟲",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": "狂い火",
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "戦場の宿将"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "霧の扉"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "死儀礼の鳥"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "忌み子"
+      },
+      "Mistwood": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "王配の赤狼"
+      },
+      "Lake": {
+        "text": "ツリーガード"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "爛れた樹霊"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "黄金樹の化身"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "兆し",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northwest Mistwood Pond",
+      "text": "ミミズ顔"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "神肌貴種＆使徒",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の貴種"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "混種の集団"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "王族の幽鬼"
+      },
+      "Lake": {
+        "text": "竜のツリーガード"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "獅子の混種"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "丘陵の飛竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黒き剣の眷属"
+      },
+      "North Mistwood": {
+        "text": "黄金カバ"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "兆し",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "溶鉄デーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "降る星の成獣",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Demi-Humans"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Minor Erdtree": null,
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "獣人たち"
+      },
+      "Mistwood": {
+        "text": "結晶人"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "王族の幽鬼"
+      },
+      "Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黄金樹の化身"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "夜の騎兵"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "ツリーガード"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "兆し",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": "歩く霊廟",
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "接ぎ木の君主"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "降る星の成獣",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Map Event",
+        "text": "Northeast Mistwood",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Wandering Nobles"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Third Church": {
+        "type": "Sorcerer's Rise",
+        "text": "霧の扉"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "失地騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "獣人たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "竜人兵"
+      },
+      "Mistwood": {
+        "text": "猟犬騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "溶岩土竜"
+      },
+      "Far Southwest of Lake": {
+        "text": "亜人の女王"
+      },
+      "Lake": {
+        "text": "鈴玉狩り"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黄金カバ"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "丘陵の飛竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "爛れた樹霊"
+      },
+      "North Mistwood": {
+        "text": "王配の赤狼"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "兆し",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": "Day 1 知性の蟲",
+    "nightCircle1": {
+      "place": "Northeast Corner",
+      "text": "貧食ドラゴン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "インプ像"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "忌み子"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "結晶人"
+      },
+      "Mistwood": {
+        "text": "竜人兵"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "鈴玉狩り"
+      },
+      "Far Southwest of Lake": {
+        "text": "死儀礼の鳥"
+      },
+      "Lake": {
+        "text": "黄金カバ"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黒き刃の刺客"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黒き剣の眷属"
+      },
+      "North Mistwood": {
+        "text": "ザミェルの古英雄"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "兆し",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "英雄のガーゴイル"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "神肌貴種＆使徒",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Lake": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "揺れる木"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "結晶人"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の貴種"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Mistwood": {
+        "text": "忌み子"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "ツリーガード"
+      },
+      "Far Southwest of Lake": {
+        "text": "溶岩土竜"
+      },
+      "Lake": {
+        "text": "夜の騎兵"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黄金樹の化身"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "獅子の混種"
+      },
+      "North Mistwood": {
+        "text": "爛れた樹霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "調律の魔物",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Minor Erdtree",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "百足のデーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "死儀礼の鳥",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Demi-Humans"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "失地騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "混種の集団"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "黄金カバ"
+      },
+      "Lake": {
+        "text": "溶岩土竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "夜の騎兵"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "竜のツリーガード"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "ツリーガード"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "調律の魔物",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northwest Lake",
+      "text": "王族の幽鬼"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "神肌貴種＆使徒",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Rats"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "墓守闘士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "石肌の王たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Mistwood": {
+        "text": "失地騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "鈴玉狩り"
+      },
+      "Far Southwest of Lake": {
+        "text": "爛れた樹霊"
+      },
+      "Lake": {
+        "text": "王配の赤狼"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "接ぎ木の貴公子"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "丘陵の飛竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黒き刃の刺客"
+      },
+      "North Mistwood": {
+        "text": "黒き剣の眷属"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "調律の魔物",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": "Day 2 知性の蟲",
+    "nightCircle1": {
+      "place": "Northwest Lake",
+      "text": "公のフレイディア"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "坩堝＆カバ",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Foot Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "混種の集団"
+      },
+      "Mistwood": {
+        "text": "失地騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "死儀礼の鳥"
+      },
+      "Lake": {
+        "text": "黄金カバ"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "丘陵の飛竜"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "爛れた樹霊"
+      },
+      "North Mistwood": {
+        "text": "王配の赤狼"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "調律の魔物",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": "古の魔術師塔",
+    "nightCircle1": {
+      "place": "Northwest Mistwood Pond",
+      "text": "ティビアの呼び舟"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "死儀礼の鳥",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "Lake": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Third Church": {
+        "type": "Difficult Sorcerer's Rise",
+        "text": "扉の上&瞬間移動の木&奥の像"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Mistwood": {
+        "text": "混種の集団"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "Lake": {
+        "text": "老獅子"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "祖霊"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "溶岩土竜"
+      },
+      "North Mistwood": {
+        "text": "黄金カバ"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "調律の魔物",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "戦場の宿将"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "坩堝＆カバ",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Wandering Nobles"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "石肌の王たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "獣人たち"
+      },
+      "Mistwood": {
+        "text": "猟犬騎士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "鈴玉狩り"
+      },
+      "Castle Rooftop": {
+        "text": "溶岩土竜"
+      },
+      "Far Southwest of Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "Lake": {
+        "text": "黄金カバ"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "夜の騎兵"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "爛れた樹霊"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ツリーガード"
+      },
+      "North Mistwood": {
+        "text": "ミランダフラワー"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "闇駆ける狩人",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": "Day 1 調律の魔物",
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "百足のデーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "僻地の宿将",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "揺れる木"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "忌み子"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Mistwood": {
+        "text": "結晶人"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "王族の幽鬼"
+      },
+      "Castle Rooftop": {
+        "text": "死儀礼の鳥"
+      },
+      "Far Southwest of Lake": {
+        "text": "爛れた樹霊"
+      },
+      "Lake": {
+        "text": "夜の騎兵"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "亜人の女王"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ザミェルの古英雄"
+      },
+      "North Mistwood": {
+        "text": "丘陵の飛竜"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "闇駆ける狩人",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "王族の幽鬼"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜人兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "獣人たち",
+        "element": "lightning"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "神肌の使徒"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "獣人たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "石肌の王たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "溶岩土竜"
+      },
+      "Far Southwest of Lake": {
+        "text": "夜の騎兵"
+      },
+      "Lake": {
+        "text": "ツリーガード"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "老獅子"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ザミェルの古英雄"
+      },
+      "North Mistwood": {
+        "text": "鈴玉狩り"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "闇駆ける狩人",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": "Day 2 夜の勢力",
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "貧食ドラゴン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "無名の王",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Rats"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Southeast of Lake": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "動く切株"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Mistwood": {
+        "text": "獣人たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "鈴玉狩り"
+      },
+      "Castle Rooftop": {
+        "text": "溶岩土竜"
+      },
+      "Far Southwest of Lake": {
+        "text": "ザミェルの古英雄"
+      },
+      "Lake": {
+        "text": "祖霊"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "獅子の混種"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黒き剣の眷属"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黄金樹の化身"
+      },
+      "North Mistwood": {
+        "text": "夜の騎兵"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "闇駆ける狩人",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "ミミズ顔"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜人兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Demi-Humans"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Third Church": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "結晶人"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Mistwood": {
+        "text": "獣人たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "竜のツリーガード"
+      },
+      "Far Southwest of Lake": {
+        "text": "夜の騎兵"
+      },
+      "Lake": {
+        "text": "丘陵の飛竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "カーリアの親衛騎士"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黄金カバ"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "老獅子"
+      },
+      "North Mistwood": {
+        "text": "祖霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "闇駆ける狩人",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "夜の騎兵"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "無名の王",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "枯木"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Foot Soldiers"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "獣人たち"
+      },
+      "Mistwood": {
+        "text": "結晶人"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "死儀礼の鳥"
+      },
+      "Far Southwest of Lake": {
+        "text": "鈴玉狩り"
+      },
+      "Lake": {
+        "text": "亜人の女王"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "ザミェルの古英雄"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "溶岩土竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王族の幽鬼"
+      },
+      "North Mistwood": {
+        "text": "丘陵の飛竜"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "霧の裂け目",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "接ぎ木の君主"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "冷たい谷の踊り子",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "霧の扉"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Shack"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "神肌の使徒"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "失地騎士"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Mistwood": {
+        "text": "獣人たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "鈴玉狩り"
+      },
+      "Castle Rooftop": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Far Southwest of Lake": {
+        "text": "ツリーガード"
+      },
+      "Lake": {
+        "text": "王族の幽鬼"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "爛れた樹霊"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黒き刃の刺客"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "ミランダフラワー"
+      },
+      "North Mistwood": {
+        "text": "死儀礼の鳥"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "霧の裂け目",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": "Day 1 兆し",
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "公のフレイディア"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "冷たい谷の踊り子",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "王都軍の騎士",
+        "element": "lightning"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "霧の扉"
+      },
+      "Third Church": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "獣人たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "神肌貴種＆使徒"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "ザミェルの古英雄"
+      },
+      "Lake": {
+        "text": "黄金樹の化身"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "竜のツリーガード"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "王族の幽鬼"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "丘陵の飛竜"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "霧の裂け目",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": "歩く霊廟",
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "溶鉄デーモン"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "神肌貴種＆使徒",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Map Event",
+        "text": "Northeast Mistwood",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "調香師",
+        "element": "poison"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Rats"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "動く切株"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "墓守闘士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "結晶人"
+      },
+      "Mistwood": {
+        "text": "神肌の使徒"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "獅子の混種"
+      },
+      "Castle Rooftop": {
+        "text": "溶岩土竜"
+      },
+      "Far Southwest of Lake": {
+        "text": "竜のツリーガード"
+      },
+      "Lake": {
+        "text": "王族の幽鬼"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "ミランダフラワー"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "鈴玉狩り"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "亜人の女王"
+      },
+      "North Mistwood": {
+        "text": "爛れた樹霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "霧の裂け目",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "爛れた樹霊"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "ミミズ顔",
+        "element": "death"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Southeast of Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Rats"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "墓守闘士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "失地騎士"
+      },
+      "Mistwood": {
+        "text": "神肌の貴種"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "王配の赤狼"
+      },
+      "Castle Rooftop": {
+        "text": "鈴玉狩り"
+      },
+      "Far Southwest of Lake": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Lake": {
+        "text": "溶岩土竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黒き刃の刺客"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ツリーガード"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "黒き剣の眷属"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "霧の裂け目",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northeast Corner",
+      "text": "ティビアの呼び舟"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "坩堝の騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "君主軍の兵士長",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "しろがね人",
+        "element": "holy"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "結晶人"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の使徒"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "墓守闘士"
+      },
+      "Mistwood": {
+        "text": "死儀礼の鳥"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "黒き刃の刺客"
+      },
+      "Castle Rooftop": {
+        "text": "鈴玉狩り"
+      },
+      "Far Southwest of Lake": {
+        "text": "黒き剣の眷属"
+      },
+      "Lake": {
+        "text": "ミランダフラワー"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "溶岩土竜"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ザミェルの古英雄"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "カーリアの親衛騎士"
+      },
+      "North Mistwood": {
+        "text": "王族の幽鬼"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "夜を象る者",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northwest Mistwood Pond",
+      "text": "接ぎ木の君主"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "坩堝＆カバ",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "火の戦車隊",
+        "element": "fire"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "血の貴族",
+        "element": "bleed"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Caravans and Nobles"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "ノクスの戦士たち"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Mistwood": {
+        "text": "墓守闘士"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "ツリーガード"
+      },
+      "Far Southwest of Lake": {
+        "text": "黒き刃の刺客"
+      },
+      "Lake": {
+        "text": "黄金樹の化身"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "竜のツリーガード"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "カーリアの親衛騎士"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "夜の騎兵"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "夜を象る者",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": "Day 1 知性の蟲",
+    "nightCircle1": {
+      "place": "Southwest Mistwood",
+      "text": "鈴玉狩り"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "忌み鬼",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "ザミェルの古英雄",
+        "element": "frostbite"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "扉の上"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "左の外壁"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Rats and Demi-Humans"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "猟犬騎士"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "神肌の貴種"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "獣人たち"
+      },
+      "Mistwood": {
+        "text": "神肌貴種＆使徒"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "祖霊"
+      },
+      "Far Southwest of Lake": {
+        "text": "王配の赤狼"
+      },
+      "Lake": {
+        "text": "黒き剣の眷属"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "ツリーガード"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "黄金カバ"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "黄金樹の化身"
+      },
+      "North Mistwood": {
+        "text": "亜人の女王"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "夜を象る者",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "王族の幽鬼"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "竜ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "獅子の混種",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "ルーンベア",
+        "element": "sleep"
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Great Church",
+        "text": "神託の使者",
+        "element": "holy"
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "還樹の番犬",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Stormhill South of Gate": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Nobles and Soldiers"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Sorcerer's Rise",
+        "text": "水たまり"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs and Soldiers"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Third Church": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "忌み子"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "ノクスの戦士たち"
+      },
+      "Mistwood": {
+        "text": "石肌の王たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "ザミェルの古英雄"
+      },
+      "Castle Rooftop": {
+        "text": "黒き剣の眷属"
+      },
+      "Far Southwest of Lake": {
+        "text": "黄金カバ"
+      },
+      "Lake": {
+        "text": "溶岩土竜"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "黄金樹の化身"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ミランダフラワー"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "夜の騎兵"
+      },
+      "North Mistwood": {
+        "text": "カーリアの親衛騎士"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "夜を象る者",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "亜人女王&剣聖"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "僻地の宿将",
+      "extra": null
+    },
+    "castleBoss": "トロール",
+    "majorBases": {
+      "South Lake": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Gatefront": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "乙女人形",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "赤獅子騎士",
+        "element": "fire"
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "狂い火トロル",
+        "element": "madness"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "しろがね射手",
+        "element": "frostbite"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "Lake": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Stormhill South of Gate": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の像"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Small Camp",
+        "text": "Demi-Humans"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Dogs"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Small Camp",
+        "text": "Caravans"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "失地騎士"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "忌み子"
+      },
+      "Mistwood": {
+        "text": "坩堝の騎士(剣)"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "鈴玉狩り"
+      },
+      "Castle Rooftop": {
+        "text": "黒き剣の眷属"
+      },
+      "Far Southwest of Lake": {
+        "text": "爛れた樹霊"
+      },
+      "Lake": {
+        "text": "ミランダフラワー"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "老獅子"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "ツリーガード"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "丘陵の飛竜"
+      },
+      "North Mistwood": {
+        "text": "黒き刃の刺客"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "夜を象る者",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": "Day 2 忌み鬼",
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "爛れた樹霊"
+    },
+    "nightCircle2": {
+      "place": "North of Crater",
+      "text": "ツリーガード＆騎兵",
+      "extra": null
+    },
+    "castleBoss": "失地騎士",
+    "majorBases": {
+      "South Lake": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Gatefront": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "霊廟騎士",
+        "element": null
+      },
+      "Alexander Spot": null,
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "失地騎士",
+        "element": null
+      },
+      "Northeast Stormhill": null,
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "老獅子",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "ゴーレム",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "火の僧兵",
+        "element": "fire"
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "堕落調香師",
+        "element": "poison"
+      },
+      "Northwest Mistwood": null,
+      "Artist's Shack": null,
+      "Northeast Mistwood": {
+        "type": "Fort",
+        "text": "結晶人",
+        "element": "magic"
+      },
+      "Summonwater Approach": null,
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "戦魔術師たち",
+        "element": "magic"
+      }
+    },
+    "minorBases": {
+      "Far Southwest": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "奥の蝋燭"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Above Stormhill Tunnel Entrance": null,
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Rats"
+      },
+      "Southeast of Lake": {
+        "type": "Small Camp",
+        "text": "Misbegotten"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Minor Erdtree": {
+        "type": "Small Camp",
+        "text": "Guilty"
+      },
+      "Below Summonwater Hawk": {
+        "type": "Township",
+        "text": "Township"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Normal"
+      },
+      "Northeast of Saintsbridge": null
+    },
+    "evergaols": {
+      "Northwest of Lake": {
+        "text": "石肌の王たち"
+      },
+      "Murkwater Terminus": null,
+      "Stormhill": {
+        "text": "死儀礼の鳥"
+      },
+      "Highroad": null,
+      "East of Lake": {
+        "text": "坩堝の騎士(槍)"
+      },
+      "Mistwood": {
+        "text": "獣人たち"
+      },
+      "Northeast Tunnel Entrance": null
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "接ぎ木の貴公子"
+      },
+      "Castle Rooftop": {
+        "text": "黒き剣の眷属"
+      },
+      "Far Southwest of Lake": {
+        "text": "黄金カバ"
+      },
+      "Lake": {
+        "text": "カーリアの親衛騎士"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "王族の幽鬼"
+      },
+      "North of Murkwater Terminus": null,
+      "Stormhill Spectral Hawk": null,
+      "Northwest Stormhill Cliffside": {
+        "text": "溶岩土竜"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "王配の赤狼"
+      },
+      "North Mistwood": {
+        "text": "祖霊"
+      },
+      "East of Murkwater Terminus": null,
+      "Northwest of Summonwater": null,
+      "Southwest": null,
+      "Southeast": null,
+      "Center West": null,
+      "Center East": null,
+      "Far Northwest": null,
+      "Northwest": null,
+      "Northeast": null,
+      "Far Northeast": null
+    },
+    "rotBlessing": null
+  }
+]

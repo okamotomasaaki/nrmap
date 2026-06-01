@@ -1,0 +1,11 @@
+{
+  "title": "Nightreign Map",
+  "description": "『ELDEN RING NIGHTREIGN』のマップツール。PC・スマホ両対応で、封牢やボスの種類、マップパターンを快適に確認できます。ナイトレインの広大な世界の探索にお役立てください。",
+  "nightLord": "夜の王",
+  "specialEvent": "特殊イベント",
+  "instructionTitle": "使い方",
+  "instructionStep1": "大きなアイコンでマップや夜の王を選択できます。",
+  "instructionStep2": "マップ上の出現地点アイコン（鷹のアイコン）をクリックして開始します。",
+  "instructionStep3": "拠点のアイコンを選択してパターンを絞り込みます。",
+  "instructionDontShowAgain": "次回から表示しない"
+}

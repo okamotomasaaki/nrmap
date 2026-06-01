@@ -1,0 +1,285 @@
+{
+  "三つ首の獣": {
+    "weakness": "holy",
+    "weaks": {
+      "magic": [
+        0
+      ],
+      "fire": [
+        -50
+      ],
+      "lightning": [
+        0
+      ],
+      "holy": [
+        35
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "喰らいつく顎": {
+    "weakness": "poison",
+    "weaks": {
+      "magic": [
+        0
+      ],
+      "fire": [
+        -20
+      ],
+      "lightning": [
+        -20
+      ],
+      "holy": [
+        0
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "知性の蟲": {
+    "weakness": "fire",
+    "weaks": {
+      "magic": [
+        -50,
+        -10
+      ],
+      "fire": [
+        40,
+        35
+      ],
+      "lightning": [
+        -10
+      ],
+      "holy": [
+        -10
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "兆し": {
+    "weakness": "lightning",
+    "weaks": {
+      "magic": [
+        -20
+      ],
+      "fire": [
+        -50
+      ],
+      "lightning": [
+        40
+      ],
+      "holy": [
+        -15
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "調律の魔物": {
+    "weakness": "madness",
+    "weaks": {
+      "magic": [
+        -20
+      ],
+      "fire": [
+        20
+      ],
+      "lightning": [
+        0
+      ],
+      "holy": [
+        35
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "闇駆ける狩人": {
+    "weakness": "lightning",
+    "weaks": {
+      "magic": [
+        0
+      ],
+      "fire": [
+        0
+      ],
+      "lightning": [
+        20
+      ],
+      "holy": [
+        -30
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "霧の裂け目": {
+    "weakness": "fire",
+    "weaks": {
+      "magic": [
+        -20
+      ],
+      "fire": [
+        35
+      ],
+      "lightning": [
+        -20
+      ],
+      "holy": [
+        -20
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  },
+  "夜を象る者": {
+    "weakness": "holy",
+    "weaks": {
+      "magic": [
+        0
+      ],
+      "fire": [
+        20
+      ],
+      "lightning": [
+        20
+      ],
+      "holy": [
+        35,
+        20
+      ],
+      "poison": [
+        0
+      ],
+      "rot": [
+        0
+      ],
+      "bleed": [
+        0
+      ],
+      "frostbite": [
+        0
+      ],
+      "sleep": [
+        0
+      ],
+      "madness": [
+        0
+      ]
+    }
+  }
+}
