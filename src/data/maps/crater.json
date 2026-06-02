@@ -6955,5 +6955,1383 @@
       "Far Northeast": null
     },
     "rotBlessing": null
+  },
+  {
+    "nightLord": "安寧者達",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": "Day 1 Gladius Raid",
+    "nightCircle1": {
+      "place": "Northeast of Lake",
+      "text": "DBW & Curseblade"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Mohg",
+      "extra": null
+    },
+    "castleBoss": "Trolls",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Camp",
+        "text": "Cleanrot Knight",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "Omenkillers",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Chief Bloodfiend",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Chief Bloodfiend",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "Depraved Perfumer",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "Fire Monk",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Minor Erdtree": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Town"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Stump"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Crystalians"
+      },
+      "Mistwood": {
+        "text": "Stoneskin Lords"
+      },
+      "Northwest of Lake": {
+        "text": "Sword Crucible Knight"
+      },
+      "Stormhill": {
+        "text": "Beastmen of Farum Azula"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Ancient Hero of Zamor"
+      },
+      "Castle Roof": {
+        "text": "Erdtree Avatar"
+      },
+      "Lake": {
+        "text": "Death Rite Bird"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Black Knife Assassin"
+      },
+      "North Mistwood": {
+        "text": "Demihuman Queen"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Black Blade Kindred"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Elder Lion"
+      },
+      "Southwest of Lake": {
+        "text": "Royal Carian Knight"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "安寧者達",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Below Summonwater Hawk",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South Lake",
+      "text": "Demons"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Demon Prince",
+      "extra": null
+    },
+    "castleBoss": "Trolls",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "Kindreds of Rot",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Spider Scorpions",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Spider Scorpions",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Leonine Misbegotten",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "Royal Army Knights",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "East of Cavalry Bridge": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Minor Erdtree": {
+        "type": "Township",
+        "text": "Town"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Candle"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Beastmen of Farum Azula"
+      },
+      "Mistwood": {
+        "text": "Bloodhound Knight"
+      },
+      "Northwest of Lake": {
+        "text": "Nox Warriors"
+      },
+      "Stormhill": {
+        "text": "Godskin Apostle"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Black Knife Assassin"
+      },
+      "Castle Roof": {
+        "text": "Magma Wyrm"
+      },
+      "Lake": {
+        "text": "Red Wolf"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Miranda Blossom"
+      },
+      "North Mistwood": {
+        "text": "Royal Carian Knight"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Ulcerated Tree Spirit"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Tree Sentinel"
+      },
+      "Southwest of Lake": {
+        "text": "Golden Hippo"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "安寧者達",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": "Day 1 Caligo Raid",
+    "nightCircle1": {
+      "place": "Southwest Mistwood",
+      "text": "Demons"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Demon Prince",
+      "extra": null
+    },
+    "castleBoss": "Crucible Knights",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Camp",
+        "text": "Nomads",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "Oracle Envoys",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Kindreds of Rot",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "Depraved Perfumer",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "Sanguine Noble",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "Nomads",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "Sanguine Noble",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Minor Erdtree": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Reflection"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: No Puzzle"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Nox Warriors"
+      },
+      "Mistwood": {
+        "text": "Dragonkin Soldier"
+      },
+      "Northwest of Lake": {
+        "text": "Beastly Brigade"
+      },
+      "Stormhill": {
+        "text": "Crystalians"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Black Knife Assassin"
+      },
+      "Castle Roof": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Lake": {
+        "text": "Ulcerated Tree Spirit"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Erdtree Avatar"
+      },
+      "North Mistwood": {
+        "text": "Miranda Blossom"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Golden Hippo"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Red Wolf"
+      },
+      "Southwest of Lake": {
+        "text": "Flying Dragon"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "安寧者達",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "DBW & Curseblade"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Mohg",
+      "extra": null
+    },
+    "castleBoss": "Banished Knights",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Fort",
+        "text": "Lordsworn Captain",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "Frost Crayfish",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "Nomads",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Leonine Misbegotten",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Leonine Misbegotten",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Flame Chariots",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "Crystalian Alliance",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "Flame Chariots",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Far Southwest": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Stump"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Withered Trees"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Stoneskin Lords"
+      },
+      "Mistwood": {
+        "text": "Death Rite Bird"
+      },
+      "Northwest of Lake": {
+        "text": "Sword Crucible Knight"
+      },
+      "Stormhill": {
+        "text": "Omen"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Red Wolf"
+      },
+      "Castle Roof": {
+        "text": "Death Rite Bird"
+      },
+      "Lake": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Bell Bearing Hunter"
+      },
+      "North Mistwood": {
+        "text": "Ancient Hero of Zamor"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Tree Sentinel"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Black Knife Assassin"
+      },
+      "Southwest of Lake": {
+        "text": "Royal Revenant"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "安寧者達",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": "Walking Mausoleum",
+    "nightCircle1": {
+      "place": "Southwest Corner",
+      "text": "Demons"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Demon Prince",
+      "extra": null
+    },
+    "castleBoss": "Trolls",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Camp",
+        "text": "Omens",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "Elder Lion",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "Mausoleum Knight",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Frost Crayfish",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Omens",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Royal Army Knights",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Nomads",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Frost Crayfish",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "Fire Monk",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Lake": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Third Church": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Reflection"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Crystalians"
+      },
+      "Mistwood": {
+        "text": "Omen"
+      },
+      "Northwest of Lake": {
+        "text": "Sword Crucible Knight"
+      },
+      "Stormhill": {
+        "text": "Bloodhound Knight"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Red Wolf"
+      },
+      "Castle Roof": {
+        "text": "Tree Sentinel"
+      },
+      "Lake": {
+        "text": "Ancestor Spirit"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Leonine Misbegotten"
+      },
+      "North Mistwood": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Black Knife Assassin"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Royal Revenant"
+      },
+      "Southwest of Lake": {
+        "text": "Black Blade Kindred"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "瓦礫の王",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Far Southwest",
+    "specialEvent": "Day 1 Balancers Raid",
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "Great Red Bear"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Dancing Lion",
+      "extra": null
+    },
+    "castleBoss": "Banished Knights",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Camp",
+        "text": "Black Flame Monks",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "Oracle Envoys",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Great Church",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Grave Warden Duelists",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Frost Crayfish",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Redmane Knights",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Black Flame Monks",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "Banished Knights",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "Black Flame Monks",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Township",
+        "text": "Town"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Above Door"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Crystalians"
+      },
+      "Mistwood": {
+        "text": "Omen"
+      },
+      "Northwest of Lake": {
+        "text": "Nox Warriors"
+      },
+      "Stormhill": {
+        "text": "Sword Crucible Knight"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Black Knife Assassin"
+      },
+      "Castle Roof": {
+        "text": "Death Rite Bird"
+      },
+      "Lake": {
+        "text": "Elder Lion"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Ancestor Spirit"
+      },
+      "North Mistwood": {
+        "text": "Ancient Hero of Zamor"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Golden Hippo"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Bell Bearing Hunter"
+      },
+      "Southwest of Lake": {
+        "text": "Royal Carian Knight"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "瓦礫の王",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Southeast of Lake",
+    "specialEvent": "Day 1 Maris Raid",
+    "nightCircle1": {
+      "place": "South of Castle",
+      "text": "Death Knights"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Dancing Lion",
+      "extra": null
+    },
+    "castleBoss": "Trolls",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "Wormface",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "Black Flame Monks",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Fort",
+        "text": "Abductor Virgin",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Spider Scorpions",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Omenkillers",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Black Flame Monks",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Fort",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "East of Cavalry Bridge": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Bush"
+      },
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Minor Erdtree": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Church"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Bloodhound Knight"
+      },
+      "Mistwood": {
+        "text": "Nox Warriors"
+      },
+      "Northwest of Lake": {
+        "text": "Beastmen of Farum Azula"
+      },
+      "Stormhill": {
+        "text": "Spear Crucible Knight"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Leonine Misbegotten"
+      },
+      "Castle Roof": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Lake": {
+        "text": "Death Rite Bird"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Elder Lion"
+      },
+      "North Mistwood": {
+        "text": "Night's Cavalry"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Bell Bearing Hunter"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Magma Wyrm"
+      },
+      "Southwest of Lake": {
+        "text": "Golden Hippo"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "瓦礫の王",
+    "shiftingEarth": "火口",
+    "spawnPoint": "West of Warmaster's Shack",
+    "specialEvent": "Day 2 Caligo Raid",
+    "nightCircle1": {
+      "place": "West Stormhill Graveyard",
+      "text": "Death Knights"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Artorias",
+      "extra": null
+    },
+    "castleBoss": "Banished Knights",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Camp",
+        "text": "Chief Bloodfiend",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Camp",
+        "text": "Chief Bloodfiend",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "Chief Bloodfiend",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Frost Crayfish",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Spider Scorpions",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Ruins",
+        "text": "Erdtree Burial Watchdogs",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Fort",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Fort",
+        "text": "Abductor Virgin",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Camp",
+        "text": "Spider Scorpions",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Far Southwest": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Lake": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Above Door"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Stormhill South of Gate": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Third Church": {
+        "type": "Township",
+        "text": "Town"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Township",
+        "text": "Caravan"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Bloodhound Knight"
+      },
+      "Mistwood": {
+        "text": "Omen"
+      },
+      "Northwest of Lake": {
+        "text": "Sword Crucible Knight"
+      },
+      "Stormhill": {
+        "text": "Nox Warriors"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Red Wolf"
+      },
+      "Castle Roof": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Lake": {
+        "text": "Black Blade Kindred"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Demihuman Queen"
+      },
+      "North Mistwood": {
+        "text": "Golden Hippo"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Tree Sentinel"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Bell Bearing Hunter"
+      },
+      "Southwest of Lake": {
+        "text": "Miranda Blossom"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "瓦礫の王",
+    "shiftingEarth": "火口",
+    "spawnPoint": "Stormhill South of Gate",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Northwest Mistwood Pond",
+      "text": "Great Red Bear"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Dancing Lion",
+      "extra": null
+    },
+    "castleBoss": "Banished Knights",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Fort",
+        "text": "Abductor Virgin",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Fort",
+        "text": "Abductor Virgin",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Camp",
+        "text": "Sanguine Nobles",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Fort",
+        "text": "Guardian Golem",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Sanguine Nobles",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Death Knight",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Ruins",
+        "text": "Battlemages",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Camp",
+        "text": "Grave Warden Duelists",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Camp",
+        "text": "Cuckoo Knights",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Ruins",
+        "text": "Beastmen of Farum Azula",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Reflection"
+      },
+      "East of Cavalry Bridge": {
+        "type": "Township",
+        "text": "Town"
+      },
+      "Lake": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Minor Erdtree": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Third Church": {
+        "type": "Church",
+        "text": "Church"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Spear Crucible Knight"
+      },
+      "Mistwood": {
+        "text": "Nox Warriors"
+      },
+      "Northwest of Lake": {
+        "text": "Beastly Brigade"
+      },
+      "Stormhill": {
+        "text": "Godskin Duo"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Royal Revenant"
+      },
+      "Castle Roof": {
+        "text": "Magma Wyrm"
+      },
+      "Lake": {
+        "text": "Erdtree Avatar"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Black Knife Assassin"
+      },
+      "North Mistwood": {
+        "text": "Black Blade Kindred"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Elder Lion"
+      },
+      "Southwest of Lake": {
+        "text": "Leonine Misbegotten"
+      }
+    },
+    "rotBlessing": null
+  },
+  {
+    "nightLord": "瓦礫の王",
+    "shiftingEarth": "火口",
+    "spawnPoint": "East of Cavalry Bridge",
+    "specialEvent": null,
+    "nightCircle1": {
+      "place": "Southwest Mistwood",
+      "text": "Great Red Bear"
+    },
+    "nightCircle2": {
+      "place": "Crater",
+      "text": "Artorias",
+      "extra": null
+    },
+    "castleBoss": "Trolls",
+    "majorBases": {
+      "Gatefront": {
+        "type": "Ruins",
+        "text": "Runebear",
+        "element": null
+      },
+      "Groveside": {
+        "type": "Great Church",
+        "text": "Oracle Envoys",
+        "element": null
+      },
+      "Minor Erdtree": {
+        "type": "Ruins",
+        "text": "Albinaurics",
+        "element": null
+      },
+      "Northeast Mistwood": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "Northwest Stormhill": {
+        "type": "Camp",
+        "text": "Ancestral Followers",
+        "element": null
+      },
+      "South Lake": {
+        "type": "Camp",
+        "text": "Kindreds of Rot",
+        "element": null
+      },
+      "South Mistwood": {
+        "type": "Camp",
+        "text": "Omens",
+        "element": null
+      },
+      "Stormhill North of Gate": {
+        "type": "Camp",
+        "text": "Sanguine Nobles",
+        "element": null
+      },
+      "Summonwater": {
+        "type": "Ruins",
+        "text": "Runebear",
+        "element": null
+      },
+      "Waypoint Ruins": {
+        "type": "Great Church",
+        "text": "Fire Monk",
+        "element": null
+      },
+      "West Mistwood": {
+        "type": "Great Church",
+        "text": "Fire Monk",
+        "element": null
+      }
+    },
+    "minorBases": {
+      "Below Summonwater Hawk": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Side Building"
+      },
+      "Far Southwest": {
+        "type": "Township",
+        "text": "Caravan"
+      },
+      "Southeast of Lake": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Stormhill South of Gate": {
+        "type": "Church",
+        "text": "Church"
+      },
+      "Third Church": {
+        "type": "Sorcerer's Rise",
+        "text": "Rise: Withered Trees"
+      },
+      "West of Warmaster's Shack": {
+        "type": "Church",
+        "text": "Church"
+      }
+    },
+    "evergaols": {
+      "East of Lake": {
+        "text": "Spear Crucible Knight"
+      },
+      "Mistwood": {
+        "text": "Bloodhound Knight"
+      },
+      "Northwest of Lake": {
+        "text": "Beastly Brigade"
+      },
+      "Stormhill": {
+        "text": "Crystalians"
+      }
+    },
+    "fieldBosses": {
+      "Castle Basement": {
+        "text": "Ancient Hero of Zamor"
+      },
+      "Castle Roof": {
+        "text": "Death Rite Bird"
+      },
+      "Lake": {
+        "text": "Draconic Tree Sentinel"
+      },
+      "Mistwood Spectral Hawk": {
+        "text": "Black Blade Kindred"
+      },
+      "North Mistwood": {
+        "text": "Elder Lion"
+      },
+      "North of Stormhill Tunnel Entrance": {
+        "text": "Demihuman Queen"
+      },
+      "Northwest Stormhill Cliffside": {
+        "text": "Night's Cavalry"
+      },
+      "Southwest of Lake": {
+        "text": "Ancestor Spirit"
+      }
+    },
+    "rotBlessing": null
   }
 ]
