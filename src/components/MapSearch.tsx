@@ -477,13 +477,13 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   <button
                     key={lord}
                     onClick={() => handleNightLordChange(lord)}
-                    className={`group rounded-none border text-center transition-all relative overflow-hidden aspect-square w-full select-none ${
+                    className={`group rounded-none border transition-all flex flex-col w-full select-none ${
                       isSelected
                         ? 'border-rose-500 ring-2 ring-rose-500/40'
                         : 'border-gray-800 hover:border-gray-700'
                     }`}
                   >
-                    <div className="absolute inset-0 z-0">
+                    <div className="relative w-full aspect-square shrink-0">
                       <Image 
                         src={`/icon/nightLord/${BOSS_IMAGE_MAP[lord] || lord}.jpg`} 
                         alt={lord} 
@@ -492,7 +492,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
                         className="object-cover pointer-events-none" 
                       />
                     </div>
-                    <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-[10px] md:text-xs text-white z-10 bg-black/80 py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-1">
+                    <span className="w-full text-center font-semibold text-[10px] md:text-xs text-white bg-black/80 py-1.5 border-t border-gray-800/60 truncate px-1">
                       {transText(lord)}
                     </span>
                   </button>
@@ -500,16 +500,16 @@ export default function MapSearch({ locale }: MapSearchProps) {
               })}
               <button
                 onClick={() => handleNightLordChange(null)}
-                className={`group rounded-none border text-center transition-all relative overflow-hidden aspect-square w-full select-none ${
+                className={`group rounded-none border transition-all flex flex-col w-full select-none ${
                   selectedNightLord === null
                     ? 'border-rose-500 ring-2 ring-rose-500/40'
                     : 'border-gray-800 hover:border-gray-700'
                 }`}
               >
-                <div className="absolute inset-0 z-0">
+                <div className="relative w-full aspect-square shrink-0">
                   <Image src="/icon/nightLord/unnamed.jpg" alt="All" fill sizes="200px" className="object-cover pointer-events-none" />
                 </div>
-                <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-[10px] md:text-xs text-white z-10 bg-black/80 py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-1">
+                <span className="w-full text-center font-semibold text-[10px] md:text-xs text-white bg-black/80 py-1.5 border-t border-gray-800/60 truncate px-1">
                   不明
                 </span>
               </button>
