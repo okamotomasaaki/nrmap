@@ -88,7 +88,7 @@ const BOSS_IMAGE_MAP: Record<string, string> = {
   '霧 of 裂け目': 'mist_rift',
   '霧の裂け目': 'mist_rift',
   '夜を象る者': 'night_shaper',
-  '安寧者たち': 'harmonia',
+  '安寧者達': 'harmonia',
   '瓦礫の王': 'straghess'
 };
 
