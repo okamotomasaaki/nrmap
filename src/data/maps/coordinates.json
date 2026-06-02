@@ -63,6 +63,54 @@
     "Summonwater": {
       "x": 720,
       "y": 230
+    },
+    "Northwest Castle": {
+      "x": 310,
+      "y": 300
+    },
+    "Southeast Castle": {
+      "x": 610,
+      "y": 700
+    },
+    "Northwest Temple Floor 1": {
+      "x": 220,
+      "y": 460
+    },
+    "Northwest Temple Floor 2": {
+      "x": 240,
+      "y": 460
+    },
+    "Northwest Temple Floor 3": {
+      "x": 260,
+      "y": 460
+    },
+    "Southeast Temple Floor 1": {
+      "x": 690,
+      "y": 685
+    },
+    "Southeast Temple Floor 2": {
+      "x": 710,
+      "y": 685
+    },
+    "Southeast Temple Floor 3": {
+      "x": 730,
+      "y": 685
+    },
+    "Southeast Ruin": {
+      "x": 820,
+      "y": 790
+    },
+    "West Ruin": {
+      "x": 240,
+      "y": 580
+    },
+    "Northeast Great Church": {
+      "x": 770,
+      "y": 420
+    },
+    "South Great Church": {
+      "x": 580,
+      "y": 840
     }
   },
   "minorBases": {
@@ -109,6 +157,22 @@
     "Northeast of Saintsbridge": {
       "x": 540,
       "y": 230
+    },
+    "Minor Base South": {
+      "x": 360,
+      "y": 770
+    },
+    "Minor Base South of Divine Tower": {
+      "x": 540,
+      "y": 430
+    },
+    "Minor Base Underground": {
+      "x": 890,
+      "y": 670
+    },
+    "Minor Base West": {
+      "x": 410,
+      "y": 450
     }
   },
   "spawnPoints": {
@@ -147,6 +211,18 @@
     "West of Warmaster's Shack": {
       "x": 230,
       "y": 350
+    },
+    "Northeast": {
+      "x": 730,
+      "y": 300
+    },
+    "Southwest": {
+      "x": 200,
+      "y": 750
+    },
+    "South": {
+      "x": 450,
+      "y": 800
     }
   },
   "evergaols": {
@@ -259,6 +335,54 @@
     "Far Northeast": {
       "x": 780,
       "y": 550
+    },
+    "Northwest Castle Basement": {
+      "x": 310,
+      "y": 320
+    },
+    "Field Boss East of West Ruin": {
+      "x": 350,
+      "y": 610
+    },
+    "Field Boss In Crystal Pillar": {
+      "x": 440,
+      "y": 610
+    },
+    "Field Boss North of Crystal Pillar": {
+      "x": 460,
+      "y": 560
+    },
+    "Field Boss North of West Ruin Lower": {
+      "x": 290,
+      "y": 540
+    },
+    "Field Boss North of West Ruin Upper": {
+      "x": 240,
+      "y": 570
+    },
+    "Field Boss Northernmost": {
+      "x": 460,
+      "y": 350
+    },
+    "Field Boss South of Crystal Pillar": {
+      "x": 460,
+      "y": 660
+    },
+    "Field Boss South of Divine Tower": {
+      "x": 610,
+      "y": 520
+    },
+    "Field Boss Underground Center": {
+      "x": 825,
+      "y": 710
+    },
+    "Field Boss Underground East": {
+      "x": 890,
+      "y": 740
+    },
+    "Field Boss Underground North": {
+      "x": 820,
+      "y": 650
     }
   },
   "nightCircle1": {
@@ -309,6 +433,18 @@
     "West Stormhill Graveyard": {
       "x": 200,
       "y": 400
+    },
+    "North": {
+      "x": 550,
+      "y": 360
+    },
+    "East": {
+      "x": 750,
+      "y": 500
+    },
+    "South": {
+      "x": 350,
+      "y": 680
     }
   },
   "nightCircle2": {
@@ -379,6 +515,10 @@
     "Southeast Rotted Woods": {
       "x": 610,
       "y": 700
+    },
+    "Divine Tower": {
+      "x": 580,
+      "y": 330
     }
   },
   "rotBlessings": {

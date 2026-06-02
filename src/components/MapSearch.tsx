@@ -8,8 +8,6 @@ import {
   User, 
   Compass, 
   RotateCcw, 
-  HelpCircle, 
-  ChevronRight, 
   Sparkles,
   Info,
   Globe,
@@ -26,6 +24,7 @@ import peaksMapData from '@/data/maps/peaks.json';
 import craterMapData from '@/data/maps/crater.json';
 import rottedMapData from '@/data/maps/rotted.json';
 import noklateoMapData from '@/data/maps/noklateo.json';
+import hollowMapData from '@/data/maps/hollow.json';
 
 import coordinates from '@/data/maps/coordinates.json';
 import bosses from '@/data/maps/bosses.json';
@@ -57,7 +56,8 @@ const MAP_DATA_MAP: Record<string, MapPattern[]> = {
   山嶺: peaksMapData as unknown as MapPattern[],
   火口: craterMapData as unknown as MapPattern[],
   腐れ森: rottedMapData as unknown as MapPattern[],
-  隠れ都ノクラテオ: noklateoMapData as unknown as MapPattern[]
+  隠れ都ノクラテオ: noklateoMapData as unknown as MapPattern[],
+  大空洞: hollowMapData as unknown as MapPattern[]
 };
 
 // 翻訳データのマッピング
@@ -73,7 +73,8 @@ const MAP_IMAGE_MAP: Record<string, string> = {
   '山嶺': 'peaks',
   '火口': 'crater',
   '腐れ森': 'rotted',
-  '隠れ都ノクラテオ': 'noklateo'
+  '隠れ都ノクラテオ': 'noklateo',
+  '大空洞': 'hollow'
 };
 
 // ボス画像の日本語名からアルファベットファイル名へのマッピング
@@ -86,7 +87,9 @@ const BOSS_IMAGE_MAP: Record<string, string> = {
   '闇駆ける狩人': 'dark_hunter',
   '霧 of 裂け目': 'mist_rift',
   '霧の裂け目': 'mist_rift',
-  '夜を象る者': 'night_shaper'
+  '夜を象る者': 'night_shaper',
+  '安寧者たち': 'harmonia',
+  '瓦礫の王': 'straghess'
 };
 
 // マップ選択画面でのマップ背景ズーム・フォーカス用クラス
@@ -95,19 +98,8 @@ const MAP_ZOOM_CLASSES: Record<string, string> = {
   '山嶺': 'scale-[180%] origin-top-left',
   '火口': 'scale-[180%] origin-top',
   '腐れ森': 'scale-[180%] origin-bottom-right',
-  '隠れ都ノクラテオ': 'scale-[200%] origin-bottom-left'
-};
-
-// 夜の王のテーマカラー
-const NIGHT_LORD_COLORS: Record<string, { bg: string, border: string, text: string }> = {
-  '三つ首の獣': { bg: 'from-red-950 to-rose-900', border: 'border-red-500/50', text: 'text-red-300' },
-  '喰らいつく顎': { bg: 'from-amber-950 to-yellow-900', border: 'border-yellow-500/50', text: 'text-yellow-300' },
-  '知性の蟲': { bg: 'from-emerald-950 to-teal-900', border: 'border-emerald-500/50', text: 'text-emerald-300' },
-  '兆し': { bg: 'from-purple-950 to-indigo-900', border: 'border-purple-500/50', text: 'text-purple-300' },
-  '調律の魔物': { bg: 'from-fuchsia-950 to-pink-900', border: 'border-fuchsia-500/50', text: 'text-fuchsia-300' },
-  '闇駆ける狩人': { bg: 'from-cyan-950 to-blue-900', border: 'border-cyan-500/50', text: 'text-cyan-300' },
-  '霧の裂け目': { bg: 'from-slate-900 to-zinc-800', border: 'border-slate-500/50', text: 'text-slate-300' },
-  '夜を象る者': { bg: 'from-violet-950 to-purple-900', border: 'border-violet-500/50', text: 'text-violet-300' }
+  '隠れ都ノクラテオ': 'scale-[200%] origin-bottom-left',
+  '大空洞': 'scale-100'
 };
 
 // ボスの危険度設定
@@ -229,11 +221,6 @@ export default function MapSearch({ locale }: MapSearchProps) {
     }
   };
 
-  const handleSpawnPointChange = (spawnName: string | null) => {
-    setSelectedSpawnPoint(spawnName);
-    resetFilters();
-  };
-
   // 2. 現在の絞り込み条件に一致するパターンリスト
   const activePatterns = useMemo(() => {
     return mapPatterns
@@ -340,6 +327,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
   const availableNightLords = useMemo(() => {
     const set = new Set<string>();
     defaultMapData.forEach(p => set.add(p.nightLord));
+    hollowMapData.forEach(p => set.add(p.nightLord));
     return Array.from(set);
   }, []);
 
@@ -480,7 +468,6 @@ export default function MapSearch({ locale }: MapSearchProps) {
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {availableNightLords.map(lord => {
-                const color = NIGHT_LORD_COLORS[lord] || { bg: 'from-gray-900 to-gray-800', border: 'border-gray-700', text: 'text-gray-300' };
                 const isSelected = selectedNightLord === lord;
                 return (
                   <button
