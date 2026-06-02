@@ -22,10 +22,10 @@ import enTrans from '@/data/translations/en.json';
 import zhTrans from '@/data/translations/zh.json';
 
 import defaultMapData from '@/data/maps/Default.json';
-import peaksMapData from '@/data/maps/山嶺.json';
-import craterMapData from '@/data/maps/火口.json';
-import rottedMapData from '@/data/maps/腐れ森.json';
-import noklateoMapData from '@/data/maps/隠れ都ノクラテオ.json';
+import peaksMapData from '@/data/maps/peaks.json';
+import craterMapData from '@/data/maps/crater.json';
+import rottedMapData from '@/data/maps/rotted.json';
+import noklateoMapData from '@/data/maps/noklateo.json';
 
 import coordinates from '@/data/maps/coordinates.json';
 import bosses from '@/data/maps/bosses.json';
@@ -65,6 +65,37 @@ const TRANS_MAP: Record<string, Record<string, string>> = {
   ja: jaTrans,
   en: enTrans,
   zh: zhTrans
+};
+
+// マップ画像の日本語名からアルファベットファイル名へのマッピング
+const MAP_IMAGE_MAP: Record<string, string> = {
+  'Default': 'Default',
+  '山嶺': 'peaks',
+  '火口': 'crater',
+  '腐れ森': 'rotted',
+  '隠れ都ノクラテオ': 'noklateo'
+};
+
+// ボス画像の日本語名からアルファベットファイル名へのマッピング
+const BOSS_IMAGE_MAP: Record<string, string> = {
+  '三つ首の獣': 'three_headed_beast',
+  '喰らいつく顎': 'snapping_jaws',
+  '知性の蟲': 'intellect_insect',
+  '兆し': 'omen',
+  '調律の魔物': 'tuning_monster',
+  '闇駆ける狩人': 'dark_hunter',
+  '霧 of 裂け目': 'mist_rift',
+  '霧の裂け目': 'mist_rift',
+  '夜を象る者': 'night_shaper'
+};
+
+// マップ選択画面でのマップ背景ズーム・フォーカス用クラス
+const MAP_ZOOM_CLASSES: Record<string, string> = {
+  'Default': 'scale-100',
+  '山嶺': 'scale-[180%] origin-top-left',
+  '火口': 'scale-[180%] origin-top',
+  '腐れ森': 'scale-[180%] origin-bottom-right',
+  '隠れ都ノクラテオ': 'scale-[200%] origin-bottom-left'
 };
 
 // 夜の王のテーマカラー
@@ -122,8 +153,8 @@ export default function MapSearch({ locale }: MapSearchProps) {
   const t = TRANS_MAP[currentLocale] || jaTrans;
 
   // 1. 基本となる絞り込みステート
-  const [currentMap, setCurrentMap] = useState<string>('Default');
-  const [selectedNightLord, setSelectedNightLord] = useState<string | null>(null);
+  const [currentMap, setCurrentMap] = useState<string | null>(null);
+  const [selectedNightLord, setSelectedNightLord] = useState<string | null | undefined>(undefined);
   const [selectedSpawnPoint, setSelectedSpawnPoint] = useState<string | null>(null);
   
   // 各ピンの種類ごとの個別フィルター
@@ -165,7 +196,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
 
   // 全マップデータ
   const mapPatterns = useMemo(() => {
-    return MAP_DATA_MAP[currentMap] || defaultMapData;
+    return currentMap ? (MAP_DATA_MAP[currentMap] || defaultMapData) : [];
   }, [currentMap]);
 
   // マップや夜の王などの基本的な切り替えがあった時にフィルターをクリア
@@ -184,12 +215,18 @@ export default function MapSearch({ locale }: MapSearchProps) {
     setCurrentMap(mapName);
     setSelectedSpawnPoint(null);
     resetFilters();
+    if (selectedNightLord !== undefined) {
+      setIsMapScreen(true);
+    }
   };
 
   const handleNightLordChange = (lordName: string | null) => {
     setSelectedNightLord(lordName);
     setSelectedSpawnPoint(null);
     resetFilters();
+    if (currentMap !== null) {
+      setIsMapScreen(true);
+    }
   };
 
   const handleSpawnPointChange = (spawnName: string | null) => {
@@ -200,7 +237,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
   // 2. 現在の絞り込み条件に一致するパターンリスト
   const activePatterns = useMemo(() => {
     return mapPatterns
-      .filter(p => !selectedNightLord || p.nightLord === selectedNightLord)
+      .filter(p => selectedNightLord === undefined || !selectedNightLord || p.nightLord === selectedNightLord)
       .filter(p => !selectedSpawnPoint || p.spawnPoint === selectedSpawnPoint)
       .filter(p => {
         // 大拠点フィルター
@@ -292,7 +329,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
   const availableSpawnPoints = useMemo(() => {
     const set = new Set<string>();
     mapPatterns.forEach(p => {
-      if (!selectedNightLord || p.nightLord === selectedNightLord) {
+      if (selectedNightLord === undefined || !selectedNightLord || p.nightLord === selectedNightLord) {
         set.add(p.spawnPoint);
       }
     });
@@ -302,9 +339,9 @@ export default function MapSearch({ locale }: MapSearchProps) {
   // 夜の王のリスト
   const availableNightLords = useMemo(() => {
     const set = new Set<string>();
-    mapPatterns.forEach(p => set.add(p.nightLord));
+    defaultMapData.forEach(p => set.add(p.nightLord));
     return Array.from(set);
-  }, [mapPatterns]);
+  }, []);
 
   // 翻訳キーの適用関数
   const transText = (key: string | null) => {
@@ -377,68 +414,59 @@ export default function MapSearch({ locale }: MapSearchProps) {
     );
   };
 
-  return (
-    <div className="flex flex-col md:flex-row h-full w-full overflow-hidden">
-      
-      {/* 1. 左側コントロールパネル */}
-      <div className="w-full md:w-80 flex flex-col bg-gray-900/60 border-b md:border-b-0 md:border-r border-gray-800 backdrop-blur-md z-10 shrink-0 h-[40vh] md:h-full overflow-y-auto">
-        <div className="p-4 border-b border-gray-800">
-          <div className="flex justify-between items-center">
-            <h1 className="text-lg font-bold tracking-tight text-white flex items-center gap-2">
-              <MapIcon className="w-5 h-5 text-blue-500" />
+  // 画面遷移ステート
+  const [isMapScreen, setIsMapScreen] = useState<boolean>(false);
+
+
+
+  const handleBackToSelect = () => {
+    setIsMapScreen(false);
+    resetFilters();
+  };
+
+  if (!isMapScreen) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen w-full bg-slate-950 text-gray-100 p-4 md:p-8">
+        <div className="w-full max-w-2xl bg-gray-900/60 border border-gray-800 rounded-2xl p-6 md:p-8 backdrop-blur-md shadow-2xl flex flex-col gap-6">
+          <div className="text-center">
+            <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white flex items-center justify-center gap-3 mb-2">
+              <MapIcon className="w-8 h-8 text-blue-500" />
               {t.title}
             </h1>
-            <div className="flex gap-2">
-              <button 
-                onClick={() => setShowInstruction(!showInstruction)}
-                className="p-1.5 hover:bg-gray-800 rounded-lg text-gray-400 hover:text-white transition-colors"
-                title={t.instructionTitle}
-              >
-                <HelpCircle className="w-4 h-4" />
-              </button>
-              <button 
-                onClick={() => {
-                  setSelectedNightLord(null);
-                  setSelectedSpawnPoint(null);
-                  resetFilters();
-                }}
-                className="p-1.5 hover:bg-gray-800 rounded-lg text-gray-400 hover:text-white transition-colors"
-                title="リセット"
-              >
-                <RotateCcw className="w-4 h-4" />
-              </button>
-            </div>
+            <p className="text-xs md:text-sm text-gray-400 max-w-md mx-auto">{t.description}</p>
           </div>
-          <p className="text-[11px] text-gray-400 mt-1 line-clamp-2">{t.description}</p>
-        </div>
 
-        {/* 絞り込み進捗状況 */}
-        <div className="px-4 py-3 bg-gray-950/40 border-b border-gray-800 flex justify-between items-center text-xs">
-          <span className="text-gray-400">候補パターン:</span>
-          <span className="font-mono text-sm font-bold text-blue-400">
-            {activePatterns.length} / {mapPatterns.length}
-          </span>
-        </div>
+          <div className="border-t border-gray-800/80 my-2"></div>
 
-        <div className="p-4 flex flex-col gap-5">
           {/* マップ選択 */}
           <div>
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-              <Compass className="w-3.5 h-3.5 text-blue-500" />
-              MAP SELECT
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-1.5 justify-center md:justify-start">
+              <Compass className="w-4 h-4 text-blue-500" />
+              1. MAP SELECT (マップ選択)
             </h2>
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               {Object.keys(MAP_DATA_MAP).map(mapName => (
                 <button
                   key={mapName}
                   onClick={() => handleMapChange(mapName)}
-                  className={`px-3 py-2 text-xs font-semibold rounded-lg border text-left transition-all relative overflow-hidden ${
+                  className={`group rounded-none border text-center transition-all relative overflow-hidden aspect-square w-full select-none ${
                     currentMap === mapName 
-                      ? 'bg-blue-600/10 border-blue-500 text-blue-200' 
-                      : 'bg-gray-800/40 border-gray-800 text-gray-400 hover:border-gray-700 hover:text-gray-200'
+                      ? 'border-blue-500 ring-2 ring-blue-500/40' 
+                      : 'border-gray-800 hover:border-gray-700'
                   }`}
                 >
-                  {mapName === 'Default' ? 'Default (リムグレイブ)' : mapName}
+                  <div className="absolute inset-0 z-0">
+                    <Image 
+                      src={`/map/${MAP_IMAGE_MAP[mapName] || mapName}.webp`}
+                      alt={mapName}
+                      fill
+                      sizes="200px"
+                      className={`object-cover pointer-events-none transition-transform duration-300 ${MAP_ZOOM_CLASSES[mapName] || 'scale-100'}`}
+                    />
+                  </div>
+                  <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-xs md:text-sm text-white z-10 bg-black/80 py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-1">
+                    {mapName === 'Default' ? (currentLocale === 'ja' ? 'ノーマル' : 'Default') : mapName}
+                  </span>
                 </button>
               ))}
             </div>
@@ -446,21 +474,11 @@ export default function MapSearch({ locale }: MapSearchProps) {
 
           {/* 夜の王の選択 */}
           <div>
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-              <User className="w-3.5 h-3.5 text-rose-500" />
-              {t.nightLord}
+            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-3 flex items-center gap-1.5 justify-center md:justify-start">
+              <User className="w-4 h-4 text-rose-500" />
+              2. SELECT NIGHT LORD (夜の王の選択)
             </h2>
-            <div className="grid grid-cols-2 gap-1.5">
-              <button
-                onClick={() => handleNightLordChange(null)}
-                className={`col-span-2 px-2.5 py-1.5 text-[11px] font-semibold rounded border transition-all text-center ${
-                  selectedNightLord === null
-                    ? 'bg-gray-800 border-gray-600 text-white'
-                    : 'bg-transparent border-gray-800 text-gray-500 hover:border-gray-700'
-                }`}
-              >
-                All
-              </button>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {availableNightLords.map(lord => {
                 const color = NIGHT_LORD_COLORS[lord] || { bg: 'from-gray-900 to-gray-800', border: 'border-gray-700', text: 'text-gray-300' };
                 const isSelected = selectedNightLord === lord;
@@ -468,50 +486,51 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   <button
                     key={lord}
                     onClick={() => handleNightLordChange(lord)}
-                    className={`px-2 py-1.5 text-[11px] font-semibold rounded border text-left transition-all overflow-hidden text-ellipsis whitespace-nowrap bg-gradient-to-br ${color.bg} ${
+                    className={`group rounded-none border text-center transition-all relative overflow-hidden aspect-square w-full select-none ${
                       isSelected
-                        ? `${color.border} ring-1 ring-offset-1 ring-offset-gray-900 ring-rose-500 text-white`
-                        : 'border-transparent text-gray-400 opacity-60 hover:opacity-90'
+                        ? 'border-rose-500 ring-2 ring-rose-500/40'
+                        : 'border-gray-800 hover:border-gray-700'
                     }`}
                   >
-                    {transText(lord)}
+                    <div className="absolute inset-0 z-0">
+                      <Image 
+                        src={`/icon/nightLord/${BOSS_IMAGE_MAP[lord] || lord}.jpg`} 
+                        alt={lord} 
+                        fill 
+                        sizes="200px" 
+                        className="object-cover pointer-events-none" 
+                      />
+                    </div>
+                    <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-[10px] md:text-xs text-white z-10 bg-black/80 py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-1">
+                      {transText(lord)}
+                    </span>
                   </button>
                 );
               })}
-            </div>
-          </div>
-
-          {/* 出現地点の選択 */}
-          <div>
-            <h2 className="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
-              <Compass className="w-3.5 h-3.5 text-emerald-500" />
-              SPAWN POINT
-            </h2>
-            <div className="relative">
-              <select
-                value={selectedSpawnPoint || ''}
-                onChange={(e) => handleSpawnPointChange(e.target.value || null)}
-                className="w-full bg-gray-800/80 border border-gray-700 rounded-lg px-3 py-2 text-xs font-semibold text-gray-200 outline-none focus:border-blue-500 appearance-none"
+              <button
+                onClick={() => handleNightLordChange(null)}
+                className={`group rounded-none border text-center transition-all relative overflow-hidden aspect-square w-full select-none ${
+                  selectedNightLord === null
+                    ? 'border-rose-500 ring-2 ring-rose-500/40'
+                    : 'border-gray-800 hover:border-gray-700'
+                }`}
               >
-                <option value="">Select Spawn Point (All)</option>
-                {availableSpawnPoints.map(sp => (
-                  <option key={sp} value={sp}>
-                    {transText(sp)}
-                  </option>
-                ))}
-              </select>
-              <div className="absolute right-3 top-2.5 pointer-events-none text-gray-400">
-                <ChevronRight className="w-3.5 h-3.5 rotate-90" />
-              </div>
+                <div className="absolute inset-0 z-0">
+                  <Image src="/icon/nightLord/unnamed.jpg" alt="All" fill sizes="200px" className="object-cover pointer-events-none" />
+                </div>
+                <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-[10px] md:text-xs text-white z-10 bg-black/80 py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-1">
+                  不明
+                </span>
+              </button>
             </div>
           </div>
         </div>
 
-        {/* 4. 左下言語切り替え & クレジット */}
-        <div className="mt-auto p-4 border-t border-gray-800 flex justify-between items-center text-xs bg-gray-950/40">
+        {/* 言語切り替え & クレジット */}
+        <div className="mt-8 flex flex-col items-center gap-3 text-xs text-gray-500">
           <div className="flex gap-2">
-            <Globe className="w-3.5 h-3.5 text-gray-400 mt-0.5" />
-            <div className="flex gap-1.5 font-semibold text-gray-400">
+            <Globe className="w-4 h-4 text-gray-500 mt-0.5" />
+            <div className="flex gap-1.5 font-semibold text-gray-400 text-sm">
               <Link href="/ja" className={`hover:text-white transition-colors ${currentLocale === 'ja' ? 'text-blue-500 font-bold' : ''}`}>JA</Link>
               <span>/</span>
               <Link href="/en" className={`hover:text-white transition-colors ${currentLocale === 'en' ? 'text-blue-500 font-bold' : ''}`}>EN</Link>
@@ -519,12 +538,16 @@ export default function MapSearch({ locale }: MapSearchProps) {
               <Link href="/zh" className={`hover:text-white transition-colors ${currentLocale === 'zh' ? 'text-blue-500 font-bold' : ''}`}>ZH</Link>
             </div>
           </div>
-          <span className="text-[10px] text-gray-500">© 2026 nightreignmap.com</span>
+          <span>© 2026 nightreignmap.com</span>
         </div>
       </div>
+    );
+  }
 
-      {/* 2. マップ表示エリア（右側） */}
-      <div className="flex-grow relative h-[60vh] md:h-full bg-slate-950 flex justify-center items-center overflow-auto p-2 md:p-6 select-none">
+  return (
+    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-slate-950 p-4 md:p-8 overflow-auto select-none">
+      
+      <div className="relative w-full max-w-[85vh] flex flex-col items-center gap-6">
         
         {/* Instruction パネルの表示（オーバーレイ） */}
         {showInstruction && (
@@ -563,8 +586,8 @@ export default function MapSearch({ locale }: MapSearchProps) {
           {/* マップ背景画像 */}
           <div className="absolute inset-0 pointer-events-none">
             <Image 
-              src={`/map/${currentMap === 'Default' ? 'Default' : currentMap}.webp`} 
-              alt={currentMap} 
+              src={`/map/${MAP_IMAGE_MAP[currentMap || 'Default'] || 'Default'}.webp`} 
+              alt={currentMap || 'map'} 
               fill 
               sizes="100vw"
               priority
@@ -577,20 +600,15 @@ export default function MapSearch({ locale }: MapSearchProps) {
           {/* === マップピン・マーカーの描画 === */}
           
           {/* 出現地点 (spawnPoints) の描画 */}
-          {Object.entries(coordinates.spawnPoints).map(([name, pos]) => {
+          {!selectedSpawnPoint && Object.entries(coordinates.spawnPoints).map(([name, pos]) => {
             const isAvailable = availableSpawnPoints.includes(name);
-            const isSelected = selectedSpawnPoint === name;
             if (!isAvailable) return null;
             return (
               <button
                 key={`spawn-${name}`}
                 onClick={() => handleSpawnPointClick(name, pos)}
                 style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 w-16 h-16 transition-all z-20 cursor-pointer drop-shadow-md hover:scale-110 ${
-                  isSelected 
-                    ? 'ring-2 ring-emerald-500 scale-110 rounded-full' 
-                    : ''
-                }`}
+                className="absolute -translate-x-1/2 -translate-y-1/2 w-16 h-16 transition-all z-20 cursor-pointer drop-shadow-md hover:scale-110 border-[3px] border-emerald-500 rounded-full bg-slate-950/20"
                 title={transText(name)}
               >
                 <Image 
@@ -605,7 +623,7 @@ export default function MapSearch({ locale }: MapSearchProps) {
           })}
 
           {/* 大拠点 (majorBases) の描画 */}
-          {Object.entries(coordinates.majorBases).map(([name, pos]) => {
+          {selectedSpawnPoint && Object.entries(coordinates.majorBases).map(([name, pos]) => {
             const uniqueOptions = activePatterns
               .map(p => p.majorBases[name])
               .filter((item, idx, self) => 
@@ -617,47 +635,87 @@ export default function MapSearch({ locale }: MapSearchProps) {
             const filterActive = filters.majorBases[name];
             const isPatternDetermined = activePatterns.length === 1;
 
+            // 表示するボス名の判定
+            let bossNameToShow = '';
+            let isCampType = false;
+            if (uniqueOptions.length === 1) {
+              const isChurch = uniqueOptions[0].type === 'Church';
+              if (!isChurch) {
+                bossNameToShow = uniqueOptions[0].text;
+              }
+              isCampType = uniqueOptions[0].type === 'Camp';
+            } else {
+              const currentFilter = filters.majorBases[name];
+              if (currentFilter && currentFilter.text) {
+                const isChurch = currentFilter.type === 'Church';
+                if (!isChurch) {
+                  bossNameToShow = currentFilter.text;
+                }
+                isCampType = currentFilter.type === 'Camp';
+              }
+            }
+
+            const labelOffset = isCampType ? '30px' : '38px';
+
             return (
-              <button
-                key={`major-${name}`}
-                onClick={() => handleBaseClick('major', name, pos)}
-                style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 w-16 h-16 transition-all z-10 cursor-pointer drop-shadow-md hover:scale-110 ${
-                  !isPatternDetermined ? 'ring-2 ring-yellow-50/50 rounded-full' : ''
-                } ${filterActive ? 'ring-2 ring-yellow-300 rounded-full' : ''}`}
-                title={transText(name)}
-              >
-                {uniqueOptions.length > 1 ? (
-                  <Image 
-                    src="/icon/undefined.png" 
-                    alt="undefined" 
-                    fill 
-                    sizes="64px"
-                    className="object-contain pointer-events-none"
-                  />
-                ) : (
-                  <div className="relative w-full h-full">
+              <React.Fragment key={`major-frag-${name}`}>
+                <button
+                  key={`major-${name}`}
+                  onClick={() => handleBaseClick('major', name, pos)}
+                  style={{ 
+                    left: `${(pos.x / 1000) * 100}%`, 
+                    top: `${(pos.y / 1000) * 100}%`,
+                    filter: 'drop-shadow(0 0 8px #000000)'
+                  }}
+                  className={`absolute -translate-x-1/2 -translate-y-1/2 w-24 h-24 transition-all z-10 cursor-pointer hover:scale-110 ${
+                    !isPatternDetermined ? 'ring-2 ring-yellow-50/50 rounded-full' : ''
+                  } ${filterActive ? 'ring-2 ring-yellow-300 rounded-full' : ''}`}
+                  title={transText(name)}
+                >
+                  {uniqueOptions.length > 1 ? (
                     <Image 
-                      src={`/icon/${uniqueOptions[0].type}.png`} 
-                      alt={uniqueOptions[0].type} 
+                      src="/icon/undefined.png" 
+                      alt="undefined" 
                       fill 
-                      sizes="64px"
+                      sizes="96px"
                       className="object-contain pointer-events-none"
                     />
-                    {uniqueOptions[0].element && (
-                      <div className="absolute bottom-1.5 right-1.5 w-5 h-5 z-20">
-                        <Image 
-                          src={`/icon/element/${uniqueOptions[0].element}.png`} 
-                          alt={uniqueOptions[0].element} 
-                          fill 
-                          sizes="20px"
-                          className="object-contain pointer-events-none"
-                        />
-                      </div>
-                    )}
+                  ) : (
+                    <div className="relative w-full h-full">
+                      <Image 
+                        src={`/icon/${uniqueOptions[0].type}.png`} 
+                        alt={uniqueOptions[0].type} 
+                        fill 
+                        sizes="96px"
+                        className="object-contain pointer-events-none"
+                      />
+                      {uniqueOptions[0].element && (
+                        <div className="absolute bottom-2 right-2 w-7 h-7 z-20">
+                          <Image 
+                            src={`/icon/element/${uniqueOptions[0].element}.png`} 
+                            alt={uniqueOptions[0].element} 
+                            fill 
+                            sizes="28px"
+                            className="object-contain pointer-events-none"
+                          />
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </button>
+                {bossNameToShow && (
+                  <div 
+                    className="absolute text-white text-[12px] font-normal tracking-wider whitespace-nowrap bg-black/80 border border-gray-800/80 px-1.5 py-0.5 rounded shadow pointer-events-none z-20"
+                    style={{ 
+                      left: `${(pos.x / 1000) * 100}%`, 
+                      top: `${(pos.y / 1000) * 100}%`, 
+                      transform: `translate(-50%, ${labelOffset})` 
+                    }}
+                  >
+                    {transText(bossNameToShow)}
                   </div>
                 )}
-              </button>
+              </React.Fragment>
             );
           })}
 
@@ -667,25 +725,45 @@ export default function MapSearch({ locale }: MapSearchProps) {
             if (!baseInfo || baseInfo.type === 'Small Camp') return null;
 
             const filterActive = filters.minorBases[name];
+            const isChurch = baseInfo.type === 'Church';
+            const minorLabelOffset = baseInfo.type === 'Camp' ? '30px' : '38px';
 
             return (
-              <button
-                key={`minor-${name}`}
-                onClick={() => handleBaseClick('minor', name, pos)}
-                style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 w-16 h-16 transition-all z-10 cursor-pointer drop-shadow-md hover:scale-110 ${
-                  filterActive ? 'ring-2 ring-yellow-300 rounded-full' : ''
-                }`}
-                title={transText(name)}
-              >
-                <Image 
-                  src={`/icon/${baseInfo.type}.png`} 
-                  alt={baseInfo.type} 
-                  fill 
-                  sizes="64px"
-                  className="object-contain pointer-events-none"
-                />
-              </button>
+              <React.Fragment key={`minor-frag-${name}`}>
+                <button
+                  key={`minor-${name}`}
+                  onClick={() => handleBaseClick('minor', name, pos)}
+                  style={{ 
+                    left: `${(pos.x / 1000) * 100}%`, 
+                    top: `${(pos.y / 1000) * 100}%`,
+                    filter: 'drop-shadow(0 0 8px #000000)'
+                  }}
+                  className={`absolute -translate-x-1/2 -translate-y-1/2 w-24 h-24 transition-all z-10 cursor-pointer hover:scale-110 ${
+                    filterActive ? 'ring-2 ring-yellow-300 rounded-full' : ''
+                  }`}
+                  title={transText(name)}
+                >
+                  <Image 
+                    src={`/icon/${baseInfo.type}.png`} 
+                    alt={baseInfo.type} 
+                    fill 
+                    sizes="96px"
+                    className="object-contain pointer-events-none"
+                  />
+                </button>
+                {!isChurch && (
+                  <div 
+                    className="absolute text-white text-[12px] font-normal tracking-wider whitespace-nowrap bg-black/80 border border-gray-800/80 px-1.5 py-0.5 rounded shadow pointer-events-none z-20"
+                    style={{ 
+                      left: `${(pos.x / 1000) * 100}%`, 
+                      top: `${(pos.y / 1000) * 100}%`, 
+                      transform: `translate(-50%, ${minorLabelOffset})` 
+                    }}
+                  >
+                    {transText(baseInfo.text)}
+                  </div>
+                )}
+              </React.Fragment>
             );
           })}
 
@@ -728,25 +806,55 @@ export default function MapSearch({ locale }: MapSearchProps) {
             const iconSrc = isDanger ? '/icon/redBoss.png' : '/icon/field-boss.png';
 
             return (
-              <button
-                key={`fieldBoss-${name}`}
-                onClick={() => handleBaseClick('fieldBoss', name, pos)}
-                style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 w-12 h-12 transition-all z-10 cursor-pointer drop-shadow-md hover:scale-110 ${
-                  filterActive ? 'ring-2 ring-rose-500 rounded-full' : ''
-                }`}
-                title={transText(name)}
-              >
-                <Image 
-                  src={iconSrc} 
-                  alt="fieldBoss" 
-                  fill 
-                  sizes="48px"
-                  className="object-contain pointer-events-none"
-                />
-              </button>
+              <React.Fragment key={`fieldBoss-frag-${name}`}>
+                <button
+                  key={`fieldBoss-${name}`}
+                  onClick={() => handleBaseClick('fieldBoss', name, pos)}
+                  style={{ 
+                    left: `${(pos.x / 1000) * 100}%`, 
+                    top: `${(pos.y / 1000) * 100}%`,
+                    filter: 'drop-shadow(0 0 6px #000000) drop-shadow(0 0 2px #000000)'
+                  }}
+                  className={`absolute -translate-x-1/2 -translate-y-1/2 w-12 h-12 transition-all z-10 cursor-pointer hover:scale-110 ${
+                    filterActive ? 'ring-2 ring-rose-500 rounded-full' : ''
+                  }`}
+                  title={transText(name)}
+                >
+                  <Image 
+                    src={iconSrc} 
+                    alt="fieldBoss" 
+                    fill 
+                    sizes="48px"
+                    className="object-contain pointer-events-none"
+                  />
+                </button>
+                <div 
+                  className="absolute text-white text-[12px] font-normal tracking-wider whitespace-nowrap bg-black/80 border border-gray-800/80 px-1.5 py-0.5 rounded shadow pointer-events-none z-20"
+                  style={{ 
+                    left: `${(pos.x / 1000) * 100}%`, 
+                    top: `${(pos.y / 1000) * 100}%`, 
+                    transform: 'translate(-50%, 20px)' 
+                  }}
+                >
+                  {transText(bossInfo.text)}
+                </div>
+              </React.Fragment>
             );
           })}
+
+          {/* 中央砦 (Castle Boss) の敵名称表示 */}
+          {activePatterns.length === 1 && activePatterns[0].castleBoss && (
+            <div 
+              className="absolute text-white text-[14px] font-normal tracking-wider text-center whitespace-nowrap bg-black/80 border border-gray-800/80 px-1.5 py-0.5 rounded shadow pointer-events-none z-20"
+              style={{ 
+                left: '45.5%', 
+                top: '48%', 
+                transform: 'translate(calc(-50% + 8px), -50%)' 
+              }}
+            >
+              {transText('Center Fort')}: {transText(activePatterns[0].castleBoss)}
+            </div>
+          )}
 
           {/* 祝福 (rotBlessings) の描画（腐れ森マップ限定、かつ確定パターンに存在する場合） */}
           {activePatterns.length === 1 && currentMap === '腐れ森' && (() => {
@@ -787,14 +895,14 @@ export default function MapSearch({ locale }: MapSearchProps) {
                     key="nc1"
                     onClick={() => setActivePopup({ type: 'nightCircle', name: `Night Event 1: ${item.text}`, x: pos.x, y: pos.y })}
                     style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                    className="absolute -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full cursor-pointer z-15 drop-shadow-md ring-4 ring-violet-800/80 transition-all hover:scale-110 flex items-center justify-center animate-pulse"
+                    className="absolute -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full cursor-pointer z-15 drop-shadow-md ring-4 ring-orange-700 bg-orange-700 transition-all hover:scale-110 flex items-center justify-center animate-pulse"
                     title={`夜イベント: ${transText(item.text)}`}
                   >
                     <div 
-                      className="absolute text-white text-[9px] font-bold whitespace-nowrap bg-violet-950/80 border border-violet-800/50 px-1.5 py-0.5 rounded shadow-lg pointer-events-none"
-                      style={{ bottom: '-30px', left: '50%', transform: 'translateX(-50%)' }}
+                      className="absolute text-white text-[14px] font-bold whitespace-nowrap bg-orange-950/90 border border-orange-700/50 px-2 py-0.5 rounded shadow-lg pointer-events-none"
+                      style={{ bottom: '-45px', left: '50%', transform: 'translateX(-50%)' }}
                     >
-                      <div className="text-center text-[7px] text-violet-300 leading-none">DAY 1</div>
+                      <div className="text-center text-[11px] text-orange-300 leading-none mb-0.5">DAY 1</div>
                       {transText(item.text)}
                     </div>
                   </button>
@@ -812,14 +920,14 @@ export default function MapSearch({ locale }: MapSearchProps) {
                     key="nc2"
                     onClick={() => setActivePopup({ type: 'nightCircle', name: `Night Event 2: ${item.text}`, x: pos.x, y: pos.y })}
                     style={{ left: `${(pos.x / 1000) * 100}%`, top: `${(pos.y / 1000) * 100}%` }}
-                    className="absolute -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full cursor-pointer z-15 drop-shadow-md ring-4 ring-violet-800/80 transition-all hover:scale-110 flex items-center justify-center animate-pulse"
+                    className="absolute -translate-x-1/2 -translate-y-1/2 w-10 h-10 rounded-full cursor-pointer z-15 drop-shadow-md ring-4 ring-violet-800 bg-violet-800 transition-all hover:scale-110 flex items-center justify-center animate-pulse"
                     title={`夜イベント: ${transText(item.text)}`}
                   >
                     <div 
-                      className="absolute text-white text-[9px] font-bold whitespace-nowrap bg-violet-950/80 border border-violet-800/50 px-1.5 py-0.5 rounded shadow-lg pointer-events-none"
-                      style={{ bottom: '-30px', left: '50%', transform: 'translateX(-50%)' }}
+                      className="absolute text-white text-[14px] font-bold whitespace-nowrap bg-violet-950/90 border border-violet-800/50 px-2 py-0.5 rounded shadow-lg pointer-events-none"
+                      style={{ bottom: '-45px', left: '50%', transform: 'translateX(-50%)' }}
                     >
-                      <div className="text-center text-[7px] text-violet-300 leading-none">DAY 2</div>
+                      <div className="text-center text-[11px] text-violet-300 leading-none mb-0.5">DAY 2</div>
                       {transText(item.text)}
                     </div>
                   </button>
@@ -836,24 +944,39 @@ export default function MapSearch({ locale }: MapSearchProps) {
                 top: `${(activePopup.y / 1000) * 100}%`,
                 transform: `translate(-50%, ${activePopup.y > 600 ? '-105%' : '15%'})`
               }}
-              className="absolute bg-gray-950/95 border border-gray-800 rounded-xl p-4 backdrop-blur-md shadow-2xl z-30 w-72 max-h-80 overflow-y-auto select-text pointer-events-auto text-gray-100"
+              className={`absolute bg-gray-950/95 border border-gray-800 rounded-xl backdrop-blur-md shadow-2xl z-30 select-text pointer-events-auto text-gray-100 ${
+                activePopup.type === 'major' && !filters.majorBases[activePopup.name] ? 'w-fit p-4' : 'w-72 max-h-80 overflow-y-auto p-3'
+              }`}
             >
-              <div className="flex justify-between items-start mb-2 border-b border-gray-800 pb-1.5">
-                <div>
-                  <h4 className="font-bold text-xs text-blue-400">
-                    {transText(activePopup.type.toUpperCase())}
-                  </h4>
-                  <h3 className="font-bold text-sm text-white">
-                    {transText(activePopup.name)}
-                  </h3>
-                </div>
+              {/* 大拠点未選択時の絶対配置バツボタン */}
+              {activePopup.type === 'major' && !filters.majorBases[activePopup.name] && (
                 <button 
                   onClick={() => setActivePopup(null)}
-                  className="text-gray-500 hover:text-white transition-colors"
+                  className="absolute -top-2 -right-2 p-1.5 bg-gray-900 border border-gray-800 rounded-full text-gray-500 hover:text-white transition-colors z-40 shadow-md"
                 >
                   <X className="w-3.5 h-3.5" />
                 </button>
-              </div>
+              )}
+
+              {/* 通常のヘッダー */}
+              {!(activePopup.type === 'major' && !filters.majorBases[activePopup.name]) && (
+                <div className="flex justify-between items-start mb-2 border-b border-gray-800 pb-1.5">
+                  <div>
+                    <h4 className="font-bold text-xs text-blue-400">
+                      {transText(activePopup.type.toUpperCase())}
+                    </h4>
+                    <h3 className="font-bold text-sm text-white">
+                      {transText(activePopup.name)}
+                    </h3>
+                  </div>
+                  <button 
+                    onClick={() => setActivePopup(null)}
+                    className="text-gray-500 hover:text-white transition-colors"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+              )}
 
               {/* 選択肢/状態の描画 */}
               <div className="space-y-1 text-xs">
@@ -944,34 +1067,45 @@ export default function MapSearch({ locale }: MapSearchProps) {
                   }
 
                   return (
-                    <div className="space-y-1.5 max-h-56 overflow-y-auto">
-                      <p className="text-[10px] text-gray-400 mb-1">条件を絞り込む:</p>
-                      {opts.map((opt, i) => (
-                        <button
-                          key={i}
-                          onClick={() => handleFilterSelect('major', activePopup.name, opt)}
-                          className="w-full text-left p-2 rounded hover:bg-gray-900 border border-gray-900 hover:border-gray-800 transition-colors flex items-center gap-3"
-                        >
-                          <div className="relative w-12 h-12 shrink-0 bg-gray-950/40 rounded border border-gray-800 p-1 flex items-center justify-center">
-                            <Image 
-                              src={`/icon/${opt.type}.png`} 
-                              alt={opt.type} 
-                              fill 
-                              sizes="40px"
-                              className="object-contain pointer-events-none p-0.5"
-                            />
-                          </div>
-                          <div className="flex-grow min-w-0">
-                            <span className="font-semibold text-gray-200 block truncate text-xs">{transText(opt.text)}</span>
-                            <span className="text-[9px] text-gray-500 uppercase tracking-wider block mt-0.5">{transText(opt.type)}</span>
-                          </div>
-                          {opt.element && (
-                            <div className="shrink-0">
-                              {getElementBadge(opt.element)}
+                    <div className="flex gap-3.5 items-center justify-center p-1">
+                      {opts.map((opt, i) => {
+                        const displayName = transText(opt.text);
+                        const showText = ['老獅子', '獅子の混種', '失地騎士'].includes(displayName);
+                        return (
+                          <button
+                            key={i}
+                            onClick={() => handleFilterSelect('major', activePopup.name, opt)}
+                            className="relative w-20 h-20 bg-gray-900 border border-gray-800 hover:border-gray-600 rounded-xl p-1.5 flex items-center justify-center transition-all hover:scale-105 active:scale-95 group shadow-sm shrink-0 overflow-hidden"
+                            title={displayName}
+                          >
+                            <div className="relative w-full h-full">
+                              <Image 
+                                src={`/icon/${opt.type}.png`} 
+                                alt={opt.type} 
+                                fill 
+                                sizes="64px"
+                                className="object-contain pointer-events-none p-0.5"
+                              />
                             </div>
-                          )}
-                        </button>
-                      ))}
+                            {opt.element && (
+                              <div className="absolute bottom-1 left-1.5 z-20 drop-shadow-md w-7 h-7">
+                                <Image 
+                                  src={`/icon/element/${opt.element}.png`} 
+                                  alt={opt.element} 
+                                  fill 
+                                  sizes="28px"
+                                  className="object-contain pointer-events-none"
+                                />
+                              </div>
+                            )}
+                            {showText && (
+                              <span className="absolute bottom-0 left-0 right-0 text-[9px] text-white font-bold tracking-tight text-center py-0.5 bg-black/60 z-30 leading-none truncate px-0.5 border-t border-gray-800/40">
+                                {displayName}
+                              </span>
+                            )}
+                          </button>
+                        );
+                      })}
                     </div>
                   );
                 })()}
@@ -1159,6 +1293,19 @@ export default function MapSearch({ locale }: MapSearchProps) {
             </div>
           )}
         </div>
+
+        {/* マップの下部にリセットボタンを配置 */}
+        <button
+          onClick={() => {
+            setCurrentMap(null);
+            setSelectedNightLord(undefined);
+            handleBackToSelect();
+          }}
+          className="px-8 py-3 bg-red-950/40 hover:bg-red-900/60 text-red-200 hover:text-red-100 border border-red-800/50 text-sm font-bold rounded-xl transition-all flex items-center justify-center gap-1.5 shadow-lg"
+        >
+          <RotateCcw className="w-4 h-4" />
+          リセット
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
 {
   "title": "Nightreign Map",
-  "description": "An interactive map for ELDEN RING NIGHTREIGN, fully optimized for both desktop and mobile. Easily find all Night Lord spawn points, boss locations, and event patterns to aid you in your journey through the lands between.",
+  "description": "Please select a MAP and a Boss.",
   "nightLord": "Night Lord",
   "specialEvent": "Special Event",
   "三つ首の獣": "Gladius",
@@ -122,5 +122,6 @@
   "instructionStep1": "Use the large icons to change the map or the selected Night Lord.",
   "instructionStep2": "Click a spawn point icon (eagle icon) to begin.",
   "instructionStep3": "Select other icons on the map to narrow down the results.",
-  "instructionDontShowAgain": "Don't show again"
+  "instructionDontShowAgain": "Don't show again",
+  "Center Fort": "Center Fort"
 }

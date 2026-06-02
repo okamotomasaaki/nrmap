@@ -1,6 +1,6 @@
 {
   "title": "夜王地图",
-  "description": "《艾尔登法环黑夜君临》互动地图，适用于PC和手机，方便查看夜王和Boss的出现地点及事件模式，助你探索广阔的世界。",
+  "description": "请分别选择地图和首领",
   "nightLord": "夜王",
   "specialEvent": "特别活动",
   "三つ首の獣": "格拉狄乌斯",
@@ -122,5 +122,6 @@
   "instructionStep1": "点击大图标以更换地图或选择夜王。",
   "instructionStep2": "点击生成点图标（鹰形图标）开始。",
   "instructionStep3": "点击地图上的其他图标以缩小结果范围。",
-  "instructionDontShowAgain": "不再显示"
+  "instructionDontShowAgain": "不再显示",
+  "Center Fort": "中央要塞"
 }
