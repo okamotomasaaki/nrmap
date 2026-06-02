@@ -326,8 +326,12 @@ export default function MapSearch({ locale }: MapSearchProps) {
   // 夜の王のリスト
   const availableNightLords = useMemo(() => {
     const set = new Set<string>();
-    defaultMapData.forEach(p => set.add(p.nightLord));
-    hollowMapData.forEach(p => set.add(p.nightLord));
+    defaultMapData.forEach(p => {
+      if (p.nightLord) set.add(p.nightLord);
+    });
+    hollowMapData.forEach(p => {
+      if (p.nightLord) set.add(p.nightLord);
+    });
     return Array.from(set);
   }, []);
 
