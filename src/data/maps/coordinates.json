@@ -78,11 +78,11 @@
     },
     "Northwest Temple Floor 2": {
       "x": 240,
-      "y": 460
+      "y": 440
     },
     "Northwest Temple Floor 3": {
       "x": 260,
-      "y": 460
+      "y": 420
     },
     "Southeast Temple Floor 1": {
       "x": 690,
@@ -90,11 +90,11 @@
     },
     "Southeast Temple Floor 2": {
       "x": 710,
-      "y": 685
+      "y": 665
     },
     "Southeast Temple Floor 3": {
       "x": 730,
-      "y": 685
+      "y": 645
     },
     "Southeast Ruin": {
       "x": 820,
@@ -119,8 +119,8 @@
       "y": 710
     },
     "Lake": {
-      "x": 450,
-      "y": 700
+      "x": 460,
+      "y": 670
     },
     "Stormhill South of Gate": {
       "x": 210,

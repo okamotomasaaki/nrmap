@@ -7135,7 +7135,7 @@
       "Artist's Shack": {
         "type": "Ruins",
         "text": "Sanguine Noble",
-        "element": null
+        "element": "bleed"
       },
       "Gatefront": {
         "type": "Ruins",
@@ -7150,7 +7150,7 @@
       "Minor Erdtree": {
         "type": "Ruins",
         "text": "Sanguine Noble",
-        "element": null
+        "element": "bleed"
       },
       "Northeast Mistwood": {
         "type": "Camp",
@@ -7170,7 +7170,7 @@
       "South Mistwood": {
         "type": "Ruins",
         "text": "Sanguine Noble",
-        "element": null
+        "element": "bleed"
       },
       "Summonwater": {
         "type": "Camp",
@@ -7180,17 +7180,17 @@
       "Summonwater Approach": {
         "type": "Ruins",
         "text": "Sanguine Noble",
-        "element": null
+        "element": "bleed"
       },
       "Waypoint Ruins": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "West Mistwood": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       }
     },
     "minorBases": {
@@ -7310,7 +7310,7 @@
       "South Lake": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "South Mistwood": {
         "type": "Camp",
@@ -7430,7 +7430,7 @@
       "Gatefront": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Groveside": {
         "type": "Great Church",
@@ -7440,12 +7440,12 @@
       "Minor Erdtree": {
         "type": "Ruins",
         "text": "Beastmen of Farum Azula",
-        "element": null
+        "element": "lightning"
       },
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Northwest Mistwood": {
         "type": "Ruins",
@@ -7460,12 +7460,12 @@
       "South Mistwood": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Summonwater": {
         "type": "Ruins",
         "text": "Beastmen of Farum Azula",
-        "element": null
+        "element": "lightning"
       },
       "Summonwater Approach": {
         "type": "Camp",
@@ -7475,12 +7475,12 @@
       "Waypoint Ruins": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "West Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       }
     },
     "minorBases": {
@@ -7570,7 +7570,7 @@
       "Artist's Shack": {
         "type": "Camp",
         "text": "Redmane Knights",
-        "element": null
+        "element": "fire"
       },
       "Gatefront": {
         "type": "Camp",
@@ -7580,17 +7580,17 @@
       "Groveside": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Minor Erdtree": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Redmane Knights",
-        "element": null
+        "element": "fire"
       },
       "Northwest Mistwood": {
         "type": "Camp",
@@ -7610,7 +7610,7 @@
       "Summonwater": {
         "type": "Camp",
         "text": "Redmane Knights",
-        "element": null
+        "element": "fire"
       },
       "Summonwater Approach": {
         "type": "Camp",
@@ -7625,7 +7625,7 @@
       "West Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       }
     },
     "minorBases": {
@@ -7721,7 +7721,7 @@
       "Groveside": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Minor Erdtree": {
         "type": "Camp",
@@ -7736,12 +7736,12 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "South Lake": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "South Mistwood": {
         "type": "Camp",
@@ -7756,7 +7756,7 @@
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Waypoint Ruins": {
         "type": "Fort",
@@ -7856,7 +7856,7 @@
       "Artist's Shack": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Gatefront": {
         "type": "Fort",
@@ -7871,7 +7871,7 @@
       "Minor Erdtree": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Northeast Mistwood": {
         "type": "Fort",
@@ -7881,32 +7881,32 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "South Lake": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "South Mistwood": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       },
       "Summonwater": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Summonwater Approach": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Waypoint Ruins": {
         "type": "Ruins",
         "text": "Battlemages",
-        "element": null
+        "element": "magic"
       },
       "West Mistwood": {
         "type": "Fort",
@@ -8016,7 +8016,7 @@
       "Minor Erdtree": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "Northeast Mistwood": {
         "type": "Camp",
@@ -8026,12 +8026,12 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "South Lake": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "South Mistwood": {
         "type": "Camp",
@@ -8046,7 +8046,7 @@
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       },
       "Waypoint Ruins": {
         "type": "Camp",
@@ -8150,7 +8150,7 @@
       "Artist's Shack": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Gatefront": {
         "type": "Fort",
@@ -8160,7 +8160,7 @@
       "Groveside": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Minor Erdtree": {
         "type": "Camp",
@@ -8175,17 +8175,17 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "South Lake": {
         "type": "Camp",
         "text": "Black Flame Monks",
-        "element": null
+        "element": "fire"
       },
       "South Mistwood": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Summonwater": {
         "type": "Camp",
@@ -8300,17 +8300,17 @@
       "Gatefront": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Groveside": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Minor Erdtree": {
         "type": "Ruins",
         "text": "Perfumer",
-        "element": null
+        "element": "poison"
       },
       "Northeast Mistwood": {
         "type": "Camp",
@@ -8325,7 +8325,7 @@
       "South Lake": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "South Mistwood": {
         "type": "Great Church",
@@ -8335,7 +8335,7 @@
       "Summonwater": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Summonwater Approach": {
         "type": "Camp",
@@ -8345,7 +8345,7 @@
       "Waypoint Ruins": {
         "type": "Great Church",
         "text": "Fire Monk",
-        "element": null
+        "element": "fire"
       },
       "West Mistwood": {
         "type": "Camp",
@@ -8436,22 +8436,22 @@
       "Artist's Shack": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Gatefront": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Groveside": {
         "type": "Camp",
         "text": "Royal Army Knights",
-        "element": null
+        "element": "lightning"
       },
       "Minor Erdtree": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Northeast Mistwood": {
         "type": "Great Church",
@@ -8461,7 +8461,7 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Royal Army Knights",
-        "element": null
+        "element": "lightning"
       },
       "South Lake": {
         "type": "Camp",
@@ -8476,12 +8476,12 @@
       "Summonwater": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "Summonwater Approach": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Waypoint Ruins": {
         "type": "Camp",
@@ -8491,7 +8491,7 @@
       "West Mistwood": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       }
     },
     "minorBases": {

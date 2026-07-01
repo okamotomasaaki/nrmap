@@ -18,7 +18,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -33,7 +33,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -43,7 +43,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -53,7 +53,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -150,7 +150,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -165,7 +165,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -282,12 +282,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -297,7 +297,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -414,7 +414,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -429,7 +429,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -449,7 +449,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -546,17 +546,17 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -566,7 +566,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -576,7 +576,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -678,7 +678,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -693,12 +693,12 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -708,7 +708,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -810,7 +810,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -830,7 +830,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -840,12 +840,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -942,12 +942,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -972,7 +972,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1074,12 +1074,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1094,7 +1094,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1206,12 +1206,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1226,7 +1226,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1236,7 +1236,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1338,7 +1338,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -1358,7 +1358,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1373,7 +1373,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -1470,7 +1470,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -1485,7 +1485,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1602,12 +1602,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1617,7 +1617,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1734,7 +1734,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -1764,7 +1764,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1866,12 +1866,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -1896,7 +1896,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -1998,7 +1998,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -2130,12 +2130,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -2150,7 +2150,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -2165,7 +2165,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -2266,12 +2266,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -2291,7 +2291,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -2402,7 +2402,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -2534,12 +2534,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -2564,12 +2564,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -2666,7 +2666,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -2798,7 +2798,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -2818,7 +2818,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -2828,7 +2828,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -2930,12 +2930,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3066,12 +3066,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3081,12 +3081,12 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3101,7 +3101,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -3198,7 +3198,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -3228,12 +3228,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -3330,12 +3330,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3355,7 +3355,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -3365,7 +3365,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -3462,12 +3462,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3477,7 +3477,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -3492,7 +3492,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -3594,12 +3594,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3609,7 +3609,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -3624,7 +3624,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -3726,7 +3726,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -3746,7 +3746,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -3756,12 +3756,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -3862,7 +3862,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -3897,7 +3897,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -3994,7 +3994,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -4024,12 +4024,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -4126,7 +4126,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -4151,7 +4151,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -4161,7 +4161,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -4258,22 +4258,22 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -4390,7 +4390,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -4420,7 +4420,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -4522,12 +4522,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -4547,12 +4547,12 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -4654,7 +4654,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -4664,12 +4664,12 @@
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -4689,7 +4689,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -4786,12 +4786,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -4918,12 +4918,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -4943,7 +4943,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -5050,12 +5050,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5080,12 +5080,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -5182,7 +5182,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -5217,7 +5217,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -5314,12 +5314,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5344,12 +5344,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -5450,12 +5450,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5582,12 +5582,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5602,7 +5602,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5617,7 +5617,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -5714,17 +5714,17 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -5734,7 +5734,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5846,12 +5846,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -5871,17 +5871,17 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -5978,7 +5978,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -6008,12 +6008,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -6110,7 +6110,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -6125,7 +6125,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -6140,12 +6140,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -6242,7 +6242,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -6262,12 +6262,12 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -6374,12 +6374,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -6389,7 +6389,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -6404,7 +6404,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -6506,12 +6506,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -6521,7 +6521,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -6541,7 +6541,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -6638,7 +6638,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -6648,7 +6648,7 @@
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -6658,17 +6658,17 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -6770,12 +6770,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -6790,7 +6790,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -6902,7 +6902,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -6922,7 +6922,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7034,7 +7034,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7069,7 +7069,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -7166,7 +7166,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7181,7 +7181,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -7196,7 +7196,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -7298,7 +7298,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7313,7 +7313,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -7328,7 +7328,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -7430,12 +7430,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7445,12 +7445,12 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7465,7 +7465,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -7562,7 +7562,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7582,7 +7582,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7694,12 +7694,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7714,7 +7714,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -7724,7 +7724,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -7826,7 +7826,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7851,7 +7851,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -7958,7 +7958,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -7968,7 +7968,7 @@
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -7993,7 +7993,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -8090,12 +8090,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -8105,7 +8105,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -8125,7 +8125,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -8222,12 +8222,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -8252,12 +8252,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -8354,12 +8354,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -8384,7 +8384,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -8486,7 +8486,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -8506,12 +8506,12 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -8521,7 +8521,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -8618,7 +8618,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -8750,12 +8750,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -8882,7 +8882,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -8897,7 +8897,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -8912,7 +8912,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -9014,12 +9014,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -9049,7 +9049,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -9146,7 +9146,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -9176,7 +9176,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -9278,12 +9278,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -9293,7 +9293,7 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -9303,7 +9303,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -9410,7 +9410,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -9440,7 +9440,7 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -9542,7 +9542,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -9562,7 +9562,7 @@
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -9674,12 +9674,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -9704,12 +9704,12 @@
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Dragonkin Soldier",
-        "element": null
+        "element": "frostbite"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -9810,7 +9810,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -9825,12 +9825,12 @@
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Draconic Tree Sentinel",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -9946,7 +9946,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -9956,12 +9956,12 @@
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 2": {
         "type": "Sorcerer's Rise",
         "text": "Godskin Duo",
-        "element": null
+        "element": "fire"
       },
       "Northwest Temple Floor 3": {
         "type": "Sorcerer's Rise",
@@ -10078,12 +10078,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Fire Knights",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -10103,7 +10103,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -10113,7 +10113,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",
@@ -10210,12 +10210,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -10235,7 +10235,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Valiant Gargoyle",
-        "element": null
+        "element": "poison"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -10342,7 +10342,7 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
@@ -10367,7 +10367,7 @@
       "Southeast Temple Floor 1": {
         "type": "Sorcerer's Rise",
         "text": "Smelter Demon",
-        "element": null
+        "element": "fire"
       },
       "Southeast Temple Floor 2": {
         "type": "Sorcerer's Rise",
@@ -10474,12 +10474,12 @@
       "Northwest Castle": {
         "type": "Castle",
         "text": "Godskins",
-        "element": null
+        "element": "fire"
       },
       "Southeast Castle": {
         "type": "Castle",
         "text": "Cleanrot Knights",
-        "element": null
+        "element": "poison"
       },
       "Northwest Temple Floor 1": {
         "type": "Sorcerer's Rise",
@@ -10509,7 +10509,7 @@
       "Southeast Temple Floor 3": {
         "type": "Sorcerer's Rise",
         "text": "Great Wyrm",
-        "element": null
+        "element": "fire"
       },
       "Southeast Ruin": {
         "type": "Ruins",

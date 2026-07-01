@@ -3,6 +3,110 @@
 :root {
   --background: #030712;
   --foreground: #f3f4f6;
+
+  /* SP (mobile) values in vw */
+  --castle-basement-offset: 1.3vw;
+  
+  --spawn-size: 5.2vw;
+  --major-base-size: 6.9vw;
+  --evergaol-size: 3.5vw;
+  --field-boss-size: 3.5vw;
+  
+  --font-size-base: 1.04vw;
+  --label-offset-camp: calc(2.2vw + 1px);
+  --label-offset-other: calc(2.9vw + 2px);
+  --label-offset-rise-church: calc(var(--label-offset-other) * 1.5);
+  
+  --element-icon-size: 1.95vw;
+  --element-icon-bottom: 1.04vw;
+  --element-icon-right: 0.65vw;
+
+  --popup-width: 55vw;
+  --popup-width-large: 83vw;
+  --popup-max-height: 60vw;
+  --popup-padding: 2.5vw;
+  --popup-padding-large: 3vw;
+  --popup-font-title: 2.8vw;
+  --popup-font-text: 2.2vw;
+  --popup-font-badge: 1.8vw;
+  --popup-gap: 1.5vw;
+  
+  --spawn-border: 1px;
+  --element-badge-size: 13vw;
+  
+  --night-circle-label-bottom: -3.3vw;
+  --day3-boss-card-padding: 1vw;
+  --day3-boss-card-gap: 0.6vw;
+  --day3-boss-card-bottom: 1.5vw;
+  --day3-boss-card-right: 1.5vw;
+  --day3-boss-icon-size: 9.3vw;
+  --day3-boss-font-title: 1.5vw;
+  --day3-boss-font-text: 1.6vw;
+
+  --blessing-size: 2.3vw;
+  --font-size-castle-boss: 1.17vw;
+  --label-offset-field-boss-gap: 0.52vw;
+  --font-size-night-title: 0.9vw;
+  --font-size-night-sub: 0.7vw;
+
+  --night-circle-size: 1.35vw;
+  --font-size-night-circle-text: 1.1vw;
+  --font-size-night-circle-badge: 0.9vw;
+  --night-circle-label-offset: -1.65vw;
+}
+
+@media (min-width: 768px) {
+  :root {
+    /* PC values in px */
+    --castle-basement-offset: 15px;
+    
+    --spawn-size: 64px;
+    --major-base-size: 96px;
+    --evergaol-size: 48px;
+    --field-boss-size: 48px;
+    
+    --font-size-base: 14px;
+    --label-offset-camp: 30px;
+    --label-offset-other: 38px;
+    --label-offset-rise-church: calc(var(--label-offset-other) * 1.5 - 10px);
+    
+    --element-icon-size: 28px;
+    --element-icon-bottom: 16px;
+    --element-icon-right: 8px;
+
+    --popup-width: 288px;
+    --popup-width-large: 488px;
+    --popup-max-height: 320px;
+    --popup-padding: 12px;
+    --popup-padding-large: 16px;
+    --popup-font-title: 14px;
+    --popup-font-text: 12px;
+    --popup-font-badge: 10px;
+    --popup-gap: 8px;
+    
+    --spawn-border: 3px;
+    --element-badge-size: 80px;
+    
+    --night-circle-label-bottom: -45px;
+    --day3-boss-card-padding: 12px;
+    --day3-boss-card-gap: 8px;
+    --day3-boss-card-bottom: 16px;
+    --day3-boss-card-right: 16px;
+    --day3-boss-icon-size: 168px;
+    --day3-boss-font-title: 11px;
+    --day3-boss-font-text: 12px;
+
+    --blessing-size: 32px;
+    --font-size-castle-boss: 16px;
+    --label-offset-field-boss-gap: 6px;
+    --font-size-night-title: 14px;
+    --font-size-night-sub: 11px;
+
+    --night-circle-size: 48px;
+    --font-size-night-circle-text: 12px;
+    --font-size-night-circle-badge: 10px;
+    --night-circle-label-offset: -45px;
+  }
 }
 
 @theme inline {
@@ -15,7 +119,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  overflow: hidden;
+  overflow: auto;
 }
 
 /* スタイリッシュなスクロールバー */

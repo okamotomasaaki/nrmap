@@ -7978,7 +7978,7 @@
       "Alexander Spot": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Artist's Shack": {
         "type": "Camp",
@@ -7988,12 +7988,12 @@
       "Gatefront": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Groveside": {
         "type": "Camp",
         "text": "Death Knight",
-        "element": null
+        "element": "lightning"
       },
       "Northeast Mistwood": {
         "type": "Camp",
@@ -8013,17 +8013,17 @@
       "Northwest Stormhill": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "South Lake": {
         "type": "Great Church",
         "text": "Fire Monk",
-        "element": null
+        "element": "fire"
       },
       "Stormhill North of Gate": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Summonwater": {
         "type": "Camp",
@@ -8153,27 +8153,27 @@
       "Alexander Spot": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       },
       "Artist's Shack": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       },
       "Gatefront": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Groveside": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       },
       "Northeast Stormhill": {
         "type": "Great Church",
@@ -8183,17 +8183,17 @@
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Northwest Stormhill": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "South Lake": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "Stormhill North of Gate": {
         "type": "Camp",
@@ -8208,7 +8208,7 @@
       "Summonwater Approach": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       }
     },
     "minorBases": {
@@ -8329,12 +8329,12 @@
       "Artist's Shack": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Gatefront": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Groveside": {
         "type": "Camp",
@@ -8369,7 +8369,7 @@
       "Stormhill North of Gate": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       },
       "Summonwater": {
         "type": "Camp",
@@ -8504,7 +8504,7 @@
       "Artist's Shack": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Gatefront": {
         "type": "Camp",
@@ -8519,7 +8519,7 @@
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Kindreds of Rot",
-        "element": null
+        "element": "poison"
       },
       "Northeast Stormhill": {
         "type": "Ruins",
@@ -8534,7 +8534,7 @@
       "Northwest Stormhill": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       },
       "South Lake": {
         "type": "Camp",
@@ -8544,7 +8544,7 @@
       "Stormhill North of Gate": {
         "type": "Ruins",
         "text": "Wormface",
-        "element": null
+        "element": "death"
       },
       "Summonwater": {
         "type": "Fort",
@@ -8554,7 +8554,7 @@
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       }
     },
     "minorBases": {
@@ -8679,17 +8679,17 @@
       "Gatefront": {
         "type": "Ruins",
         "text": "Albinauric Archers",
-        "element": null
+        "element": "frostbite"
       },
       "Groveside": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Northeast Mistwood": {
         "type": "Ruins",
         "text": "Albinauric Archers",
-        "element": null
+        "element": "frostbite"
       },
       "Northeast Stormhill": {
         "type": "Camp",
@@ -8714,7 +8714,7 @@
       "Stormhill North of Gate": {
         "type": "Ruins",
         "text": "Albinauric Archers",
-        "element": null
+        "element": "frostbite"
       },
       "Summonwater": {
         "type": "Camp",
@@ -8859,7 +8859,7 @@
       "Groveside": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Northeast Mistwood": {
         "type": "Camp",
@@ -8869,12 +8869,12 @@
       "Northeast Stormhill": {
         "type": "Camp",
         "text": "Sanguine Nobles",
-        "element": null
+        "element": "bleed"
       },
       "Northwest Mistwood": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Northwest Stormhill": {
         "type": "Camp",
@@ -8889,17 +8889,17 @@
       "Stormhill North of Gate": {
         "type": "Great Church",
         "text": "Fire Monk",
-        "element": null
+        "element": "fire"
       },
       "Summonwater": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       }
     },
     "minorBases": {
@@ -9015,7 +9015,7 @@
       "Alexander Spot": {
         "type": "Camp",
         "text": "Divine Bird Warrior",
-        "element": null
+        "element": "holy"
       },
       "Artist's Shack": {
         "type": "Camp",
@@ -9025,17 +9025,17 @@
       "Gatefront": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       },
       "Groveside": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       },
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "Northeast Stormhill": {
         "type": "Camp",
@@ -9045,7 +9045,7 @@
       "Northwest Mistwood": {
         "type": "Great Church",
         "text": "Fire Monk",
-        "element": null
+        "element": "fire"
       },
       "Northwest Stormhill": {
         "type": "Camp",
@@ -9055,22 +9055,22 @@
       "South Lake": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       },
       "Stormhill North of Gate": {
         "type": "Great Church",
         "text": "Oracle Envoys",
-        "element": null
+        "element": "holy"
       },
       "Summonwater": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       },
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       }
     },
     "minorBases": {
@@ -9190,7 +9190,7 @@
       "Alexander Spot": {
         "type": "Camp",
         "text": "Black Flame Monks",
-        "element": null
+        "element": "fire"
       },
       "Artist's Shack": {
         "type": "Fort",
@@ -9200,7 +9200,7 @@
       "Gatefront": {
         "type": "Camp",
         "text": "Flame Chariots",
-        "element": null
+        "element": "fire"
       },
       "Groveside": {
         "type": "Camp",
@@ -9210,32 +9210,32 @@
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Royal Army Knights",
-        "element": null
+        "element": "lightning"
       },
       "Northeast Stormhill": {
         "type": "Camp",
         "text": "Royal Army Knights",
-        "element": null
+        "element": "lightning"
       },
       "Northwest Mistwood": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Northwest Stormhill": {
         "type": "Camp",
         "text": "Nomads",
-        "element": null
+        "element": "madness"
       },
       "South Lake": {
         "type": "Camp",
         "text": "Royal Army Knights",
-        "element": null
+        "element": "lightning"
       },
       "Stormhill North of Gate": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       },
       "Summonwater": {
         "type": "Camp",
@@ -9245,7 +9245,7 @@
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       }
     },
     "minorBases": {
@@ -9365,17 +9365,17 @@
       "Alexander Spot": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "Artist's Shack": {
         "type": "Ruins",
         "text": "Battlemages",
-        "element": null
+        "element": "magic"
       },
       "Gatefront": {
         "type": "Camp",
         "text": "Frost Crayfish",
-        "element": null
+        "element": "frostbite"
       },
       "Groveside": {
         "type": "Camp",
@@ -9390,7 +9390,7 @@
       "Northeast Stormhill": {
         "type": "Fort",
         "text": "Crystalian Alliance",
-        "element": null
+        "element": "magic"
       },
       "Northwest Mistwood": {
         "type": "Camp",
@@ -9400,12 +9400,12 @@
       "Northwest Stormhill": {
         "type": "Camp",
         "text": "Kindreds of Rot",
-        "element": null
+        "element": "poison"
       },
       "South Lake": {
         "type": "Ruins",
         "text": "Perfumer",
-        "element": null
+        "element": "poison"
       },
       "Stormhill North of Gate": {
         "type": "Fort",
@@ -9420,7 +9420,7 @@
       "Summonwater Approach": {
         "type": "Ruins",
         "text": "Battlemages",
-        "element": null
+        "element": "magic"
       }
     },
     "minorBases": {
@@ -9555,17 +9555,17 @@
       "Groveside": {
         "type": "Camp",
         "text": "Cleanrot Knight",
-        "element": null
+        "element": "poison"
       },
       "Northeast Mistwood": {
         "type": "Camp",
         "text": "Black Flame Monks",
-        "element": null
+        "element": "fire"
       },
       "Northeast Stormhill": {
         "type": "Camp",
         "text": "Frenzied Flame Troll",
-        "element": null
+        "element": "madness"
       },
       "Northwest Mistwood": {
         "type": "Great Church",
@@ -9595,7 +9595,7 @@
       "Summonwater Approach": {
         "type": "Camp",
         "text": "Kindreds of Rot",
-        "element": null
+        "element": "poison"
       }
     },
     "minorBases": {
