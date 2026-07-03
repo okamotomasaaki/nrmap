@@ -1568,7 +1568,8 @@ export default function MapSearch() {
                   className="absolute z-20 bg-slate-950/90 border border-rose-500/50 rounded-2xl backdrop-blur-md shadow-2xl flex flex-col items-center animate-in fade-in zoom-in-95 duration-300"
                   style={{
                     bottom: 'var(--day3-boss-card-bottom)',
-                    right: 'var(--day3-boss-card-right)',
+                    left: currentMap === '大空洞' ? 'var(--day3-boss-card-right)' : undefined,
+                    right: currentMap === '大空洞' ? undefined : 'var(--day3-boss-card-right)',
                     padding: 'var(--day3-boss-card-padding)',
                     gap: 'var(--day3-boss-card-gap)'
                   }}
@@ -2022,8 +2023,8 @@ export default function MapSearch() {
             );
           })()}
 
-          {/* タイマー表示 (左下) */}
-          <div className={`absolute bottom-2 left-2 md:bottom-4 md:left-4 z-30 border rounded-lg md:rounded-xl px-1 py-0.5 md:px-3 md:py-2 flex flex-col items-center justify-center gap-0 md:gap-1 shadow-2xl backdrop-blur-md select-none min-w-[40px] md:min-w-[150px] transition-all duration-300 ${
+          {/* タイマー表示 (左下/大空洞では右下) */}
+          <div className={`absolute bottom-2 ${currentMap === '大空洞' ? 'right-2 md:right-4' : 'left-2 md:left-4'} md:bottom-4 z-30 border rounded-lg md:rounded-xl px-1 py-0.5 md:px-3 md:py-2 flex flex-col items-center justify-center gap-0 md:gap-1 shadow-2xl backdrop-blur-md select-none min-w-[40px] md:min-w-[150px] transition-all duration-300 ${
             timerSeconds <= 10 
               ? 'bg-red-950/90 border-red-500/80 animate-pulse' 
               : 'bg-slate-950/85 border-gray-800/80'
@@ -2050,6 +2051,21 @@ export default function MapSearch() {
           <RotateCcw className="w-5 h-5 md:w-6 md:h-6" />
           {autoResetSeconds !== null ? `リセット (自動リセットまで ${formatTime(autoResetSeconds)})` : 'リセット'}
         </button>
+
+        {currentMap === '大空洞' && (
+          <div className="w-full flex justify-center mt-3 md:mt-4 shrink-0">
+            <div className="relative w-full rounded-2xl overflow-hidden border border-gray-800/60 shadow-2xl">
+              <Image 
+                src="/crystal.jpg" 
+                alt="Crystal" 
+                width={700} 
+                height={500} 
+                className="w-full h-auto object-contain pointer-events-none" 
+                priority
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
