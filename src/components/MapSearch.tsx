@@ -1,7 +1,8 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useCallback } from 'react';
+import React, { useState, useMemo, useEffect, useCallback, Suspense } from 'react';
 import Image from 'next/image';
+import { useSearchParams } from 'next/navigation';
 import { 
   User, 
   Compass, 
@@ -269,7 +270,7 @@ interface FilterOption {
   element?: string | null;
 }
 
-export default function MapSearch() {
+function MapSearchContent() {
   // 翻訳と言語
   const currentLocale = 'ja';
   const t: Record<string, string> = jaTrans;
@@ -452,6 +453,17 @@ export default function MapSearch() {
         return !filters.castleBoss || p.castleBoss === filters.castleBoss;
       });
   }, [mapPatterns, selectedNightLord, selectedSpawnPoint, filters]);
+
+  // 決定されたパターンの元配列のインデックスを特定
+  const originalIndex = useMemo(() => {
+    if (!currentMap) return -1;
+    if (currentMap === '大空洞') {
+      if (activePatterns.length === 0) return -1;
+      return mapPatterns.indexOf(activePatterns[0]);
+    }
+    if (activePatterns.length !== 1) return -1;
+    return mapPatterns.indexOf(activePatterns[0]);
+  }, [activePatterns, mapPatterns, currentMap]);
 
   // 3. 現在の候補で出現しうる選択肢のユニークなリストを取得するヘルパー
   const getAvailableOptions = useMemo(() => {
@@ -673,6 +685,125 @@ export default function MapSearch() {
   // 画面遷移ステート
   const [isMapScreen, setIsMapScreen] = useState<boolean>(false);
 
+  // コピー状態管理ステート
+  const [copied, setCopied] = useState<boolean>(false);
+
+  // URLをクリップボードにコピーするハンドラ
+  const handleCopyUrl = useCallback(() => {
+    if (typeof window !== 'undefined') {
+      navigator.clipboard.writeText(window.location.href)
+        .then(() => {
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1500);
+        })
+        .catch(err => {
+          console.error('Failed to copy: ', err);
+        });
+    }
+  }, []);
+
+  const searchParams = useSearchParams();
+
+  // URLパラメータ（id=crater-8など）を解析して初期状態を設定する
+  useEffect(() => {
+    const idParam = searchParams.get('id');
+    if (!idParam) return;
+
+    const parts = idParam.split('-');
+    if (parts.length !== 2) return;
+
+    const mapKeyLower = parts[0].toLowerCase();
+    const patternIdx = parseInt(parts[1], 10);
+    if (isNaN(patternIdx) || patternIdx < 0) return;
+
+    const matchedMapName = Object.keys(MAP_IMAGE_MAP).find(
+      key => MAP_IMAGE_MAP[key].toLowerCase() === mapKeyLower
+    );
+
+    if (!matchedMapName) return;
+
+    const patterns = MAP_DATA_MAP[matchedMapName];
+    if (!patterns || patternIdx >= patterns.length) return;
+
+    const targetPattern = patterns[patternIdx];
+    if (!targetPattern) return;
+
+    const nextFilters: {
+      majorBases: Record<string, FilterOption>;
+      minorBases: Record<string, FilterOption>;
+      evergaols: Record<string, FilterOption>;
+      fieldBosses: Record<string, FilterOption>;
+      castleBoss: string | null;
+    } = {
+      majorBases: {},
+      minorBases: {},
+      evergaols: {},
+      fieldBosses: {},
+      castleBoss: targetPattern.castleBoss || null
+    };
+
+    if (targetPattern.majorBases) {
+      Object.entries(targetPattern.majorBases).forEach(([name, val]) => {
+        if (val) {
+          let element = val.element;
+          if (val.text === 'Divine Bird Warrior' && element !== 'holy') {
+            element = 'holy';
+          } else if ((val.text === 'Spider Scorpions' || val.text === 'Ruin: Curseblade & Spider Scorpions') && element !== 'poison') {
+            element = 'poison';
+          } else if (val.text === 'Ancient Heroes of Zamor' && element !== 'frostbite') {
+            element = 'frostbite';
+          }
+          nextFilters.majorBases[name] = { type: val.type, text: val.text, element };
+        }
+      });
+    }
+
+    if (targetPattern.minorBases) {
+      Object.entries(targetPattern.minorBases).forEach(([name, val]) => {
+        if (val) {
+          nextFilters.minorBases[name] = { type: val.type, text: val.text, element: null };
+        }
+      });
+    }
+
+    if (targetPattern.evergaols) {
+      Object.entries(targetPattern.evergaols).forEach(([name, val]) => {
+        if (val) {
+          nextFilters.evergaols[name] = { type: 'evergaol', text: val.text, element: null };
+        }
+      });
+    }
+
+    if (targetPattern.fieldBosses) {
+      Object.entries(targetPattern.fieldBosses).forEach(([name, val]) => {
+        if (val && val.text) {
+          nextFilters.fieldBosses[name] = { type: 'fieldBoss', text: val.text, element: null };
+        }
+      });
+    }
+
+    setTimeout(() => {
+      setCurrentMap(matchedMapName);
+      setSelectedNightLord(targetPattern.nightLord || null);
+      setSelectedSpawnPoint(targetPattern.spawnPoint || null);
+      setFilters(nextFilters);
+      setIsMapScreen(true);
+      setTimerSeconds(270);
+      setTimerRunning(true);
+    }, 0);
+  }, [searchParams]);
+
+  // 確定時（および大空洞マップの候補選択時）にURLのクエリパラメータを更新する
+  useEffect(() => {
+    if (originalIndex !== -1 && currentMap) {
+      if (currentMap === '大空洞' || activePatterns.length === 1) {
+        const mapKey = (MAP_IMAGE_MAP[currentMap] || 'default').toLowerCase();
+        const newUrl = `${window.location.pathname}?id=${mapKey}-${originalIndex}`;
+        window.history.replaceState({}, '', newUrl);
+      }
+    }
+  }, [activePatterns.length, originalIndex, currentMap]);
+
   // タイマーのカウントダウン処理
   useEffect(() => {
     if (!timerRunning) return;
@@ -696,6 +827,14 @@ export default function MapSearch() {
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
+  // タイマーを再起動する関数
+  const restartTimer = useCallback(() => {
+    if (!timerRunning) {
+      setTimerSeconds(270);
+      setTimerRunning(true);
+    }
+  }, [timerRunning]);
+
   // 全状態を初期化する関数
   const performReset = useCallback(() => {
     setCurrentMap(null);
@@ -705,6 +844,10 @@ export default function MapSearch() {
     resetFilters();
     setTimerRunning(false);
     setResetAt(null);
+    // URLのクエリパラメータをクリア
+    if (typeof window !== 'undefined') {
+      window.history.replaceState({}, '', window.location.pathname);
+    }
   }, [resetFilters]);
 
   // 地図が確定した（パターンが1つに絞られた）時に自動リセット用タイマー（45分）を開始
@@ -1089,6 +1232,20 @@ export default function MapSearch() {
             <div className="absolute inset-0 bg-blue-950/10 mix-blend-overlay"></div>
           </div>
 
+          {/* Map ID Display (Top Left) */}
+          {originalIndex !== -1 && (
+            <button
+              onClick={handleCopyUrl}
+              className={`absolute top-2 left-2 md:top-4 md:left-4 z-30 bg-slate-950/85 border rounded-lg px-2 py-1 text-[10px] md:text-xs font-bold font-mono select-none shadow-md backdrop-blur-sm cursor-pointer transition-all active:scale-95 ${
+                copied 
+                  ? 'border-green-500/50 text-green-400' 
+                  : 'border-gray-800/80 text-gray-400 hover:bg-slate-900/90 hover:border-gray-700 hover:text-gray-200'
+              }`}
+            >
+              {copied ? 'COPIED!' : `${(MAP_IMAGE_MAP[currentMap || 'Default'] || 'default').toLowerCase()}-${originalIndex}`}
+            </button>
+          )}
+
           {/* === マップピン・マーカーの描画 === */}
           
           {/* 出現地点 (spawnPoints) の描画 */}
@@ -1136,8 +1293,7 @@ export default function MapSearch() {
 
             if (uniqueOptions.length === 0) return null;
 
-            const filterActive = filters.majorBases[name];
-            const isPatternDetermined = activePatterns.length === 1;
+
 
             // 魔法塔や聖杯瓶の教会の判定 (1.5倍)
             let isRiseOrChurch = false;
@@ -1185,9 +1341,7 @@ export default function MapSearch() {
                     height: isRiseOrChurch ? 'calc(var(--major-base-size) * 1.5)' : 'var(--major-base-size)',
                     filter: 'drop-shadow(0 0 8px #000000)'
                   }}
-                  className={`absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110 ${
-                    !isPatternDetermined && !shouldHide ? 'ring-2 ring-yellow-50/50 rounded-full' : ''
-                  } ${filterActive && !shouldHide ? 'ring-2 ring-yellow-300 rounded-full' : ''}`}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
                   title={transText(name)}
                 >
                   {uniqueOptions.length > 1 ? (
@@ -1258,7 +1412,7 @@ export default function MapSearch() {
             if (!baseInfo || baseInfo.type === 'Small Camp') return null;
             if (baseInfo.text && baseInfo.text.toLowerCase().includes('caravan')) return null;
 
-            const filterActive = filters.minorBases[name];
+
             const isChurch = baseInfo.type === 'Church';
             const isRiseOrChurch = baseInfo.type === 'Church' || baseInfo.type.includes('Rise');
 
@@ -1275,9 +1429,7 @@ export default function MapSearch() {
                     height: isRiseOrChurch ? 'calc(var(--evergaol-size) * 1.5)' : 'var(--evergaol-size)',
                     filter: 'drop-shadow(0 0 8px #000000)'
                   }}
-                  className={`absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110 ${
-                    filterActive ? 'ring-2 ring-yellow-300 rounded-full' : ''
-                  }`}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
                   title={transText(name)}
                 >
                   <Image 
@@ -1314,8 +1466,6 @@ export default function MapSearch() {
             const evergaolInfo = activePatterns[0].evergaols[name];
             if (!evergaolInfo) return null;
 
-            const filterActive = filters.evergaols[name];
-
             return (
               <button
                 key={`evergaol-${name}`}
@@ -1327,9 +1477,7 @@ export default function MapSearch() {
                   width: 'var(--evergaol-size)',
                   height: 'var(--evergaol-size)'
                 }}
-                className={`absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110 ${
-                  filterActive ? 'ring-2 ring-purple-500 rounded-full' : ''
-                }`}
+                className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
                 title={transText(name)}
               >
                 <Image 
@@ -1354,7 +1502,7 @@ export default function MapSearch() {
               if (!hasCastle) return null;
             }
 
-            const filterActive = filters.fieldBosses[name];
+
             const tvInfo = tv[bossInfo.text];
             const isDanger = tvInfo ? tvInfo.isDanger : false;
             const iconSrc = isDanger ? '/icon/redBoss.png' : '/icon/field-boss.png';
@@ -1381,9 +1529,7 @@ export default function MapSearch() {
                     height: 'var(--field-boss-size)',
                     filter: 'drop-shadow(0 0 6px #000000) drop-shadow(0 0 2px #000000)'
                   }}
-                  className={`absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110 ${
-                    filterActive ? 'ring-2 ring-rose-500 rounded-full' : ''
-                  }`}
+                  className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
                   title={transText(name)}
                 >
                   <Image 
@@ -2024,11 +2170,19 @@ export default function MapSearch() {
           })()}
 
           {/* タイマー表示 (左下/大空洞では右下) */}
-          <div className={`absolute bottom-2 ${currentMap === '大空洞' ? 'right-2 md:right-4' : 'left-2 md:left-4'} md:bottom-4 z-30 border rounded-lg md:rounded-xl px-1 py-0.5 md:px-3 md:py-2 flex flex-col items-center justify-center gap-0 md:gap-1 shadow-2xl backdrop-blur-md select-none min-w-[40px] md:min-w-[150px] transition-all duration-300 ${
-            timerSeconds <= 10 
-              ? 'bg-red-950/90 border-red-500/80 animate-pulse' 
-              : 'bg-slate-950/85 border-gray-800/80'
-          }`}>
+          <button
+            disabled={timerRunning}
+            onClick={restartTimer}
+            className={`absolute bottom-2 ${currentMap === '大空洞' ? 'right-2 md:right-4' : 'left-2 md:left-4'} md:bottom-4 z-30 border rounded-lg md:rounded-xl px-1 py-0.5 md:px-3 md:py-2 flex flex-col items-center justify-center gap-0 md:gap-1 shadow-2xl backdrop-blur-md select-none min-w-[40px] md:min-w-[150px] transition-all duration-300 ${
+              timerRunning 
+                ? 'cursor-default opacity-85' 
+                : 'cursor-pointer hover:bg-slate-900/90 hover:border-cyan-500/50 hover:text-cyan-200 active:scale-95'
+            } ${
+              timerSeconds <= 10 
+                ? 'bg-red-950/90 border-red-500/80 animate-pulse' 
+                : 'bg-slate-950/85 border-gray-800/80'
+            }`}
+          >
             <div className="hidden md:block text-[10px] text-gray-400 font-semibold tracking-wider uppercase text-center">
               {transText('timerTitle')}
             </div>
@@ -2037,7 +2191,7 @@ export default function MapSearch() {
             }`}>
               {formatTime(timerSeconds)}
             </div>
-          </div>
+          </button>
         </div>
 
         {/* 3日目のボスの弱点属性情報テーブル */}
@@ -2130,4 +2284,12 @@ export default function MapSearch() {
     // ポップアップを更新
     setActivePopup(prev => prev ? { ...prev } : null);
   }
+}
+
+export default function MapSearch() {
+  return (
+    <Suspense fallback={<div className="min-h-screen w-full bg-slate-950 flex items-center justify-center text-white font-semibold">Loading...</div>}>
+      <MapSearchContent />
+    </Suspense>
+  );
 }
