@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useEffect, useCallback, Suspense } from 'react';
+import React, { useState, useMemo, useEffect, useCallback, Suspense, useRef } from 'react';
 import Image from 'next/image';
 import { useSearchParams } from 'next/navigation';
 import { 
@@ -52,7 +52,7 @@ const MAP_DATA_MAP: Record<string, MapPattern[]> = {
   山嶺: peaksMapData as unknown as MapPattern[],
   火口: craterMapData as unknown as MapPattern[],
   腐れ森: rottedMapData as unknown as MapPattern[],
-  隠れ都ノクラテオ: noklateoMapData as unknown as MapPattern[],
+  ノクラテオ: noklateoMapData as unknown as MapPattern[],
   大空洞: hollowMapData as unknown as MapPattern[]
 };
 
@@ -64,7 +64,7 @@ const MAP_IMAGE_MAP: Record<string, string> = {
   '山嶺': 'peaks',
   '火口': 'crater',
   '腐れ森': 'rotted',
-  '隠れ都ノクラテオ': 'noklateo',
+  'ノクラテオ': 'noklateo',
   '大空洞': 'hollow'
 };
 
@@ -89,7 +89,7 @@ const MAP_ZOOM_CLASSES: Record<string, string> = {
   '山嶺': 'scale-[180%] origin-top-left',
   '火口': 'scale-[180%] origin-top',
   '腐れ森': 'scale-[180%] origin-bottom-right',
-  '隠れ都ノクラテオ': 'scale-[200%] origin-bottom-left',
+  'ノクラテオ': 'scale-[200%] origin-bottom-left',
   '大空洞': 'scale-100'
 };
 
@@ -393,14 +393,27 @@ function MapSearchContent() {
     setActivePopup(null);
   }, []);
 
+  // 選択されたマップと夜の王に互換性があるかを判定するヘルパー
+  const isCompatible = useCallback((map: string | null, nightLord: string | null | undefined) => {
+    if (!map || nightLord === undefined) return false;
+    if (nightLord === null) return true; // 不明の場合は常に互換性ありとする
+    const patterns = MAP_DATA_MAP[map] || defaultMapData;
+    return patterns.some(p => p.nightLord === nightLord);
+  }, []);
+
   const handleMapChange = (mapName: string) => {
     setCurrentMap(mapName);
     setSelectedSpawnPoint(null);
     resetFilters();
     if (selectedNightLord !== undefined) {
-      setIsMapScreen(true);
-      setTimerSeconds(270);
-      setTimerRunning(true);
+      if (isCompatible(mapName, selectedNightLord)) {
+        setIsMapScreen(true);
+        setTimerSeconds(270);
+        setTimerRunning(true);
+      } else {
+        // 互換性がない場合は夜の王の選択をリセットしてスタート画面に留まる
+        setSelectedNightLord(undefined);
+      }
     }
   };
 
@@ -409,9 +422,14 @@ function MapSearchContent() {
     setSelectedSpawnPoint(null);
     resetFilters();
     if (currentMap !== null) {
-      setIsMapScreen(true);
-      setTimerSeconds(270);
-      setTimerRunning(true);
+      if (isCompatible(currentMap, lordName)) {
+        setIsMapScreen(true);
+        setTimerSeconds(270);
+        setTimerRunning(true);
+      } else {
+        // 互換性がない場合はマップの選択をリセットしてスタート画面に留まる
+        setCurrentMap(null);
+      }
     }
   };
 
@@ -528,17 +546,24 @@ function MapSearchContent() {
     return Array.from(set);
   }, [mapPatterns, selectedNightLord]);
 
-  // 夜の王のリスト
+  // 夜の王のリスト (選択中のマップに応じて動的フィルタリング)
   const availableNightLords = useMemo(() => {
     const set = new Set<string>();
-    defaultMapData.forEach(p => {
-      if (p.nightLord) set.add(p.nightLord);
-    });
-    hollowMapData.forEach(p => {
-      if (p.nightLord) set.add(p.nightLord);
-    });
+    const patterns = currentMap ? (MAP_DATA_MAP[currentMap] || defaultMapData) : null;
+    if (patterns) {
+      patterns.forEach(p => {
+        if (p.nightLord) set.add(p.nightLord);
+      });
+    } else {
+      // マップ未選択の場合は、全マップの夜の王をユニークにして表示
+      Object.values(MAP_DATA_MAP).forEach(mapData => {
+        mapData.forEach(p => {
+          if (p.nightLord) set.add(p.nightLord);
+        });
+      });
+    }
     return Array.from(set);
-  }, []);
+  }, [currentMap]);
 
   // 翻訳キーの適用関数
   const transText = (key: string | null) => {
@@ -704,8 +729,14 @@ function MapSearchContent() {
 
   const searchParams = useSearchParams();
 
+  // 初回マウント判定用Ref
+  const isInitialMount = useRef(true);
+
   // URLパラメータ（id=crater-8など）を解析して初期状態を設定する
   useEffect(() => {
+    if (!isInitialMount.current) return;
+    isInitialMount.current = false;
+
     const idParam = searchParams.get('id');
     if (!idParam) return;
 
@@ -795,14 +826,14 @@ function MapSearchContent() {
 
   // 確定時（および大空洞マップの候補選択時）にURLのクエリパラメータを更新する
   useEffect(() => {
-    if (originalIndex !== -1 && currentMap) {
+    if (originalIndex !== -1 && currentMap && selectedSpawnPoint) {
       if (currentMap === '大空洞' || activePatterns.length === 1) {
         const mapKey = (MAP_IMAGE_MAP[currentMap] || 'default').toLowerCase();
         const newUrl = `${window.location.pathname}?id=${mapKey}-${originalIndex}`;
         window.history.replaceState({}, '', newUrl);
       }
     }
-  }, [activePatterns.length, originalIndex, currentMap]);
+  }, [activePatterns.length, originalIndex, currentMap, selectedSpawnPoint]);
 
   // タイマーのカウントダウン処理
   useEffect(() => {
@@ -886,7 +917,11 @@ function MapSearchContent() {
   }, [resetAt, performReset]);
 
   // 決定された夜の王 (選択済み または 絞り込みで確定)
-  const determinedNightLord = selectedNightLord || (activePatterns.length === 1 ? activePatterns[0].nightLord : null);
+  const determinedNightLord = selectedNightLord || (
+    currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0 
+      ? activePatterns[0].nightLord 
+      : (activePatterns.length === 1 ? activePatterns[0].nightLord : null)
+  );
 
   // 3日目のボス（夜の王）属性耐性表の共通描画関数
   const renderDay3BossStats = (bossName: string | null | undefined) => {
@@ -1119,35 +1154,46 @@ function MapSearchContent() {
             </h2>
             <div className="grid grid-cols-3 md:grid-cols-6 gap-2 md:gap-3">
               {Object.keys(MAP_DATA_MAP).map(mapName => {
-                const isDisabled = false;
+                const isDisabled = selectedNightLord !== undefined && !isCompatible(mapName, selectedNightLord);
                 return (
                   <button
                     key={mapName}
                     onClick={() => handleMapChange(mapName)}
                     disabled={isDisabled}
-                    className={`group rounded-none border text-center transition-all relative overflow-hidden select-none w-full aspect-square ${
+                    className={`group rounded-none transition-all flex flex-col w-full select-none relative ${
                       currentMap === mapName 
-                        ? 'border-blue-500 ring-2 ring-blue-500/40' 
-                        : 'border-gray-800 hover:border-gray-700'
+                        ? 'border-4 border-blue-500 ring-2 ring-blue-500/40' 
+                        : 'border border-gray-800 hover:border-gray-700'
                     } ${isDisabled ? 'opacity-40 cursor-not-allowed' : ''}`}
                   >
-                    <div className="absolute inset-0 z-0">
+                    <div className="relative w-full aspect-square shrink-0 overflow-hidden">
                       <Image 
                         src={`/map/${MAP_IMAGE_MAP[mapName] || mapName}.webp`}
                         alt={mapName}
                         fill
                         sizes="150px"
                         className={`object-cover pointer-events-none transition-transform duration-300 ${MAP_ZOOM_CLASSES[mapName] || 'scale-100'}`}
+                        style={
+                          mapName === '腐れ森' 
+                            ? { left: '24px', top: '24px' } 
+                            : mapName === 'ノクラテオ' 
+                              ? { left: '-20px', top: '20px' } 
+                              : mapName === '火口'
+                                ? { top: '-15px' }
+                                : mapName === '山嶺'
+                                  ? { left: '-15px', top: '-15px' }
+                                  : undefined
+                        }
                       />
+                      {isDisabled && (
+                        <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-20">
+                          <span className="text-[10px] md:text-xs font-bold text-yellow-500 bg-black/80 px-1.5 py-0.5 rounded border border-yellow-600/50 shadow-md">
+                            {transText('Under Construction')}
+                          </span>
+                        </div>
+                      )}
                     </div>
-                    {isDisabled && (
-                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center z-20">
-                        <span className="text-[10px] md:text-xs font-bold text-yellow-500 bg-black/80 px-1.5 py-0.5 rounded border border-yellow-600/50 shadow-md">
-                          {transText('Under Construction')}
-                        </span>
-                      </div>
-                    )}
-                    <span className="absolute bottom-0 left-0 right-0 w-full text-center font-semibold text-[10px] md:text-sm text-white z-10 bg-black/80 py-0.5 md:py-1 border-t border-gray-800/60 backdrop-blur-[2px] truncate px-0.5">
+                    <span className="w-full text-center font-semibold text-[10px] md:text-xs text-white bg-black/80 py-1.5 border-t border-gray-800/60 truncate px-1">
                       {mapName === 'Default' ? (currentLocale === 'ja' ? 'ノーマル' : 'Default') : mapName}
                     </span>
                   </button>
@@ -1190,7 +1236,6 @@ function MapSearchContent() {
             <ul className="text-xs text-gray-300 space-y-2 list-decimal list-inside">
               <li>{t.instructionStep1}</li>
               <li>{t.instructionStep2}</li>
-              <li>{t.instructionStep3}</li>
             </ul>
             <div className="mt-4 flex justify-end">
               <button 
@@ -1204,7 +1249,7 @@ function MapSearchContent() {
         )}
 
         {/* 特殊イベント表示 */}
-        {activePatterns.length === 1 && activePatterns[0].specialEvent && (
+        {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && activePatterns[0].specialEvent && (
           <div className="w-full text-center py-2.5 px-4 bg-yellow-950/40 border border-yellow-800/50 rounded-xl backdrop-blur-sm animate-pulse shrink-0">
             <span className="text-xs text-yellow-500 uppercase tracking-widest block font-semibold">
               {transText('specialEvent')}
@@ -1295,16 +1340,19 @@ function MapSearchContent() {
 
 
 
-            // 魔法塔や聖杯瓶の教会の判定 (1.5倍)
+            // 魔法塔や聖杯瓶の教会の判定 (1.5倍), ショップの判定 (2.0倍)
             let isRiseOrChurch = false;
+            let isTownship = false;
             if (uniqueOptions.length === 1) {
               const type = uniqueOptions[0].type;
               isRiseOrChurch = type === 'Church' || type.includes('Rise');
+              isTownship = type === 'Township';
             } else {
               const currentFilter = filters.majorBases[name];
               if (currentFilter && currentFilter.type) {
                 const type = currentFilter.type;
                 isRiseOrChurch = type === 'Church' || type.includes('Rise');
+                isTownship = type === 'Township';
               }
             }
 
@@ -1337,8 +1385,12 @@ function MapSearchContent() {
                   style={{ 
                     left: `${(pos.x / 1000) * 100}%`, 
                     top: `${(pos.y / 1000) * 100}%`,
-                    width: isRiseOrChurch ? 'calc(var(--major-base-size) * 1.5)' : 'var(--major-base-size)',
-                    height: isRiseOrChurch ? 'calc(var(--major-base-size) * 1.5)' : 'var(--major-base-size)',
+                    width: isTownship 
+                      ? 'calc(var(--major-base-size) * 2.0)' 
+                      : (isRiseOrChurch ? 'calc(var(--major-base-size) * 1.5)' : 'var(--major-base-size)'),
+                    height: isTownship 
+                      ? 'calc(var(--major-base-size) * 2.0)' 
+                      : (isRiseOrChurch ? 'calc(var(--major-base-size) * 1.5)' : 'var(--major-base-size)'),
                     filter: 'drop-shadow(0 0 8px #000000)'
                   }}
                   className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
@@ -1395,7 +1447,9 @@ function MapSearchContent() {
                         ? 'translate(-50%, var(--label-offset-camp))' 
                         : (isRiseOrChurch 
                           ? 'translate(-50%, var(--label-offset-rise-church))' 
-                          : 'translate(-50%, var(--label-offset-other))'),
+                          : (isTownship 
+                            ? 'translate(-50%, calc(var(--label-offset-other) * 1.6))' 
+                            : 'translate(-50%, var(--label-offset-other))')),
                       fontSize: 'var(--font-size-base)'
                     }}
                   >
@@ -1407,7 +1461,7 @@ function MapSearchContent() {
           })}
 
           {/* 小拠点 (minorBases) の描画（パターン確定時のみ） */}
-          {activePatterns.length === 1 && Object.entries(coordinates.minorBases).map(([name, pos]) => {
+          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.minorBases).map(([name, pos]) => {
             const baseInfo = activePatterns[0].minorBases[name];
             if (!baseInfo || baseInfo.type === 'Small Camp') return null;
             if (baseInfo.text && baseInfo.text.toLowerCase().includes('caravan')) return null;
@@ -1462,7 +1516,7 @@ function MapSearchContent() {
           })}
 
           {/* 封牢 (evergaols) の描画（パターン確定時のみ） */}
-          {activePatterns.length === 1 && Object.entries(coordinates.evergaols).map(([name, pos]) => {
+          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.evergaols).map(([name, pos]) => {
             const evergaolInfo = activePatterns[0].evergaols[name];
             if (!evergaolInfo) return null;
 
@@ -1492,7 +1546,7 @@ function MapSearchContent() {
           })}
 
           {/* フィールドボス (fieldBosses) の描画（パターン確定時のみ） */}
-          {activePatterns.length === 1 && Object.entries(coordinates.fieldBosses).map(([name, pos]) => {
+          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.fieldBosses).map(([name, pos]) => {
             const bossInfo = activePatterns[0].fieldBosses[name];
             if (!bossInfo || !bossInfo.text) return null;
 
@@ -1556,7 +1610,7 @@ function MapSearchContent() {
           })}
 
           {/* 中央砦 (Castle Boss) の敵名称表示とボスピン */}
-          {activePatterns.length === 1 && activePatterns[0].castleBoss && (() => {
+          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && activePatterns[0].castleBoss && (() => {
             const castleBoss = activePatterns[0].castleBoss;
             let centerImgSrc = '';
             const lowerBoss = castleBoss.toLowerCase();
@@ -1637,7 +1691,7 @@ function MapSearchContent() {
           })()}
 
           {/* 夜の追加イベント円 (nightCircle1, nightCircle2) の描画（確定時） */}
-          {activePatterns.length === 1 && (
+          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && (
             <>
               {/* nightCircle1 */}
               {(() => {
