@@ -1,6 +1,6 @@
 # Nightreign Map
 
-『ELDEN RING NIGHTREIGN』のマップ探索ツールを本家サイト（`https://www.nightreignmap.com/`）と完全に同一の仕様およびデザインで再現した Next.js アプリケーションです。
+『ELDEN RING NIGHTREIGN』のマップ探索ツールのNext.js アプリケーションです。
 
 ## 主な機能
 
