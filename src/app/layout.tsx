@@ -13,8 +13,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nightreign Map",
-  description: "『ELDEN RING NIGHTREIGN』のマップツール。",
+  title: "Nightreign Map | ELDEN RING NIGHTREIGN 探索ツール",
+  description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
+  keywords: ["ELDEN RING", "NIGHTREIGN", "エルデンリング", "ナイトレイン", "マップ", "マップ探索", "夜の王", "ボスの弱点", "属性耐性"],
+  authors: [{ name: "Nightreign Map Team" }],
+  metadataBase: new URL("https://www.nightreignmap.com"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    title: "Nightreign Map | ELDEN RING NIGHTREIGN 探索ツール",
+    description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
+    url: "https://www.nightreignmap.com",
+    siteName: "Nightreign Map",
+    images: [
+      {
+        url: "/title.png",
+        width: 1200,
+        height: 630,
+        alt: "Nightreign Map Logo",
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nightreign Map | ELDEN RING NIGHTREIGN 探索ツール",
+    description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
+    images: ["/title.png"],
+  },
 };
 
 export const viewport: Viewport = {
