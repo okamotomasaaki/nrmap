@@ -354,6 +354,12 @@ function MapSearchContent() {
               }
               newMajors[key] = { ...val, element: 'frostbite' };
               modified = true;
+            } else if (val.text && (val.text.includes('Bloodbane Giant Crows') || val.text.includes('Giant Crows')) && val.element !== 'bleed') {
+              if (newMajors === pattern.majorBases) {
+                newMajors = { ...newMajors };
+              }
+              newMajors[key] = { ...val, element: 'bleed' };
+              modified = true;
             }
           }
         });
@@ -570,6 +576,9 @@ function MapSearchContent() {
   // 拠点アイコンの画像パスを取得する関数（湖沼と鍛冶村は追加画像に差し替え）
   const getIconSrc = (type: string | null | undefined, name?: string | null) => {
     if (!type) return '/icon/undefined.png';
+    if (type === 'Ruins' && currentMap === '大空洞') {
+      return '/icon/Ruins.png';
+    }
     if (name) {
       const lowerName = name.toLowerCase();
       if (
@@ -779,6 +788,8 @@ function MapSearchContent() {
             element = 'poison';
           } else if (val.text === 'Ancient Heroes of Zamor' && element !== 'frostbite') {
             element = 'frostbite';
+          } else if (val.text && (val.text.includes('Bloodbane Giant Crows') || val.text.includes('Giant Crows')) && element !== 'bleed') {
+            element = 'bleed';
           }
           nextFilters.majorBases[name] = { type: val.type, text: val.text, element };
         }
@@ -1074,9 +1085,9 @@ function MapSearchContent() {
 
   if (!isMapScreen) {
     return (
-      <div className="flex flex-col items-center justify-start md:justify-center min-h-screen w-full bg-slate-950 text-gray-100 p-3 md:p-8 overflow-y-auto">
+      <div className="flex flex-col items-center justify-start min-h-screen w-full bg-slate-950 text-gray-100 p-3 md:p-8 overflow-y-auto">
         {/* タイトルロゴ画像 */}
-        <div className="mb-[21px] md:mb-[29px] flex justify-center w-full shrink-0">
+        <div className="mb-[21px] md:mb-[29px] md:mt-[30px] flex justify-center w-full shrink-0">
           <Image 
             src="/title.png" 
             alt="Title" 
