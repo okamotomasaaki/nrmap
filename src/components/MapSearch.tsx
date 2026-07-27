@@ -314,7 +314,7 @@ function MapSearchContent() {
   const [timerSeconds, setTimerSeconds] = useState<number>(270);
   const [timerRunning, setTimerRunning] = useState<boolean>(false);
 
-  // 45分自動リセット用（リセット予定時刻と現在時刻）の状態
+  // 40分自動リセット用（リセット予定時刻と現在時刻）の状態
   const [resetAt, setResetAt] = useState<number | null>(null);
   const [currentTime, setCurrentTime] = useState<number>(0);
 
@@ -475,10 +475,6 @@ function MapSearchContent() {
   // 決定されたパターンの元配列のインデックスを特定
   const originalIndex = useMemo(() => {
     if (!currentMap) return -1;
-    if (currentMap === '大空洞') {
-      if (activePatterns.length === 0) return -1;
-      return mapPatterns.indexOf(activePatterns[0]);
-    }
     if (activePatterns.length !== 1) return -1;
     return mapPatterns.indexOf(activePatterns[0]);
   }, [activePatterns, mapPatterns, currentMap]);
@@ -824,10 +820,10 @@ function MapSearchContent() {
     }, 0);
   }, [searchParams]);
 
-  // 確定時（および大空洞マップの候補選択時）にURLのクエリパラメータを更新する
+  // 確定時にURLのクエリパラメータを更新する
   useEffect(() => {
     if (originalIndex !== -1 && currentMap && selectedSpawnPoint) {
-      if (currentMap === '大空洞' || activePatterns.length === 1) {
+      if (activePatterns.length === 1) {
         const mapKey = (MAP_IMAGE_MAP[currentMap] || 'default').toLowerCase();
         const newUrl = `${window.location.pathname}?id=${mapKey}-${originalIndex}`;
         window.history.replaceState({}, '', newUrl);
@@ -881,11 +877,11 @@ function MapSearchContent() {
     }
   }, [resetFilters]);
 
-  // 地図が確定した（パターンが1つに絞られた）時に自動リセット用タイマー（45分）を開始
+  // マップ画面が表示された時に自動リセット用タイマー（40分）を開始
   useEffect(() => {
-    if (activePatterns.length === 1) {
+    if (isMapScreen) {
       const timer = setTimeout(() => {
-        setResetAt(prev => prev === null ? Date.now() + 45 * 60 * 1000 : prev);
+        setResetAt(prev => prev === null ? Date.now() + 40 * 60 * 1000 : prev);
         setCurrentTime(Date.now());
       }, 0);
       return () => clearTimeout(timer);
@@ -895,7 +891,7 @@ function MapSearchContent() {
       }, 0);
       return () => clearTimeout(timer);
     }
-  }, [activePatterns.length]);
+  }, [isMapScreen]);
 
   // 自動リセットまでの残り秒数を算出
   const autoResetSeconds = resetAt !== null ? Math.max(0, Math.ceil((resetAt - currentTime) / 1000)) : null;
@@ -918,9 +914,7 @@ function MapSearchContent() {
 
   // 決定された夜の王 (選択済み または 絞り込みで確定)
   const determinedNightLord = selectedNightLord || (
-    currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0 
-      ? activePatterns[0].nightLord 
-      : (activePatterns.length === 1 ? activePatterns[0].nightLord : null)
+    activePatterns.length === 1 ? activePatterns[0].nightLord : null
   );
 
   // 3日目のボス（夜の王）属性耐性表の共通描画関数
@@ -1249,7 +1243,7 @@ function MapSearchContent() {
         )}
 
         {/* 特殊イベント表示 */}
-        {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && activePatterns[0].specialEvent && (
+        {activePatterns.length === 1 && activePatterns[0].specialEvent && (
           <div className="w-full text-center py-2.5 px-4 bg-yellow-950/40 border border-yellow-800/50 rounded-xl backdrop-blur-sm animate-pulse shrink-0">
             <span className="text-xs text-yellow-500 uppercase tracking-widest block font-semibold">
               {transText('specialEvent')}
@@ -1461,7 +1455,7 @@ function MapSearchContent() {
           })}
 
           {/* 小拠点 (minorBases) の描画（パターン確定時のみ） */}
-          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.minorBases).map(([name, pos]) => {
+          {activePatterns.length === 1 && Object.entries(coordinates.minorBases).map(([name, pos]) => {
             const baseInfo = activePatterns[0].minorBases[name];
             if (!baseInfo || baseInfo.type === 'Small Camp') return null;
             if (baseInfo.text && baseInfo.text.toLowerCase().includes('caravan')) return null;
@@ -1516,7 +1510,7 @@ function MapSearchContent() {
           })}
 
           {/* 封牢 (evergaols) の描画（パターン確定時のみ） */}
-          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.evergaols).map(([name, pos]) => {
+          {activePatterns.length === 1 && Object.entries(coordinates.evergaols).map(([name, pos]) => {
             const evergaolInfo = activePatterns[0].evergaols[name];
             if (!evergaolInfo) return null;
 
@@ -1546,7 +1540,7 @@ function MapSearchContent() {
           })}
 
           {/* フィールドボス (fieldBosses) の描画（パターン確定時のみ） */}
-          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && Object.entries(coordinates.fieldBosses).map(([name, pos]) => {
+          {activePatterns.length === 1 && Object.entries(coordinates.fieldBosses).map(([name, pos]) => {
             const bossInfo = activePatterns[0].fieldBosses[name];
             if (!bossInfo || !bossInfo.text) return null;
 
@@ -1610,7 +1604,7 @@ function MapSearchContent() {
           })}
 
           {/* 中央砦 (Castle Boss) の敵名称表示とボスピン */}
-          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && activePatterns[0].castleBoss && (() => {
+          {activePatterns.length === 1 && activePatterns[0].castleBoss && (() => {
             const castleBoss = activePatterns[0].castleBoss;
             let centerImgSrc = '';
             const lowerBoss = castleBoss.toLowerCase();
@@ -1691,7 +1685,7 @@ function MapSearchContent() {
           })()}
 
           {/* 夜の追加イベント円 (nightCircle1, nightCircle2) の描画（確定時） */}
-          {((currentMap === '大空洞' && selectedSpawnPoint && activePatterns.length > 0) || activePatterns.length === 1) && (
+          {activePatterns.length === 1 && (
             <>
               {/* nightCircle1 */}
               {(() => {
