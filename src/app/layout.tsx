@@ -41,10 +41,10 @@ export const metadata: Metadata = {
     siteName: "Nightreign Map",
     images: [
       {
-        url: "/title.png",
+        url: "/ogp.png",
         width: 1200,
         height: 630,
-        alt: "Nightreign Map Logo",
+        alt: "Nightreign Map - ELDEN RING NIGHTREIGN 探索ツール",
       },
     ],
     locale: "ja_JP",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Nightreign Map | ELDEN RING NIGHTREIGN 探索ツール",
     description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
-    images: ["/title.png"],
+    images: ["/ogp.png"],
   },
 };
 

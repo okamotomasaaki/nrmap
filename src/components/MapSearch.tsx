@@ -1358,6 +1358,8 @@ function MapSearchContent() {
                 const type = currentFilter.type;
                 isRiseOrChurch = type === 'Church' || type.includes('Rise');
                 isTownship = type === 'Township';
+              } else if (uniqueOptions.some(o => o.type === 'Township')) {
+                isTownship = true;
               }
             }
 
@@ -1474,6 +1476,7 @@ function MapSearchContent() {
 
             const isChurch = baseInfo.type === 'Church';
             const isRiseOrChurch = baseInfo.type === 'Church' || baseInfo.type.includes('Rise');
+            const isTownship = baseInfo.type === 'Township';
 
             return (
               <React.Fragment key={`minor-frag-${name}`}>
@@ -1484,8 +1487,12 @@ function MapSearchContent() {
                   style={{ 
                     left: `${(pos.x / 1000) * 100}%`, 
                     top: `${(pos.y / 1000) * 100}%`,
-                    width: isRiseOrChurch ? 'calc(var(--evergaol-size) * 1.5)' : 'var(--evergaol-size)',
-                    height: isRiseOrChurch ? 'calc(var(--evergaol-size) * 1.5)' : 'var(--evergaol-size)',
+                    width: isTownship 
+                      ? 'calc(var(--evergaol-size) * 2.0)' 
+                      : (isRiseOrChurch ? 'calc(var(--evergaol-size) * 1.5)' : 'var(--evergaol-size)'),
+                    height: isTownship 
+                      ? 'calc(var(--evergaol-size) * 2.0)' 
+                      : (isRiseOrChurch ? 'calc(var(--evergaol-size) * 1.5)' : 'var(--evergaol-size)'),
                     filter: 'drop-shadow(0 0 8px #000000)'
                   }}
                   className="absolute -translate-x-1/2 -translate-y-1/2 transition-all z-10 cursor-pointer hover:scale-110"
@@ -1509,7 +1516,9 @@ function MapSearchContent() {
                         ? 'translate(-50%, var(--label-offset-camp))'
                         : (isRiseOrChurch 
                           ? 'translate(-50%, var(--label-offset-rise-church))' 
-                          : 'translate(-50%, var(--label-offset-other))'),
+                          : (isTownship 
+                            ? 'translate(-50%, calc(var(--label-offset-other) * 1.6))' 
+                            : 'translate(-50%, var(--label-offset-other))')),
                       fontSize: 'var(--font-size-base)'
                     }}
                   >
