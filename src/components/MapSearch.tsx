@@ -574,13 +574,14 @@ function MapSearchContent() {
   };
 
   // 拠点アイコンの画像パスを取得する関数（湖沼と鍛冶村は追加画像に差し替え）
-  const getIconSrc = (type: string | null | undefined, name?: string | null) => {
+  const getIconSrc = (type: string | null | undefined, name?: string | null, spotKey?: string | null) => {
     if (!type) return '/icon/undefined.png';
     if (type === 'Ruins' && currentMap === '大空洞') {
       return '/icon/Ruins.png';
     }
-    if (name) {
-      const lowerName = name.toLowerCase();
+    const checkText = name || spotKey;
+    if (checkText) {
+      const lowerName = checkText.toLowerCase();
       if (
         lowerName.includes('spider scorpion') || 
         lowerName.includes('ancestral follower') || 
@@ -610,7 +611,17 @@ function MapSearchContent() {
       }
     }
     if (type === 'Church') {
-      const isLake = currentMap === '腐れ森' || (name && (name.toLowerCase().includes('lake') || name.includes('湖')));
+      const spotStr = spotKey || '';
+      const textStr = name || '';
+      const isChurchBuilding = spotStr.includes('Third Church') || spotStr.includes('Church') || textStr.includes('Church') || textStr.includes('教会');
+      const isLakeSpot = spotStr === 'Lake' || spotStr === '湖';
+      const isLakeText = textStr === 'Church' || textStr === '湖沼' || textStr.toLowerCase().includes('lake') || textStr.includes('湖');
+      
+      if (isChurchBuilding && !isLakeSpot) {
+        return '/icon/Church.png';
+      }
+      
+      const isLake = isLakeSpot || isLakeText;
       return isLake ? '/icon/lake.png' : '/icon/Church.png';
     }
     if (type === 'Township') return '/icon/Township.png';
@@ -619,10 +630,20 @@ function MapSearchContent() {
   };
 
   // 拠点の種別テキスト（翻訳含む）を取得する関数
-  const getTypeLabel = (type: string | null | undefined, name?: string | null) => {
+  const getTypeLabel = (type: string | null | undefined, name?: string | null, spotKey?: string | null) => {
     if (!type) return '';
     if (type === 'Church') {
-      const isLake = currentMap === '腐れ森' || (name && (name.toLowerCase().includes('lake') || name.includes('湖')));
+      const spotStr = spotKey || '';
+      const textStr = name || '';
+      const isChurchBuilding = spotStr.includes('Third Church') || spotStr.includes('Church') || textStr.includes('Church') || textStr.includes('教会');
+      const isLakeSpot = spotStr === 'Lake' || spotStr === '湖';
+      const isLakeText = textStr === 'Church' || textStr === '湖沼' || textStr.toLowerCase().includes('lake') || textStr.includes('湖');
+
+      if (isChurchBuilding && !isLakeSpot) {
+        return currentLocale === 'ja' ? '教会' : currentLocale === 'zh' ? '教堂' : 'Church';
+      }
+
+      const isLake = isLakeSpot || isLakeText;
       if (isLake) {
         return currentLocale === 'ja' ? '湖沼' : currentLocale === 'zh' ? '湖沼' : 'Marsh';
       } else {
@@ -1415,7 +1436,7 @@ function MapSearchContent() {
                   ) : (
                     <div className="relative w-full h-full">
                       <Image 
-                        src={getIconSrc(uniqueOptions[0].type, uniqueOptions[0].text)} 
+                        src={getIconSrc(uniqueOptions[0].type, uniqueOptions[0].text, name)} 
                         alt={uniqueOptions[0].type} 
                         fill 
                         sizes="96px"
@@ -1499,7 +1520,7 @@ function MapSearchContent() {
                   title={transText(name)}
                 >
                   <Image 
-                    src={getIconSrc(baseInfo.type, baseInfo.text)} 
+                    src={getIconSrc(baseInfo.type, baseInfo.text, name)} 
                     alt={baseInfo.type} 
                     fill 
                     sizes="96px"
@@ -1921,7 +1942,7 @@ function MapSearchContent() {
                               }}
                             >
                               <Image 
-                                src={getIconSrc(currentFilter.type, currentFilter.text)} 
+                                src={getIconSrc(currentFilter.type, currentFilter.text, popup.name)} 
                                 alt={currentFilter.type ?? 'base'} 
                                 fill 
                                 sizes="40px"
@@ -1929,7 +1950,7 @@ function MapSearchContent() {
                               />
                             </div>
                             <div className="flex-grow min-w-0">
-                              <span className="text-blue-400 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(currentFilter.type, currentFilter.text)}</span>
+                              <span className="text-blue-400 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(currentFilter.type, currentFilter.text, popup.name)}</span>
                               <span className="font-semibold text-blue-100 block truncate" style={{ fontSize: 'var(--popup-font-title)' }}>{getBaseLabel(currentFilter.type, currentFilter.text)}</span>
                               {currentFilter.element && <div className="mt-1">{getElementBadge(currentFilter.element)}</div>}
                             </div>
@@ -1958,7 +1979,7 @@ function MapSearchContent() {
                               }}
                             >
                               <Image 
-                                src={getIconSrc(opt.type, opt.text)} 
+                                src={getIconSrc(opt.type, opt.text, popup.name)} 
                                 alt={opt.type} 
                                 fill 
                                 sizes="40px"
@@ -1966,7 +1987,7 @@ function MapSearchContent() {
                               />
                             </div>
                             <div className="flex-grow min-w-0">
-                              <span className="text-gray-500 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text)}</span>
+                              <span className="text-gray-500 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text, popup.name)}</span>
                               <span className="font-semibold text-gray-200 block truncate" style={{ fontSize: 'var(--popup-font-title)' }}>{getBaseLabel(opt.type, opt.text)}</span>
                               {opt.element && <div className="mt-1">{getElementBadge(opt.element)}</div>}
                             </div>
@@ -1996,7 +2017,7 @@ function MapSearchContent() {
                             >
                               <div className="relative w-full h-full">
                                 <Image 
-                                  src={getIconSrc(opt.type, opt.text)} 
+                                  src={getIconSrc(opt.type, opt.text, popup.name)} 
                                   alt={opt.type} 
                                   fill 
                                   sizes="64px"
@@ -2051,7 +2072,7 @@ function MapSearchContent() {
                             }}
                           >
                             <Image 
-                              src={getIconSrc(currentFilter.type, currentFilter.text)} 
+                              src={getIconSrc(currentFilter.type, currentFilter.text, popup.name)} 
                               alt={currentFilter.type ?? 'base'} 
                               fill 
                               sizes="40px"
@@ -2059,7 +2080,7 @@ function MapSearchContent() {
                             />
                           </div>
                           <div className="flex-grow min-w-0">
-                            <span className="text-amber-400 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(currentFilter.type, currentFilter.text)}</span>
+                            <span className="text-amber-400 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(currentFilter.type, currentFilter.text, popup.name)}</span>
                             <span className="font-semibold text-amber-100 block truncate" style={{ fontSize: 'var(--popup-font-title)' }}>{getBaseLabel(currentFilter.type, currentFilter.text)}</span>
                           </div>
                           <button
@@ -2084,7 +2105,7 @@ function MapSearchContent() {
                             }}
                           >
                             <Image 
-                              src={opt.type ? getIconSrc(opt.type, opt.text) : '/icon/undefined.png'} 
+                              src={opt.type ? getIconSrc(opt.type, opt.text, popup.name) : '/icon/undefined.png'} 
                               alt={opt.type ?? 'base'} 
                               fill 
                               sizes="40px"
@@ -2092,7 +2113,7 @@ function MapSearchContent() {
                             />
                           </div>
                           <div className="flex-grow min-w-0">
-                            <span className="text-gray-500 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text)}</span>
+                            <span className="text-gray-500 uppercase tracking-wider block" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text, popup.name)}</span>
                             <span className="font-semibold text-gray-200 block truncate" style={{ fontSize: 'var(--popup-font-title)' }}>{getBaseLabel(opt.type, opt.text)}</span>
                           </div>
                         </div>
@@ -2116,7 +2137,7 @@ function MapSearchContent() {
                               }}
                             >
                               <Image 
-                                src={getIconSrc(opt.type, opt.text)} 
+                                src={getIconSrc(opt.type, opt.text, popup.name)} 
                                 alt={opt.type} 
                                 fill 
                                 sizes="40px"
@@ -2125,7 +2146,7 @@ function MapSearchContent() {
                             </div>
                             <div className="flex-grow min-w-0">
                               <span className="font-semibold text-gray-200 block truncate" style={{ fontSize: 'var(--popup-font-text)' }}>{getBaseLabel(opt.type, opt.text)}</span>
-                              <span className="text-gray-500 uppercase tracking-wider block mt-0.5" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text)}</span>
+                              <span className="text-gray-500 uppercase tracking-wider block mt-0.5" style={{ fontSize: 'var(--popup-font-badge)' }}>{getTypeLabel(opt.type, opt.text, popup.name)}</span>
                             </div>
                           </button>
                         ))}

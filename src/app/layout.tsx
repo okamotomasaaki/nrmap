@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
   keywords: ["ELDEN RING", "NIGHTREIGN", "エルデンリング", "ナイトレイン", "マップ", "マップ探索", "夜の王", "ボスの弱点", "属性耐性"],
   authors: [{ name: "Nightreign Map Team" }],
-  metadataBase: new URL("https://www.nightreignmap.com"),
+  metadataBase: new URL("https://nrmap.vercel.app/"),
   alternates: {
     canonical: "/",
   },
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Nightreign Map | ELDEN RING NIGHTREIGN 探索ツール",
     description: "『ELDEN RING NIGHTREIGN（エルデンリング ナイトレイン）』のマップ探索ツール。出現地点の選択、各拠点の絞り込みからマップパターン特定、およびボスの詳細情報と耐性テーブルの確認が可能です。",
-    url: "https://www.nightreignmap.com",
+    url: "https://nrmap.vercel.app/",
     siteName: "Nightreign Map",
     images: [
       {
