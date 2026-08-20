@@ -1276,8 +1276,12 @@ function MapSearchContent() {
 
         {/* 特殊イベント表示 */}
         {activePatterns.length === 1 && activePatterns[0].specialEvent && (
-          <div className="w-full text-center py-2.5 px-4 bg-yellow-950/40 border border-yellow-800/50 rounded-xl backdrop-blur-sm animate-pulse shrink-0">
-            <span className="text-xs text-yellow-500 uppercase tracking-widest block font-semibold">
+          <div 
+            key={`special-event-${activePatterns[0].specialEvent}-${originalIndex}`}
+            className="w-full text-center py-2.5 px-4 bg-yellow-950/40 border border-yellow-800/50 rounded-xl backdrop-blur-sm animate-blink-10 shrink-0 shadow-lg"
+          >
+            <span className="text-xs text-yellow-500 uppercase tracking-widest block font-semibold flex items-center justify-center gap-1.5">
+              <Sparkles className="w-3.5 h-3.5 text-yellow-400 animate-spin" style={{ animationDuration: '4s' }} />
               {transText('specialEvent')}
             </span>
             <h2 className="text-xl md:text-2xl font-black text-yellow-400 tracking-wide mt-0.5">
