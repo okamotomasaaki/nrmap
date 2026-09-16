@@ -519,6 +519,26 @@
     "Divine Tower": {
       "x": 580,
       "y": 330
+    },
+    "Northeast Rotted Woods": {
+      "x": 820,
+      "y": 600
+    },
+    "West Rotted Woods": {
+      "x": 550,
+      "y": 660
+    },
+    "Noklateo": {
+      "x": 440,
+      "y": 560
+    },
+    "Mountaintops": {
+      "x": 400,
+      "y": 400
+    },
+    "Crater": {
+      "x": 480,
+      "y": 200
     }
   },
   "rotBlessings": {

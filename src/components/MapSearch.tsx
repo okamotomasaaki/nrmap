@@ -414,8 +414,6 @@ function MapSearchContent() {
     if (selectedNightLord !== undefined) {
       if (isCompatible(mapName, selectedNightLord)) {
         setIsMapScreen(true);
-        setTimerSeconds(270);
-        setTimerRunning(true);
       } else {
         // 互換性がない場合は夜の王の選択をリセットしてスタート画面に留まる
         setSelectedNightLord(undefined);
@@ -430,8 +428,6 @@ function MapSearchContent() {
     if (currentMap !== null) {
       if (isCompatible(currentMap, lordName)) {
         setIsMapScreen(true);
-        setTimerSeconds(270);
-        setTimerRunning(true);
       } else {
         // 互換性がない場合はマップの選択をリセットしてスタート画面に留まる
         setCurrentMap(null);
@@ -611,18 +607,7 @@ function MapSearchContent() {
       }
     }
     if (type === 'Church') {
-      const spotStr = spotKey || '';
-      const textStr = name || '';
-      const isChurchBuilding = spotStr.includes('Third Church') || spotStr.includes('Church') || textStr.includes('Church') || textStr.includes('教会');
-      const isLakeSpot = spotStr === 'Lake' || spotStr === '湖';
-      const isLakeText = textStr === 'Church' || textStr === '湖沼' || textStr.toLowerCase().includes('lake') || textStr.includes('湖');
-      
-      if (isChurchBuilding && !isLakeSpot) {
-        return '/icon/Church.png';
-      }
-      
-      const isLake = isLakeSpot || isLakeText;
-      return isLake ? '/icon/lake.png' : '/icon/Church.png';
+      return '/icon/Church.png';
     }
     if (type === 'Township') return '/icon/Township.png';
     if (type === 'Town') return '/icon/kajimura.png';
@@ -630,25 +615,11 @@ function MapSearchContent() {
   };
 
   // 拠点の種別テキスト（翻訳含む）を取得する関数
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const getTypeLabel = (type: string | null | undefined, name?: string | null, spotKey?: string | null) => {
     if (!type) return '';
     if (type === 'Church') {
-      const spotStr = spotKey || '';
-      const textStr = name || '';
-      const isChurchBuilding = spotStr.includes('Third Church') || spotStr.includes('Church') || textStr.includes('Church') || textStr.includes('教会');
-      const isLakeSpot = spotStr === 'Lake' || spotStr === '湖';
-      const isLakeText = textStr === 'Church' || textStr === '湖沼' || textStr.toLowerCase().includes('lake') || textStr.includes('湖');
-
-      if (isChurchBuilding && !isLakeSpot) {
-        return currentLocale === 'ja' ? '教会' : currentLocale === 'zh' ? '教堂' : 'Church';
-      }
-
-      const isLake = isLakeSpot || isLakeText;
-      if (isLake) {
-        return currentLocale === 'ja' ? '湖沼' : currentLocale === 'zh' ? '湖沼' : 'Marsh';
-      } else {
-        return currentLocale === 'ja' ? '教会' : currentLocale === 'zh' ? '教堂' : 'Church';
-      }
+      return currentLocale === 'ja' ? '教会' : currentLocale === 'zh' ? '教堂' : 'Church';
     }
     if (type === 'Township') {
       return currentLocale === 'ja' ? 'ショップ' : currentLocale === 'zh' ? '商店' : 'Shop';
@@ -847,8 +818,6 @@ function MapSearchContent() {
       setSelectedSpawnPoint(targetPattern.spawnPoint || null);
       setFilters(nextFilters);
       setIsMapScreen(true);
-      setTimerSeconds(270);
-      setTimerRunning(true);
     }, 0);
   }, [searchParams]);
 
@@ -862,6 +831,25 @@ function MapSearchContent() {
       }
     }
   }, [activePatterns.length, originalIndex, currentMap, selectedSpawnPoint]);
+
+  // マップパターンが決定（1つに確定）された時にタイマーを開始する
+  const prevDeterminedRef = useRef<boolean>(false);
+
+  useEffect(() => {
+    const isDetermined = isMapScreen && activePatterns.length === 1;
+
+    if (isDetermined && !prevDeterminedRef.current) {
+      // マップパターンが確定した瞬間にタイマーを開始
+      setTimerSeconds(270);
+      setTimerRunning(true);
+    } else if (!isDetermined && prevDeterminedRef.current) {
+      // マップ確定状態が解除されたらタイマーを停止・リセット
+      setTimerRunning(false);
+      setTimerSeconds(270);
+    }
+
+    prevDeterminedRef.current = isDetermined;
+  }, [isMapScreen, activePatterns.length]);
 
   // タイマーのカウントダウン処理
   useEffect(() => {
@@ -888,11 +876,11 @@ function MapSearchContent() {
 
   // タイマーを再起動する関数
   const restartTimer = useCallback(() => {
-    if (!timerRunning) {
+    if (!timerRunning && activePatterns.length === 1) {
       setTimerSeconds(270);
       setTimerRunning(true);
     }
-  }, [timerRunning]);
+  }, [timerRunning, activePatterns.length]);
 
   // 全状態を初期化する関数
   const performReset = useCallback(() => {
@@ -902,6 +890,7 @@ function MapSearchContent() {
     setIsMapScreen(false);
     resetFilters();
     setTimerRunning(false);
+    setTimerSeconds(270);
     setResetAt(null);
     // URLのクエリパラメータをクリア
     if (typeof window !== 'undefined') {
@@ -2264,14 +2253,16 @@ function MapSearchContent() {
 
           {/* タイマー表示 (左下/大空洞では右下) */}
           <button
-            disabled={timerRunning}
+            disabled={timerRunning || activePatterns.length !== 1}
             onClick={restartTimer}
             className={`absolute bottom-2 ${currentMap === '大空洞' ? 'right-2 md:right-4' : 'left-2 md:left-4'} md:bottom-4 z-30 border rounded-lg md:rounded-xl px-1 py-0.5 md:px-3 md:py-2 flex flex-col items-center justify-center gap-0 md:gap-1 shadow-2xl backdrop-blur-md select-none min-w-[40px] md:min-w-[150px] transition-all duration-300 ${
               timerRunning 
                 ? 'cursor-default opacity-85' 
-                : 'cursor-pointer hover:bg-slate-900/90 hover:border-cyan-500/50 hover:text-cyan-200 active:scale-95'
+                : activePatterns.length === 1
+                  ? 'cursor-pointer hover:bg-slate-900/90 hover:border-cyan-500/50 hover:text-cyan-200 active:scale-95'
+                  : 'cursor-not-allowed opacity-60'
             } ${
-              timerSeconds <= 10 
+              timerSeconds <= 10 && timerRunning
                 ? 'bg-red-950/90 border-red-500/80 animate-pulse' 
                 : 'bg-slate-950/85 border-gray-800/80'
             }`}
