@@ -569,15 +569,34 @@ function MapSearchContent() {
     return t[key] || key;
   };
 
-  // 拠点アイコンの画像パスを取得する関数（湖沼と鍛冶村は追加画像に差し替え）
+  // 拠点アイコンの画像パスを取得する関数（湖沼と鍛冶村は追加画像に差し替え、隕石等の特殊イベントはmapevent.png）
   const getIconSrc = (type: string | null | undefined, name?: string | null, spotKey?: string | null) => {
     if (!type) return '/icon/undefined.png';
+    const lowerType = type.toLowerCase();
+    if (
+      lowerType === 'map event' ||
+      lowerType === 'mapevent' ||
+      lowerType === 'meteor' ||
+      lowerType === 'special event' ||
+      lowerType.includes('event') ||
+      lowerType.includes('meteor')
+    ) {
+      return '/icon/mapevent.png';
+    }
     if (type === 'Ruins' && currentMap === '大空洞') {
       return '/icon/Ruins.png';
     }
     const checkText = name || spotKey;
     if (checkText) {
       const lowerName = checkText.toLowerCase();
+      if (
+        lowerName.includes('meteor') ||
+        lowerName.includes('隕石') ||
+        lowerName.includes('map event') ||
+        lowerName.includes('mapevent')
+      ) {
+        return '/icon/mapevent.png';
+      }
       if (
         lowerName.includes('spider scorpion') || 
         lowerName.includes('ancestral follower') || 
@@ -618,6 +637,10 @@ function MapSearchContent() {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const getTypeLabel = (type: string | null | undefined, name?: string | null, spotKey?: string | null) => {
     if (!type) return '';
+    const lowerType = type.toLowerCase();
+    if (lowerType === 'map event' || lowerType === 'mapevent' || lowerType === 'meteor' || lowerType === 'special event') {
+      return currentLocale === 'ja' ? '特殊イベント' : currentLocale === 'zh' ? '特殊事件' : 'Special Event';
+    }
     if (type === 'Church') {
       return currentLocale === 'ja' ? '教会' : currentLocale === 'zh' ? '教堂' : 'Church';
     }
@@ -1790,51 +1813,52 @@ function MapSearchContent() {
                   </button>
                 );
               })()}
-              {/* 3日目のボス (Night Lord) アイコン表示 */}
-              {activePatterns[0].nightLord && (
-                <div 
-                  className="absolute z-20 bg-slate-950/90 border border-rose-500/50 rounded-2xl backdrop-blur-md shadow-2xl flex flex-col items-center animate-in fade-in zoom-in-95 duration-300"
-                  style={{
-                    bottom: 'var(--day3-boss-card-bottom)',
-                    left: currentMap === '大空洞' ? 'var(--day3-boss-card-right)' : undefined,
-                    right: currentMap === '大空洞' ? undefined : 'var(--day3-boss-card-right)',
-                    padding: 'var(--day3-boss-card-padding)',
-                    gap: 'var(--day3-boss-card-gap)'
-                  }}
-                >
-                  <span 
-                    className="text-rose-400 font-bold uppercase tracking-wider leading-none"
-                    style={{ fontSize: 'var(--day3-boss-font-title)' }}
-                  >
-                    {currentLocale === 'ja' ? '3日目のボス' : currentLocale === 'zh' ? '第三日夜王' : 'Day 3 Boss'}
-                  </span>
-                  <div 
-                    className="relative rounded-xl overflow-hidden border border-gray-800 shadow-inner"
-                    style={{
-                      width: 'var(--day3-boss-icon-size)',
-                      height: 'var(--day3-boss-icon-size)'
-                    }}
-                  >
-                    <Image 
-                      src={`/icon/nightLord/${BOSS_IMAGE_MAP[activePatterns[0].nightLord] || activePatterns[0].nightLord}.jpg`} 
-                      alt={activePatterns[0].nightLord} 
-                      fill 
-                      sizes="168px" 
-                      className="object-cover pointer-events-none" 
-                    />
-                  </div>
-                  <span 
-                    className="text-white font-bold truncate text-center leading-none mt-0.5"
-                    style={{ 
-                      fontSize: 'var(--day3-boss-font-text)',
-                      maxWidth: 'var(--day3-boss-icon-size)'
-                    }}
-                  >
-                    {transText(activePatterns[0].nightLord)}
-                  </span>
-                </div>
-              )}
             </>
+          )}
+
+          {/* 3日目のボス (Night Lord) アイコン表示（夜の王が決定されている場合） */}
+          {determinedNightLord && (
+            <div 
+              className="absolute z-20 bg-slate-950/90 border border-rose-500/50 rounded-2xl backdrop-blur-md shadow-2xl flex flex-col items-center animate-in fade-in zoom-in-95 duration-300"
+              style={{
+                bottom: 'var(--day3-boss-card-bottom)',
+                left: currentMap === '大空洞' ? 'var(--day3-boss-card-right)' : undefined,
+                right: currentMap === '大空洞' ? undefined : 'var(--day3-boss-card-right)',
+                padding: 'var(--day3-boss-card-padding)',
+                gap: 'var(--day3-boss-card-gap)'
+              }}
+            >
+              <span 
+                className="text-rose-400 font-bold uppercase tracking-wider leading-none"
+                style={{ fontSize: 'var(--day3-boss-font-title)' }}
+              >
+                {currentLocale === 'ja' ? '3日目のボス' : currentLocale === 'zh' ? '第三日夜王' : 'Day 3 Boss'}
+              </span>
+              <div 
+                className="relative rounded-xl overflow-hidden border border-gray-800 shadow-inner"
+                style={{
+                  width: 'var(--day3-boss-icon-size)',
+                  height: 'var(--day3-boss-icon-size)'
+                }}
+              >
+                <Image 
+                  src={`/icon/nightLord/${BOSS_IMAGE_MAP[determinedNightLord] || determinedNightLord}.jpg`} 
+                  alt={determinedNightLord} 
+                  fill 
+                  sizes="168px" 
+                  className="object-cover pointer-events-none" 
+                />
+              </div>
+              <span 
+                className="text-white font-bold truncate text-center leading-none mt-0.5"
+                style={{ 
+                  fontSize: 'var(--day3-boss-font-text)',
+                  maxWidth: 'var(--day3-boss-icon-size)'
+                }}
+              >
+                {transText(determinedNightLord)}
+              </span>
+            </div>
           )}
 
           {/* === 詳細ポップアップダイアログ === */}
