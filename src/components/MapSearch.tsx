@@ -270,6 +270,10 @@ interface FilterOption {
   element?: string | null;
 }
 
+const TIMER_TOTAL_SECONDS = 11 * 60; // 11分 (660秒)
+const FIRST_ALERT_SECONDS = 11 * 60 - (4 * 60 + 30); // スタートから4分30秒後 (残り390秒 / 06:30)
+const SECOND_ALERT_SECONDS = 11 * 60 - (10 * 60 + 30); // スタートから10分30秒後 (残り30秒 / 00:30)
+
 function MapSearchContent() {
   // 翻訳と言語
   const currentLocale = 'ja';
@@ -311,8 +315,38 @@ function MapSearchContent() {
   });
 
   // タイマー用の状態
-  const [timerSeconds, setTimerSeconds] = useState<number>(270);
+  const [timerSeconds, setTimerSeconds] = useState<number>(TIMER_TOTAL_SECONDS);
   const [timerRunning, setTimerRunning] = useState<boolean>(false);
+  const seAudioRef = useRef<HTMLAudioElement | null>(null);
+  const playedAlertsRef = useRef<{ first: boolean; second: boolean }>({ first: false, second: false });
+
+  // コンポーネントマウント時にSEを事前読み込み
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const audio = new Audio('/se.mp3');
+      audio.preload = 'auto';
+      seAudioRef.current = audio;
+    }
+  }, []);
+
+  const playSe = useCallback(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      if (seAudioRef.current) {
+        seAudioRef.current.currentTime = 0;
+        seAudioRef.current.play().catch(e => {
+          console.warn('Audio play failed:', e);
+        });
+      } else {
+        const audio = new Audio('/se.mp3');
+        audio.play().catch(e => {
+          console.warn('Audio play failed:', e);
+        });
+      }
+    } catch (e) {
+      console.warn('Audio initialization failed:', e);
+    }
+  }, []);
 
   // 40分自動リセット用（リセット予定時刻と現在時刻）の状態
   const [resetAt, setResetAt] = useState<number | null>(null);
@@ -863,12 +897,14 @@ function MapSearchContent() {
 
     if (isDetermined && !prevDeterminedRef.current) {
       // マップパターンが確定した瞬間にタイマーを開始
-      setTimerSeconds(270);
+      setTimerSeconds(TIMER_TOTAL_SECONDS);
       setTimerRunning(true);
+      playedAlertsRef.current = { first: false, second: false };
     } else if (!isDetermined && prevDeterminedRef.current) {
       // マップ確定状態が解除されたらタイマーを停止・リセット
       setTimerRunning(false);
-      setTimerSeconds(270);
+      setTimerSeconds(TIMER_TOTAL_SECONDS);
+      playedAlertsRef.current = { first: false, second: false };
     }
 
     prevDeterminedRef.current = isDetermined;
@@ -890,6 +926,19 @@ function MapSearchContent() {
     return () => clearInterval(interval);
   }, [timerRunning]);
 
+  // スタートから4分30秒後および10分30秒後のタイミングでSEを1回再生
+  useEffect(() => {
+    if (!timerRunning) return;
+
+    if (timerSeconds <= FIRST_ALERT_SECONDS && timerSeconds > SECOND_ALERT_SECONDS && !playedAlertsRef.current.first) {
+      playedAlertsRef.current.first = true;
+      playSe();
+    } else if (timerSeconds <= SECOND_ALERT_SECONDS && !playedAlertsRef.current.second) {
+      playedAlertsRef.current.second = true;
+      playSe();
+    }
+  }, [timerSeconds, timerRunning, playSe]);
+
   // 時間のフォーマット関数 (分:秒)
   const formatTime = (seconds: number) => {
     const m = Math.floor(seconds / 60);
@@ -900,8 +949,9 @@ function MapSearchContent() {
   // タイマーを再起動する関数
   const restartTimer = useCallback(() => {
     if (!timerRunning && activePatterns.length === 1) {
-      setTimerSeconds(270);
+      setTimerSeconds(TIMER_TOTAL_SECONDS);
       setTimerRunning(true);
+      playedAlertsRef.current = { first: false, second: false };
     }
   }, [timerRunning, activePatterns.length]);
 
@@ -913,7 +963,8 @@ function MapSearchContent() {
     setIsMapScreen(false);
     resetFilters();
     setTimerRunning(false);
-    setTimerSeconds(270);
+    setTimerSeconds(TIMER_TOTAL_SECONDS);
+    playedAlertsRef.current = { first: false, second: false };
     setResetAt(null);
     // URLのクエリパラメータをクリア
     if (typeof window !== 'undefined') {
