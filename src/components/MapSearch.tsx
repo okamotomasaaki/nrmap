@@ -271,7 +271,7 @@ interface FilterOption {
 }
 
 const TIMER_TOTAL_SECONDS = 11 * 60; // 11分 (660秒)
-const FIRST_ALERT_SECONDS = 11 * 60 - (4 * 60 + 30); // スタートから4分30秒後 (残り390秒 / 06:30)
+const FIRST_ALERT_SECONDS = 11 * 60 - (4 * 60); // スタートから4分00秒後 (残り420秒 / 07:00、30秒前倒し)
 const SECOND_ALERT_SECONDS = 11 * 60 - (10 * 60 + 30); // スタートから10分30秒後 (残り30秒 / 00:30)
 
 function MapSearchContent() {
@@ -926,7 +926,7 @@ function MapSearchContent() {
     return () => clearInterval(interval);
   }, [timerRunning]);
 
-  // スタートから4分30秒後および10分30秒後のタイミングでSEを1回再生
+  // スタートから4分00秒後および10分30秒後のタイミングでSEを1回再生
   useEffect(() => {
     if (!timerRunning) return;
 
